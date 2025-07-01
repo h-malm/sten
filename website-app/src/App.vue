@@ -104,10 +104,11 @@
 <script setup lang="ts">
   import { ref } from 'vue';
   import Dialog from 'primevue/dialog';
+  import image1 from '@/images/thumbnail_IMG_1003.jpg'
 
   const visible = ref( false );
 
-  const image1 = '/src/images/thumbnail_IMG_1003.jpg';
+  // const image1 = '/src/images/thumbnail_IMG_1003.jpg';
   const image2 = '/src/images//thumbnail_IMG_1005.jpg';
   const backgImage1 = '/src/images//thumbnail_IMG_1001.png';
   const backgImage2 = '/src/images//thumbnail_IMG_0999.png';
