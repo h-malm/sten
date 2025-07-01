@@ -1,7 +1,6 @@
 <template>
   <div class="scrollable-content">
     <h1 class="silkscreen-regular page-header">Horror Stories</h1>
-    <!-- <img src="https://media.tenor.com/PQ9sokZx0BoAAAAj/book.gif"> -->
     <div class="content-container">
       <div v-for=" ( story, index ) in stories " :key=" index ">
         <div class="pixelbutton silkscreen-regular">

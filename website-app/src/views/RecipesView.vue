@@ -5,7 +5,6 @@
             <div v-for=" ( story, index ) in stories " :key=" index ">
                 <div class="pixelbutton silkscreen-regular">
                     <h1 class="silkscreen-regular">{{ story.header }}</h1>
-                    <!-- <img> -->
                     <button class="cancel-button tiny5-regular" type="button"
                         @click="showDialog( index )">
                         Read

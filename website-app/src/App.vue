@@ -27,7 +27,7 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap"
       rel="stylesheet">
-    <link rel="icon" href="/thumbnail_IMG_1003.jpg" type="image/x-icon">
+    <link rel="icon" href="./thumbnail_IMG_1003.jpg" type="image/x-icon">
 
 
     <div class="overlay" v-if=" isOverlayActive "></div>
@@ -107,10 +107,10 @@
 
   const visible = ref( false );
 
-  const image1 = '/thumbnail_IMG_1003.jpg';
-  const image2 = '/thumbnail_IMG_1005.jpg';
-  const backgImage1 = '/thumbnail_IMG_1001.png';
-  const backgImage2 = '/thumbnail_IMG_0999.png';
+  const image1 = 'src/images/thumbnail_IMG_1003.jpg';
+  const image2 = 'src/images//thumbnail_IMG_1005.jpg';
+  const backgImage1 = 'src/images//thumbnail_IMG_1001.png';
+  const backgImage2 = 'src/images//thumbnail_IMG_0999.png';
 
   const activeImage = ref( image1 );
   const activeBackgImage = ref( backgImage1 );

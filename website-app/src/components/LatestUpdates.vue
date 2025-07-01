@@ -48,21 +48,4 @@
     import AccordionHeader from 'primevue/accordionheader';
     import AccordionContent from 'primevue/accordioncontent';
     import { ref } from 'vue';
-
-    const image1 = '/thumbnail_IMG_1003.jpg';
-    const image2 = '/thumbnail_IMG_1005.jpg';
-    const backgImage1 = '/thumbnail_IMG_1001.png';
-    const backgImage2 = '/thumbnail_IMG_0999.png';
-
-    const activeImage = ref( image1 );
-    const activeBackgImage = ref( backgImage1 );
-    const isOverlayActive = ref( false );
-
-    function toggleImage ()
-    {
-        activeImage.value = activeImage.value === image1 ? image2 : image1;
-        activeBackgImage.value = activeBackgImage.value === backgImage1 ? backgImage2 : backgImage1;
-        isOverlayActive.value = !isOverlayActive.value;
-    }
-
 </script>
