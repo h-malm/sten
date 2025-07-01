@@ -27,7 +27,7 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap"
       rel="stylesheet">
-    <link rel="icon" href="src/images/thumbnail_IMG_1003.jpg" type="image/x-icon">
+    <link rel="icon" :href=" image1 " type="image/x-icon">
 
 
     <div class="overlay" v-if=" isOverlayActive "></div>
