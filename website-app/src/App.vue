@@ -39,7 +39,6 @@
     <nav class="tiny5-regular">
       <RouterLink class="nav-item" to="/">Home</RouterLink>
       <RouterLink class="nav-item" to="/about">About Me</RouterLink>
-      <!-- <button @click="">Content</button> -->
       <button class="nav-item" @click="visible = true">Content</button>
     </nav>
 

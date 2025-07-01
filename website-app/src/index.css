@@ -419,6 +419,10 @@ h1 {
     margin: 0rem auto;
   }
 
+  .sten-smaller {
+    font-size: 5rem;
+  }
+
   .homepage {
     width: 100%;
     margin: 0rem auto;
@@ -437,9 +441,35 @@ h1 {
   }
 
   .nav-item {
-    margin: 0.5rem 10%;
+    margin: 0.5rem auto;
     grid-row: 1;
     line-height: 2rem;
     white-space: nowrap;
+    font-size: 1rem;
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 1rem;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 1rem 0rem;
+  }
+
+  .pixelbutton {
+    font-size: 1rem;
+  }
+
+  .story {
+    font-size: 0.7rem;
+    margin: 0rem 0rem;
+  }
+
+  .full-text {
+    padding: 1rem;
+  }
+
+  h1 {
+    margin: 0rem 2rem;
   }
 }
