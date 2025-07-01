@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "start:prod": "node website-app/src/main"
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
