@@ -1,0 +1,445 @@
+@import 'tailwindcss';
+
+/**fonts**/
+.silkscreen-regular {
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.bytesized-regular {
+  font-family: 'Bytesized', sans-serif;
+  font-size: 1.4rem;
+}
+
+.jersey-20-regular {
+  font-family: 'Jersey 20', sans-serif;
+}
+
+.lekton-regular {
+  font-family: 'Lekton', monospace;
+  font-size: 1.2rem;
+}
+
+.dongle-regular {
+  font-family: 'Dongle', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiny5-regular {
+  font-family: 'Tiny5', sans-serif;
+  font-size: 1.3rem;
+}
+
+:root {
+  --primaryButtonBackground: rgb(14, 14, 14);
+  --pixelbuttonBackground: rgb(12, 12, 12);
+  --pixelbuttonBoxShadow: #0e0e0e;
+  --cancelButtonBackground: rgb(44, 7, 7);
+  --cancelButtonBoxShadow: rgb(22, 2, 2);
+}
+
+#app {
+  text-align: center;
+  width: 900px;
+  margin: 0rem auto;
+  font-size: 1.4rem;
+}
+
+body {
+  scrollbar-color: var(--cancelButtonBackground) rgba(0, 0, 0, 0);
+  background-color: #110101;
+  color: white;
+  width: auto;
+  height: auto;
+  cursor: url('https://www.svgrepo.com/show/62818/circle-outline-of-small-size.svg');
+}
+
+p {
+  color: #fff;
+}
+
+.latest-updates {
+  background-color: #000000;
+  width: 20rem;
+  padding: 1rem;
+  margin: 5rem 0rem;
+  display: inline-flex;
+  float: right;
+  box-shadow:
+    0px 5px var(--pixelbuttonBackground),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground);
+}
+
+.website-title {
+  float: left;
+  width: 100%;
+  line-height: 11rem;
+}
+
+.sten-smaller {
+  position: relative;
+  display: flex;
+  font-size: 10rem;
+}
+
+.p-button.btns {
+  background-color: var(--primaryButtonBackground);
+}
+
+.p-button.btns:not(:disabled):hover {
+  background: var(--primaryButtonBackground);
+}
+
+.pixelbutton {
+  button,
+  .cancel-button {
+    height: 1rem;
+    line-height: 0.2;
+    margin: 1rem 1rem;
+    padding: 0.9rem 1rem;
+    border: 0;
+  }
+
+  .cancel-button:active,
+  button:active {
+    transform: translateY(0.5rem);
+  }
+
+  button,
+  .dialogbutton {
+    background-color: var(--pixelbuttonBackground);
+    box-shadow:
+      0px 5px var(--pixelbuttonBackground),
+      0px -5px var(--pixelbuttonBackground),
+      5px 0px var(--pixelbuttonBackground),
+      -5px 0px var(--pixelbuttonBackground),
+      0px 10px var(--pixelbuttonBoxShadow),
+      5px 5px var(--pixelbuttonBoxShadow),
+      -5px 5px var(--pixelbuttonBoxShadow),
+      inset 0px 5px #ffffff36;
+    cursor: pointer;
+  }
+
+  .cancel-button {
+    background-color: var(--cancelButtonBackground);
+    box-shadow:
+      0px 5px var(--cancelButtonBackground),
+      0px -5px var(--cancelButtonBackground),
+      5px 0px var(--cancelButtonBackground),
+      -5px 0px var(--cancelButtonBackground),
+      0px 10px var(--cancelButtonBoxShadow),
+      5px 5px var(--cancelButtonBoxShadow),
+      -5px 5px var(--cancelButtonBoxShadow),
+      inset 0px 5px #ffffff36;
+    cursor: pointer;
+  }
+
+  button:active {
+    box-shadow:
+      0px 5px var(--pixelbuttonBoxShadow),
+      0px -5px var(--pixelbuttonBoxShadow),
+      5px 0px var(--pixelbuttonBoxShadow),
+      -5px 0px var(--pixelbuttonBoxShadow),
+      inset 0px 5px var(--pixelbuttonBoxShadow);
+  }
+
+  .cancel-button:active {
+    box-shadow:
+      0px 5px var(--cancelButtonBoxShadow),
+      0px -5px var(--cancelButtonBoxShadow),
+      5px 0px var(--cancelButtonBoxShadow),
+      -5px 0px var(--cancelButtonBoxShadow),
+      inset 0px 5px var(--cancelButtonBoxShadow);
+  }
+}
+
+.p-icon {
+  color: rgba(255, 255, 255, 0);
+}
+
+.p-overlay-mask-enter {
+  background: #000000b8 !important;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+nav {
+  grid-template-columns: max-content;
+  position: relative;
+  height: 2rem;
+  /* top: 8rem; */
+  left: 23m;
+  box-shadow:
+    0px 5px var(--cancelButtonBackground),
+    0px -5px var(--cancelButtonBackground),
+    5px 0px var(--cancelButtonBackground),
+    -5px 0px var(--cancelButtonBackground),
+    0px 10px var(--cancelButtonBoxShadow),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+  background-color: var(--cancelButtonBackground);
+  display: flex;
+  width: fit-content;
+}
+
+.nav-item {
+  margin: 0.5rem 0.5rem;
+  grid-row: 1;
+  line-height: 1rem;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content-categories {
+  text-align: center;
+}
+
+.router:hover .div1 {
+  display: inline-block;
+}
+
+.router {
+  .div1 {
+    display: none;
+  }
+}
+
+.router:hover {
+  font-weight: 800;
+}
+
+.homepage .p-accordionheader {
+  border-width: 2px;
+  border-color: transparent;
+  background-color: var(--cancelButtonBackground);
+  margin: 0.5rem;
+  padding: 0.2rem;
+  box-shadow:
+    0px 5px var(--cancelButtonBackground),
+    0px -5px var(--cancelButtonBackground),
+    5px 0px var(--cancelButtonBackground),
+    -5px 0px var(--cancelButtonBackground),
+    0px 10px var(--cancelButtonBoxShadow),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+}
+
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader {
+  background: var(--cancelButtonBoxShadow) !important;
+  box-shadow:
+    0px 5px var(--cancelButtonBoxShadow),
+    0px -5px var(--cancelButtonBoxShadow),
+    5px 0px var(--cancelButtonBoxShadow),
+    -5px 0px var(--cancelButtonBoxShadow),
+    0px 10px var(--cancelButtonBoxShadow),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+}
+
+.p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled) > .p-accordionheader:hover {
+  background: var(--cancelButtonBoxShadow) !important;
+  box-shadow:
+    0px 5px var(--cancelButtonBoxShadow),
+    0px -5px var(--cancelButtonBoxShadow),
+    5px 0px var(--cancelButtonBoxShadow),
+    -5px 0px var(--cancelButtonBoxShadow),
+    0px 10px var(--cancelButtonBoxShadow),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+}
+
+.homepage .p-accordionpanel {
+  border: solid 2px transparent;
+  border-radius: 2rem;
+}
+
+.homepage .p-accordioncontent-content {
+  border-color: transparent;
+  background-color: rgb(0, 0, 0);
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+.homepage {
+  padding: 3rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.678);
+  z-index: 1;
+}
+
+.panorama-frame {
+  background-color: rgb(45, 59, 45);
+  width: 80rem;
+  height: 50rem;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 2rem;
+  margin: 5rem 0rem 0rem 0rem;
+  padding: 2rem 0rem;
+}
+
+.about-container1 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.about-container2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.content-container > div {
+  background-color: var(--pixelbuttonBackground);
+  padding: 0.7rem;
+  box-shadow:
+    0px 5px var(--pixelbuttonBackground),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground),
+    0px 10px var(--pixelbuttonBackground),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+  line-height: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.full-text {
+  padding: 4rem;
+  text-align: justify;
+}
+
+.lightswitch {
+  height: 5%;
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+  top: 2rem;
+}
+
+.about-me {
+  padding: 2rem;
+}
+
+.korean-stories {
+  padding: 4rem;
+  text-align: justify;
+  font-size: 2rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.korean-header {
+  font-size: 2.5rem;
+}
+
+.p-dialog-mask {
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 2;
+}
+
+.p-dialog-content {
+  background-color: rgba(0, 0, 0, 0.973);
+  overflow: hidden !important;
+  box-shadow:
+    0px 5px var(--pixelbuttonBackground),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground);
+}
+
+.p-dialog {
+  width: 50rem;
+  z-index: 5;
+}
+
+.story {
+  max-height: 40vh;
+  overflow: scroll;
+  margin: 2rem 0rem;
+}
+
+.page-header {
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 1.5rem;
+}
+
+.scrollable-content {
+  overflow: scroll;
+  margin: 2rem 0rem;
+  height: 70vh;
+}
+
+/* under 900px bredd */
+@media only screen and (max-width: 900px) {
+  #app {
+    text-align: center;
+    width: 100%;
+    margin: 0rem auto;
+  }
+
+  .homepage {
+    width: 100%;
+    margin: 0rem auto;
+  }
+
+  .latest-updates {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+  }
+
+  nav {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .nav-item {
+    margin: 0.5rem 10%;
+    grid-row: 1;
+    line-height: 2rem;
+    white-space: nowrap;
+  }
+}
