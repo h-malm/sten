@@ -419,6 +419,10 @@ h1 {
     margin: 0rem auto;
   }
 
+  .website-title {
+    line-height: 4.7rem;
+  }
+
   .sten-smaller {
     font-size: 5rem;
   }
@@ -430,9 +434,10 @@ h1 {
 
   .latest-updates {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 8rem;
+    left: 5%;
     width: auto;
+    right: 2%;
   }
 
   nav {
@@ -449,21 +454,24 @@ h1 {
   }
 
   .content-container {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    gap: 1rem;
-    margin: 2rem 0rem 0rem 0rem;
-    padding: 1rem 0rem;
+    grid-template-columns: 100%;
+    gap: 4rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
   }
 
   .page-header {
     position: absolute;
-    top: 9rem;
+    top: 1rem;
     font-size: 1rem;
   }
 
   .pixelbutton {
     font-size: 1rem;
+  }
+  .p-dialog {
+    width: 22rem;
+    z-index: 5;
   }
 
   .story {
@@ -481,5 +489,50 @@ h1 {
 
   .p-accordionpanel {
     line-height: 2rem;
+  }
+
+  .p-dialog {
+    width: 22rem;
+  }
+
+  .header {
+    font-size: 1.2rem;
+  }
+
+  .p-dialog-content {
+    font-size: 1rem;
+  }
+
+  .lekton-regular {
+    font-size: 0.85rem;
+  }
+
+  .tiny5-regular {
+    font-size: 1rem;
+  }
+
+  .korean-header {
+    font-size: 1.8rem;
+  }
+
+  .korean-stories {
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+
+  .content-container > div {
+    line-height: 1rem;
+  }
+
+  .about-me {
+    padding: 0.4rem;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .latest-updates {
+    width: fit-content;
   }
 }
