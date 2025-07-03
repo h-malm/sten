@@ -34,8 +34,10 @@
   --primaryButtonBackground: rgb(14, 14, 14);
   --pixelbuttonBackground: rgb(12, 12, 12);
   --pixelbuttonBoxShadow: #0e0e0e;
-  --cancelButtonBackground: rgb(44, 7, 7);
-  --cancelButtonBoxShadow: rgb(22, 2, 2);
+  --cancelButtonBackground: rgb(102, 29, 29);
+  --cancelButtonBoxShadow: rgb(82, 29, 29);
+  --darkerRed: rgb(90, 29, 29);
+  --darkestRed: rgb(49, 0, 0);
 }
 
 #app {
@@ -47,7 +49,7 @@
 
 body {
   scrollbar-color: var(--cancelButtonBackground) rgba(0, 0, 0, 0);
-  background-color: #110101;
+  background-color: #380202;
   color: white;
   width: auto;
   height: auto;
@@ -59,17 +61,21 @@ p {
 }
 
 .latest-updates {
-  background-color: #000000;
+  background-color: var(--cancelButtonBackground);
   width: 20rem;
   padding: 1rem;
-  margin: 5rem 0rem;
+  margin: 5rem 1rem;
   display: inline-flex;
   float: right;
   box-shadow:
-    0px 5px var(--pixelbuttonBackground),
-    0px -5px var(--pixelbuttonBackground),
-    5px 0px var(--pixelbuttonBackground),
-    -5px 0px var(--pixelbuttonBackground);
+    0px 5px var(--cancelButtonBackground),
+    0px -5px var(--cancelButtonBackground),
+    5px 0px var(--cancelButtonBackground),
+    -5px 0px var(--cancelButtonBackground),
+    0px 10px var(--darkerRed),
+    5px 5px var(--darkerRed),
+    -5px 5px var(--darkerRed),
+    inset 0px 5px #ffffff36;
 }
 
 .website-title {
@@ -228,44 +234,44 @@ nav {
 .homepage .p-accordionheader {
   border-width: 2px;
   border-color: transparent;
-  background-color: var(--cancelButtonBackground);
+  background-color: var(--darkerRed);
   margin: 0.5rem;
   padding: 0.2rem;
   box-shadow:
-    0px 5px var(--cancelButtonBackground),
-    0px -5px var(--cancelButtonBackground),
-    5px 0px var(--cancelButtonBackground),
-    -5px 0px var(--cancelButtonBackground),
-    0px 10px var(--cancelButtonBoxShadow),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
+    0px 5px var(--darkerRed),
+    0px -5px var(--darkerRed),
+    5px 0px var(--darkerRed),
+    -5px 0px var(--darkerRed),
+    0px 10px var(--pixelbuttonBackground),
+    5px 5px var(--pixelbuttonBackground),
+    -5px 5px var(--pixelbuttonBackground),
+    inset 0px 5px #b9b9b936;
 }
 
 .p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader {
-  background: var(--cancelButtonBoxShadow) !important;
+  background: var(--darkestRed) !important;
   box-shadow:
-    0px 5px var(--cancelButtonBoxShadow),
-    0px -5px var(--cancelButtonBoxShadow),
-    5px 0px var(--cancelButtonBoxShadow),
-    -5px 0px var(--cancelButtonBoxShadow),
-    0px 10px var(--cancelButtonBoxShadow),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
+    0px 5px var(--darkestRed),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground),
+    0px 10px var(--pixelbuttonBackground),
+    5px 5px var(--pixelbuttonBackground),
+    -5px 5px var(--pixelbuttonBoxShadow),
+    inset 0px 5px #00000036;
 }
 
 .p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled) > .p-accordionheader:hover {
   background: var(--cancelButtonBoxShadow) !important;
   box-shadow:
-    0px 5px var(--cancelButtonBoxShadow),
-    0px -5px var(--cancelButtonBoxShadow),
-    5px 0px var(--cancelButtonBoxShadow),
-    -5px 0px var(--cancelButtonBoxShadow),
-    0px 10px var(--cancelButtonBoxShadow),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
+    0px 5px var(--darkerRed),
+    0px -5px var(--darkerRed),
+    5px 0px var(--darkerRed),
+    -5px 0px var(--darkerRed),
+    0px 10px var(--pixelbuttonBackground),
+    5px 5px var(--pixelbuttonBackground),
+    -5px 5px var(--pixelbuttonBackground),
+    inset 0px 5px #b9b9b936;
 }
 
 .homepage .p-accordionpanel {
@@ -275,7 +281,7 @@ nav {
 
 .homepage .p-accordioncontent-content {
   border-color: transparent;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   padding: 0.6rem 1rem;
   text-align: left;
 }
@@ -312,16 +318,16 @@ nav {
 }
 
 .content-container > div {
-  background-color: var(--pixelbuttonBackground);
+  background-color: var(--darkerRed);
   padding: 0.7rem;
   box-shadow:
-    0px 5px var(--pixelbuttonBackground),
-    0px -5px var(--pixelbuttonBackground),
-    5px 0px var(--pixelbuttonBackground),
-    -5px 0px var(--pixelbuttonBackground),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
+    0px 5px var(--darkerRed),
+    0px -5px var(--darkerRed),
+    5px 0px var(--darkerRed),
+    -5px 0px var(--darkerRed),
+    0px 10px var(--darkerRed),
+    5px 5px var(--darkerRed),
+    -5px 5px var(--darkerRed),
     inset 0px 5px #ffffff36;
   line-height: 2rem;
 }
@@ -366,13 +372,17 @@ h1 {
 }
 
 .p-dialog-content {
-  background-color: rgba(0, 0, 0, 0.973);
+  background-color: var(--darkestRed);
   overflow: hidden !important;
   box-shadow:
-    0px 5px var(--pixelbuttonBackground),
-    0px -5px var(--pixelbuttonBackground),
-    5px 0px var(--pixelbuttonBackground),
-    -5px 0px var(--pixelbuttonBackground);
+    0px 5px var(--darkestRed),
+    0px -5px var(--darkestRed),
+    5px 0px var(--darkestRed),
+    -5px 0px var(--darkestRed),
+    0px 10px var(--darkestRed),
+    5px 5px var(--darkestRed),
+    -5px 5px var(--darkestRed),
+    inset 0px 5px #00000000;
 }
 
 .p-dialog {
@@ -431,9 +441,9 @@ h1 {
     5px 0px var(--pixelbuttonBackground),
     -5px 0px var(--pixelbuttonBackground),
     0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
+    5px 5px var(--pixelbuttonBackground),
+    -5px 5px var(--pixelbuttonBackground),
+    inset 0px 5px #83838346;
 }
 
 .p-galleria-thumbnail-item {
