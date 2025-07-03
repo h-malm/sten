@@ -34,8 +34,8 @@
   --primaryButtonBackground: rgb(14, 14, 14);
   --pixelbuttonBackground: rgb(12, 12, 12);
   --pixelbuttonBoxShadow: #0e0e0e;
-  --cancelButtonBackground: rgb(102, 29, 29);
-  --cancelButtonBoxShadow: rgb(82, 29, 29);
+  --cancelButtonBackground: rgb(71, 18, 18);
+  --cancelButtonBoxShadow: rgb(85, 24, 24);
   --darkerRed: rgb(90, 29, 29);
   --darkestRed: rgb(49, 0, 0);
 }
