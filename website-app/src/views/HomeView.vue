@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-  import LatestUpdates from '@/components/LatestUpdates.vue';
+  import LatestUpdates from '../components/LatestUpdates.vue';
 </script>

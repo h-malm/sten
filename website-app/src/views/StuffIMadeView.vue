@@ -1,6 +1,7 @@
 <template>
     <div class="scrollable-content">
-        <h1 class="silkscreen-regular page-header">Stuff I've Made</h1>
+        <h1 class="silkscreen-regular page-header">Horror Stories</h1>
+
     </div>
 </template>
 

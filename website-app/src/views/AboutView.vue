@@ -37,7 +37,7 @@
                 deepest fears (along with tics, horseflies, snakes, and bees).
             </p>
             <p class="about-me">
-                <img src="../images/WebsiteImages/P9042177.JPG" class="image">
+                <img src="../assets/images/WebsiteImages/P9042177.JPG" class="image">
                 I study in a field of predominantly men. My class had three girls out of
                 around 50 people. Can't say it is much different than a women-dominated field.
                 Apparently, drama isn't exclusive to groups of girls, cause we've had a bunch of

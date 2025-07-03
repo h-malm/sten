@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import HorrorView from '@/views/HorrorView.vue'
+import HorrorView from '../views/HorrorView.vue'
 import PageView from '../views/PageView.vue'
-import AboutView from '@/views/AboutView.vue'
-import PhotosView from '@/views/PhotosView.vue'
-import PlantView from '@/views/PlantView.vue'
-import RecipesView from '@/views/RecipesView.vue'
-import StuffIMadeView from '@/views/StuffIMadeView.vue'
-import KoreanView from '@/views/KoreanView.vue'
+import AboutView from '../views/AboutView.vue'
+import PhotosView from '../views/PhotosView.vue'
+import PlantView from '../views/PlantView.vue'
+import RecipesView from '../views/RecipesView.vue'
+import StuffIMadeView from '../views/StuffIMadeView.vue'
+import KoreanView from '../views/KoreanView.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },

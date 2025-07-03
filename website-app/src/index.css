@@ -75,13 +75,13 @@ p {
 .website-title {
   float: left;
   width: 100%;
-  line-height: 11rem;
+  line-height: 6rem;
 }
 
 .sten-smaller {
   position: relative;
   display: flex;
-  font-size: 10rem;
+  font-size: 5rem;
 }
 
 .p-button.btns {
@@ -305,24 +305,10 @@ nav {
 
 .content-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 2rem;
   margin: 5rem 0rem 0rem 0rem;
   padding: 2rem 0rem;
-}
-
-.about-container1 {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.about-container2 {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  gap: 1rem;
-  padding: 2rem;
 }
 
 .content-container > div {
@@ -352,7 +338,7 @@ h1 {
 .lightswitch {
   height: 5%;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   right: 2rem;
   top: 2rem;
@@ -412,9 +398,51 @@ h1 {
 }
 
 .image {
-  width: 20rem;
+  max-width: 10rem;
   float: left;
-  margin-right: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.p-galleria {
+  img,
+  video {
+    max-width: 70%;
+    margin-top: 5rem;
+  }
+}
+
+.p-galleria-thumbnails-viewport {
+  margin-top: 2rem;
+}
+
+.p-galleria-items-container {
+  height: 12rem;
+  margin: 6rem;
+}
+
+.p-galleria {
+  overflow: hidden;
+  border-color: #00000000 !important;
+  background-color: var(--pixelbuttonBackground);
+  box-shadow:
+    0px 5px var(--pixelbuttonBackground),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground),
+    0px 10px var(--pixelbuttonBackground),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+}
+
+.p-galleria-thumbnail-item {
+  opacity: 0.4;
+}
+
+.p-galleria-thumbnail-item-current img {
+  border: rgb(82, 3, 3) solid 0.2rem;
+  border-radius: 0.3rem;
 }
 
 /* under 900px bredd */

@@ -12,5 +12,5 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(PrimeVue, {})
-
+// import.meta.glob('../../images/*.{png,jpg,jpeg,svg}')
 app.mount('#app')
