@@ -411,6 +411,12 @@ h1 {
   height: 70vh;
 }
 
+.image {
+  width: 20rem;
+  float: left;
+  margin-right: 1rem;
+}
+
 /* under 900px bredd */
 @media only screen and (max-width: 900px) {
   #app {
