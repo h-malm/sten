@@ -1,6 +1,6 @@
 <template>
     <div class="scrollable-content">
-        <h1 class="silkscreen-regular page-header">Recipes</h1>
+        <h1 class="silkscreen-regular page-header"> (Gluten-Free) Recipes</h1>
         <div class="content-container">
             <div v-for=" ( story, index ) in stories " :key=" index ">
                 <div class="pixelbutton silkscreen-regular">
