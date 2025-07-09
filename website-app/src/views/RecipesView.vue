@@ -35,10 +35,10 @@
 <script setup>
     import { ref, onMounted } from 'vue'
     import Dialog from 'primevue/dialog'
-    import Pancakes from '../recipes/Pancakes.txt?raw'
-    import ChocolateChipCookies from '../recipes/ChocolateChipCookies.txt?raw'
-    import Mudcake from '../recipes/Mudcake.txt?raw'
-    import Meatballs from '../recipes/Meatballs.txt?raw'
+    import Pancakes from '../textfiles/recipes/Pancakes.txt?raw'
+    import ChocolateChipCookies from '../textfiles/recipes/ChocolateChipCookies.txt?raw'
+    import Mudcake from '../textfiles/recipes/Mudcake.txt?raw'
+    import Meatballs from '../textfiles/recipes/Meatballs.txt?raw'
 
     const visibleIndex = ref( null )
     const stories = ref( [

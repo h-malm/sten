@@ -49,10 +49,38 @@
   <Dialog v-model:visible=" visible " modal class="tiny5-regular">
     <h1 class="header padding">What do you wanna see?</h1>
     <div class="body-text content-categories">
+      <RouterLink class="router" to="/art" @click="visible = false">
+        <div class="div1">&gt;</div>
+        Art
+        <div class="div1">&lt;</div>
+      </RouterLink>
+    </div>
+    <div class="body-text content-categories">
+      <RouterLink class="router" to="/crafts" @click="visible = false">
+        <div class="div1">&gt;</div>
+        Crafts
+        <div class="div1">&lt;</div>
+      </RouterLink>
+    </div>
+    <div class="body-text content-categories">
       <RouterLink class="router" to="/horror" @click="visible = false">
         <div class="div1">&gt;</div>
         Horror
         <div class="div1 ">&lt;</div>
+      </RouterLink>
+    </div>
+    <div class="body-text content-categories">
+      <RouterLink class="router" to="/knitting" @click="visible = false">
+        <div class="div1">&gt;</div>
+        Knitting
+        <div class="div1">&lt;</div>
+      </RouterLink>
+    </div>
+    <div class="body-text content-categories">
+      <RouterLink class="router" to="/korean" @click="visible = false">
+        <div class="div1">&gt;</div>
+        Korean Practice
+        <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
@@ -76,20 +104,8 @@
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router" to="/stuffimade" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Stuff I've made
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router" to="/korean" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Korean Practice
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
+
+
     <div class="padding align-center pixelbutton body-text">
 
       <button class="cancel-button" type="button" @click="visible = false">

@@ -4,10 +4,10 @@
         <div class="tiny5-regular">
             Latest Updates
             <AccordionPanel value="0">
-                <AccordionHeader>Story: Cloudy Day</AccordionHeader>
+                <AccordionHeader>Story: Moving In</AccordionHeader>
                 <AccordionContent>
                     <p class="lekton-regular">
-                        A short physchological thriller story.
+                        A short thriller story.
                     </p>
                     <RouterLink class="router lekton-regular" to="/horror" @click="visible = false">
                         <u><b>Read now</b></u>

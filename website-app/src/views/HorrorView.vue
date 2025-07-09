@@ -34,8 +34,8 @@
 <script setup>
   import { ref, onMounted } from 'vue'
   import Dialog from 'primevue/dialog'
-  import CloudyDayText from '../stories/CloudyDay.txt?raw'
-  import MovingIn from '../stories/MovingIn.txt?raw'
+  import CloudyDayText from '../textfiles/stories/CloudyDay.txt?raw'
+  import MovingIn from '../textfiles/stories/MovingIn.txt?raw'
 
   const visibleIndex = ref( null )
   const stories = ref( [

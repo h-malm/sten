@@ -317,6 +317,24 @@ nav {
   padding: 2rem 0rem;
 }
 
+.content-container-crafts {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+  margin: 5rem 1rem 1rem 1rem;
+  padding: 2rem 0rem;
+  background-color: var(--pixelbuttonBackground);
+  box-shadow:
+    0px 5px var(--pixelbuttonBackground),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground),
+    0px 10px var(--pixelbuttonBackground),
+    5px 5px var(--pixelbuttonBackground),
+    -5px 5px var(--pixelbuttonBackground),
+    inset 0px 5px #ffffff36;
+}
+
 .content-container > div {
   background-color: var(--darkerRed);
   padding: 0.7rem;
@@ -453,6 +471,19 @@ h1 {
 .p-galleria-thumbnail-item-current img {
   border: rgb(82, 3, 3) solid 0.2rem;
   border-radius: 0.3rem;
+}
+
+.image1 {
+  max-height: 25rem;
+  display: inline;
+  margin: 1rem;
+  border: rgb(82, 3, 3) solid 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.links {
+  text-decoration: underline;
+  font-size: 1rem;
 }
 
 /* under 900px bredd */

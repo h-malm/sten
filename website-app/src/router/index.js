@@ -6,8 +6,10 @@ import AboutView from '../views/AboutView.vue'
 import PhotosView from '../views/PhotosView.vue'
 import PlantView from '../views/PlantView.vue'
 import RecipesView from '../views/RecipesView.vue'
-import StuffIMadeView from '../views/StuffIMadeView.vue'
+import CraftsView from '../views/Crafts.vue'
 import KoreanView from '../views/KoreanView.vue'
+import ArtView from '@/views/ArtView.vue'
+import KnittingsView from '@/views/KnittingsView.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
@@ -17,8 +19,10 @@ const routes = [
   { path: '/photos', name: 'Photos', component: PhotosView },
   { path: '/plants', name: 'Plants', component: PlantView },
   { path: '/recipes', name: 'Recipes', component: RecipesView },
-  { path: '/stuffimade', name: 'Stuff I have made', component: StuffIMadeView },
+  { path: '/crafts', name: 'Crafts', component: CraftsView },
   { path: '/korean', name: 'Korean Practice', component: KoreanView },
+  { path: '/art', name: 'Art', component: ArtView },
+  { path: '/knitting', name: 'Knitting', component: KnittingsView },
 ]
 
 const router = createRouter({
