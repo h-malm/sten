@@ -1,6 +1,7 @@
 <template>
     <h1 class="silkscreen-regular page-header">Art</h1>
-
+    <p class="lekton-regular p-2">A collection of stuff I've drawn or painted. I don't have a
+        specific style, but mostly draw whatever is fun or I think will look good.</p>
     <div class="scrollable-content">
         <Galleria :value=" images " :numVisible=" 9 "
             containerStyle=" max-width: 40rem; margin: auto;" :circular=" true "

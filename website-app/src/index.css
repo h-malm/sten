@@ -64,7 +64,7 @@ p {
   background-color: var(--cancelButtonBackground);
   width: 20rem;
   padding: 1rem;
-  margin: 5rem 1rem;
+  margin: 3rem 1rem;
   display: inline-flex;
   float: right;
   box-shadow:
@@ -284,6 +284,7 @@ nav {
   background-color: rgba(0, 0, 0, 0);
   padding: 0.6rem 1rem;
   text-align: left;
+  width: 21rem;
 }
 
 .homepage {
@@ -368,8 +369,14 @@ h1 {
   top: 2rem;
 }
 
-.about-me {
+.p-2 {
   padding: 2rem;
+}
+
+.float-left {
+  float: left;
+  text-align: justify;
+  width: 49%;
 }
 
 .korean-stories {
@@ -509,7 +516,7 @@ h1 {
 
   .latest-updates {
     position: absolute;
-    top: 8rem;
+    top: 10rem;
     left: 5%;
     width: auto;
     right: 2%;
@@ -600,8 +607,12 @@ h1 {
     line-height: 1rem;
   }
 
-  .about-me {
+  .p-2 {
     padding: 0.4rem;
+    text-align: justify;
+  }
+  .float-left {
+    display: flex;
     text-align: justify;
   }
 }

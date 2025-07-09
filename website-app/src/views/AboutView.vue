@@ -2,7 +2,7 @@
     <div class="scrollable-content">
         <h1 class="silkscreen-regular page-header">About Me</h1>
         <div class="lekton-regular about-container">
-            <p class="about-me">
+            <p class="p-2">
                 I'm a 23-year-old Computer Engineering student. My Master's thesis just got graded
                 (I got a 4 out of 5. One could say I am pretty fucking proud). My Master's thesis
                 discussed the
@@ -16,7 +16,7 @@
                 peaked my interest in accessibility, usability, and global website design trends.
             </p>
             <h1>What does Sten like and dislike?</h1>
-            <p class="about-me">
+            <p class="p-2">
                 Aaaw, you want to get to know me moore~? Well, since you're so curious, I
                 like creative stuff, such as drawing, pottery, and painting. I also like building
                 stuff, which means I like woodworking, knitting, home-making, and sewing. I
@@ -28,7 +28,7 @@
                 something that really makes me happy because it always results in a feeling of
                 accomplishment and self-sufficiency.
             </p>
-            <p class="about-me">
+            <p class="p-2">
                 I love a challenge, and by keeping a (butt)load
                 of plants, I have something that shows both progression from my hard-work and
                 something that gives me something back, like oxygen and hopefully fruits. Dude, I
@@ -36,24 +36,23 @@
                 horror-stories or videos on the daily. I get easily scared. House-fires are my
                 deepest fears (along with tics, horseflies, snakes, and bees).
             </p>
-            <p class="about-me">
+            <p class="p-2">
                 <img src="../assets/images/WebsiteImages/P9042177.JPG" class="image">
                 I study in a field of predominantly men. My class had three girls out of
                 around 50 people. Can't say it is much different than a women-dominated field.
                 Apparently, drama isn't exclusive to groups of girls, cause we've had a bunch of
-                drama in the last year of our studies, all originating from dudes. I really though
+                drama in the last year of our studies, all originating from dudes. I really thought
                 drama would disappear as people exited their teens.
             </p>
-            <p class="about-me">
+            <p class="p-2">
                 I already said I don't like bugs, but I equally do not like people who clearly value
-                friends based on social groups. Loyalty, however cliché it sounds, is sooo so
+                friends based on social groups. Loyalty, however cliché it may sound, is sooo so
                 important. It's insane how much people play fast and loose with friendships just to
-                satisfy their needs or to find popularity. Fake friends can eat a dick and hang out
-                with other fake people (who can also eat a dick). Now you know everything about
-                me and what I think :D
+                satisfy their needs or to find popularity. I don't like fake friends. Fake friends
+                can eat a dick, then go hang out with other fake people (who can also eat a dick).
             </p>
             <h1>Why make a website?</h1>
-            <p class="about-me">
+            <p class="p-2">
                 Actually, the initial point of this website was to make something to show my
                 development and design skills when I apply for jobs. Since,
                 my main interest within IT is frontend, usability, and accessibility in website
@@ -70,7 +69,7 @@
                 personalized website with blog-like content.
             </p>
             <h1>Guide to Sten's website</h1>
-            <p class="about-me">
+            <p class="p-2">
                 A little guide for this website might be good :) I was inspired by the 90s
                 websites when the computer screens were much smaller (I'm implementing the website
                 using
@@ -81,7 +80,7 @@
                 any personal info here. You never know what websites are scraped for data to train
                 AI models.
             </p>
-            <p class="about-me">
+            <p class="p-2">
                 There are horror stories I've written under <i>Content > Horror</i>, plant tips
                 under <i>Content > Plant Tips</i>, and so on. If you happen to be a native Korean
                 speaker,
@@ -94,7 +93,7 @@
                 categories
                 and sort them).
             </p>
-            <p class="about-me">
+            <p class="p-2">
                 I'd say my website is majorly focused on reading, so if you're not interested in
                 that, I'd like to suggest that you get
                 off my
@@ -122,7 +121,7 @@
             </p>
 
 
-            <p class="about-me">
+            <p class="p-2">
                 Whew! There's a lot more text than I thought there'd be. Apparently, I'm a yapper in
                 text-form.
             </p>

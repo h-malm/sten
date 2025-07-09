@@ -1,4 +1,8 @@
 <template>
+    <h1 class="silkscreen-regular page-header">Art</h1>
+    <p class="lekton-regular p-2">A collection of photos I have taken throughout the years.
+        Some are taken with my old Oneplus 7 Pro, some with my new Google Pixel, and some with good
+        cameras (e.g. ixus, lumix, olympus, or nikon).</p>
     <div class="scrollable-content">
         <Galleria :value=" images " :numVisible=" 9 "
             containerStyle=" max-width: 40rem; margin: auto;" :circular=" true "
