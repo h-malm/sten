@@ -613,6 +613,7 @@ h1 {
   }
   .float-left {
     display: flex;
+
     text-align: justify;
   }
 }
