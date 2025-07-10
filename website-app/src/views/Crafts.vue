@@ -24,6 +24,11 @@
     import ShelfText from '../textfiles/crafts/shelf.txt?raw'
     import PillowText from '../textfiles/crafts/pillow.txt?raw'
 
+    import i1 from '/src/assets/images/Crafts/1556.jpg';
+    import i2 from '/src/assets/images/Crafts/shelf1.jpg';
+    import i3 from '/src/assets/images/Crafts/shelf2.jpg';
+    import i4 from '/src/assets/images/Crafts/skirt.jpg';
+
     const stories = ref( [
         { header: 'Wrench Holder', text: '', image1: '', image2: '', },
         { header: 'Tiny Shelf', text: '', image1: '', image2: '', },
@@ -34,14 +39,14 @@
     onMounted( () =>
     {
         stories.value[ 0 ].text = WrenchText;
-        stories.value[ 0 ].image1 = './src/assets/images/Crafts/1556.jpg';
+        stories.value[ 0 ].image1 = i1;
 
         stories.value[ 1 ].text = ShelfText;
-        stories.value[ 1 ].image1 = './src/assets/images/Crafts/shelf1.jpg';
-        stories.value[ 1 ].image2 = './src/assets/images/Crafts/shelf2.jpg';
+        stories.value[ 1 ].image1 = i2;
+        stories.value[ 1 ].image2 = i3;
 
         stories.value[ 2 ].text = PillowText;
-        stories.value[ 2 ].image1 = './src/assets/images/Crafts/skirt.jpg';
+        stories.value[ 2 ].image1 = i4;
     } )
 
     const formatText = ( text ) =>
