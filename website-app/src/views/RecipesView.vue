@@ -3,7 +3,7 @@
         <h1 class="silkscreen-regular page-header"> (Gluten-Free) Recipes</h1>
         <div class="content-container">
             <div v-for=" ( story, index ) in stories " :key=" index ">
-                <div class="pixelbutton silkscreen-regular">
+                <div class="pixelbutton silkscreen-regular inherit-width">
                     <h1 class="silkscreen-regular">{{ story.header }}</h1>
                     <button class="cancel-button tiny5-regular" type="button"
                         @click="showDialog( index )">

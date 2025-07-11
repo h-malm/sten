@@ -515,11 +515,12 @@ h1 {
   }
 
   .latest-updates {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     top: 10rem;
     left: 5%;
-    width: auto;
-    right: 2%;
+    width: fit-content;
+    right: 2%; */
   }
 
   nav {
@@ -611,15 +612,24 @@ h1 {
     padding: 0.4rem;
     text-align: justify;
   }
+
   .float-left {
     display: flex;
-
     text-align: justify;
+    width: 100%;
+  }
+
+  .homepage .p-accordionpanel {
+    width: 10rem;
+  }
+
+  .inherit-width {
+    width: inherit;
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 500px) {
   .latest-updates {
-    width: fit-content;
+    display: none;
   }
 }
