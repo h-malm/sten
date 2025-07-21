@@ -3,8 +3,8 @@
     <div class="scrollable-content">
         <p class="lekton-regular p-2">A collection of photos I have taken throughout the years.
             Some are taken with my old Oneplus 7 Pro, some with my new Google Pixel, and some with
-            good
-            cameras (e.g. ixus, lumix, olympus, or nikon).</p>
+            good cameras (e.g. ixus, lumix, olympus, or nikon).
+        </p>
         <Galleria :value=" images " :numVisible=" 9 "
             containerStyle=" max-width: 40rem; margin: auto;" :circular=" true "
             :autoPlay=" false ">
