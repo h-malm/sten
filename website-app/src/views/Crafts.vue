@@ -7,7 +7,7 @@
                     <h1 class="silkscreen-regular">{{ item.header }}</h1>
                     <img v-for=" image in getImages( item ) " :key=" image " class="image1"
                         :src=" image ">
-                    <div class="story lekton-regular">
+                    <div class="lekton-regular p-2">
                         <div v-for=" paragraph in formatText( item.text ) " :key=" paragraph ">
                             <p>{{ paragraph }}</p>
                         </div>
