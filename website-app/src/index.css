@@ -644,4 +644,11 @@ h1 {
   .scrollable-content {
     margin: 0.5rem;
   }
+
+  .p-galleria {
+    img,
+    video {
+      max-width: 100%;
+    }
+  }
 }
