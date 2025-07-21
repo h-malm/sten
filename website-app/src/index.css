@@ -523,23 +523,23 @@ h1 {
   .homepage {
     width: 100%;
     margin: 0rem auto;
+    padding: 0.8rem;
   }
 
   .latest-updates {
-    width: 10rem;
-    right: 2%;
-    margin: 1rem 1rem;
+    width: 8rem;
+    margin: 0.5rem 0.5rem;
     padding: 0.2rem;
   }
 
   .homepage .p-accordionpanel {
-    width: 9.6rem;
+    width: 7.6rem;
+    line-height: 1rem;
   }
 
   .homepage .p-accordioncontent-content {
-    width: 10rem;
-    line-height: 1rem;
-    padding: 1rem 0rem;
+    width: 7.5rem;
+    padding: 0.5rem 0rem;
   }
 
   nav {
@@ -564,15 +564,17 @@ h1 {
 
   .page-header {
     position: absolute;
-    top: 1rem;
     font-size: 1rem;
+    top: 0rem;
+    left: 4.1rem;
   }
 
   .pixelbutton {
     font-size: 1rem;
   }
-  .p-dialog {
-    width: 22rem;
+
+  .home-dialog.p-dialog {
+    width: 15rem;
     z-index: 5;
   }
 

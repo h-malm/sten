@@ -46,7 +46,7 @@
       <RouterView />
     </main>
   </div>
-  <Dialog v-model:visible=" visible " modal class="tiny5-regular">
+  <Dialog v-model:visible=" visible " modal class="tiny5-regular home-dialog">
     <h1 class="header padding">What do you wanna see?</h1>
     <div class="body-text content-categories">
       <RouterLink class="router" to="/art" @click="visible = false">
