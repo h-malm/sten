@@ -1,6 +1,6 @@
 <template>
+    <h1 class="silkscreen-regular page-header">About Me</h1>
     <div class="scrollable-content">
-        <h1 class="silkscreen-regular page-header">About Me</h1>
         <div class="lekton-regular about-container">
             <p class="p-2">
                 I'm a 23-year-old Computer Engineering student. My Master's thesis just got graded

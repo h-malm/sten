@@ -63,6 +63,7 @@ p {
 .latest-updates {
   background-color: var(--cancelButtonBackground);
   width: 20rem;
+  height: fit-content;
   padding: 1rem;
   margin: 3rem 1rem;
   display: inline-flex;
@@ -76,6 +77,10 @@ p {
     5px 5px var(--darkerRed),
     -5px 5px var(--darkerRed),
     inset 0px 5px #ffffff36;
+}
+
+.homepage .p-accordionpanel {
+  width: 18rem;
 }
 
 .website-title {
@@ -376,7 +381,6 @@ h1 {
 .float-left {
   float: left;
   text-align: justify;
-  width: 49%;
 }
 
 .korean-stories {
@@ -430,6 +434,13 @@ h1 {
   overflow: scroll;
   margin: 2rem 0rem;
   height: 70vh;
+}
+
+.home-container {
+  overflow: scroll;
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .image {
@@ -515,12 +526,20 @@ h1 {
   }
 
   .latest-updates {
-    display: none;
-    /* position: absolute;
-    top: 10rem;
-    left: 5%;
-    width: fit-content;
-    right: 2%; */
+    width: 10rem;
+    right: 2%;
+    margin: 1rem 1rem;
+    padding: 0.2rem;
+  }
+
+  .homepage .p-accordionpanel {
+    width: 9.6rem;
+  }
+
+  .homepage .p-accordioncontent-content {
+    width: 10rem;
+    line-height: 1rem;
+    padding: 1rem 0rem;
   }
 
   nav {
@@ -612,24 +631,9 @@ h1 {
     padding: 0.4rem;
     text-align: justify;
   }
-
   .float-left {
     display: flex;
+
     text-align: justify;
-    width: 100%;
-  }
-
-  .homepage .p-accordionpanel {
-    width: 10rem;
-  }
-
-  .inherit-width {
-    width: inherit;
-  }
-}
-
-@media only screen and (min-width: 500px) {
-  .latest-updates {
-    display: none;
   }
 }
