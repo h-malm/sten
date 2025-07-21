@@ -29,9 +29,11 @@
                 accomplishment and self-sufficiency.
             </p>
             <p class="p-2">
-                I love a challenge, and by keeping a (butt)load
+                I love a challenge, and by keeping an abundance
                 of plants, I have something that shows both progression from my hard-work and
-                something that gives me something back, like oxygen and hopefully fruits. Dude, I
+                something that gives me something back, like oxygen and hopefully fruits.
+            </p>
+            <p class="p-2">Dude, I
                 looove everything horror. Although I am a bit of a worry-wart and wimp, I consume
                 horror-stories or videos on the daily. I get easily scared. House-fires are my
                 deepest fears (along with tics, horseflies, snakes, and bees).
@@ -41,8 +43,8 @@
                 I study in a field of predominantly men. My class had three girls out of
                 around 50 people. Can't say it is much different than a women-dominated field.
                 Apparently, drama isn't exclusive to groups of girls, cause we've had a bunch of
-                drama in the last year of our studies, all originating from dudes. I really thought
-                drama would disappear as people exited their teens.
+                drama in the last year of our studies, all originating from guys. I thought
+                drama would disappear as people becam adults.
             </p>
             <p class="p-2">
                 I already said I don't like bugs, but I equally do not like people who clearly value
