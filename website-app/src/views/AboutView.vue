@@ -1,7 +1,7 @@
 <template>
     <h1 class="silkscreen-regular page-header">About Me</h1>
     <div class="scrollable-content">
-        <div class="lekton-regular about-container">
+        <div class="lekton-regular about-container justify">
             <p class="p-2">
                 I'm a 23-year-old Computer Engineering student. My Master's thesis just got graded
                 (I got a 4 out of 5. One could say I am pretty fucking proud). My Master's thesis
