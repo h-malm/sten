@@ -31,7 +31,7 @@ const router = createRouter({
 })
 
 if (process.env.NODE_ENV === 'production') {
-  app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'))
+  app.get(/.*/, (req, res) => res.sendFile(__dirname + '/index.html'))
 }
 
 export default router
