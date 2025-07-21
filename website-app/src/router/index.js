@@ -30,4 +30,8 @@ const router = createRouter({
   routes,
 })
 
+if (process.env.NODE_ENV === 'production') {
+  app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'))
+}
+
 export default router
