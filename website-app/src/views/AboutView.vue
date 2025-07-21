@@ -24,19 +24,25 @@
                 in my apartment or I am missing something, I'll fix it by looking up the manual or
                 finding a video about it, or I'll make the thing I am missing myself. Some people
                 may prefer to save time and spend money by paying someone else to fix or make
-                something for them, and I understand that. It's just not my vibe. Problem-solving is
+                something for them, and I understand that. It's just not my style. Problem-solving
+                is
                 something that really makes me happy because it always results in a feeling of
                 accomplishment and self-sufficiency.
             </p>
             <p class="p-2">
-                I love a challenge, and by keeping an abundance
+                I love a challenge. And by keeping an abundance
                 of plants, I have something that shows both progression from my hard-work and
                 something that gives me something back, like oxygen and hopefully fruits.
             </p>
-            <p class="p-2">Dude, I
-                looove everything horror. Although I am a bit of a worry-wart and wimp, I consume
-                horror-stories or videos on the daily. I get easily scared. House-fires are my
-                deepest fears (along with tics, horseflies, snakes, and bees).
+            <p class="p-2">
+                Dude, I
+                looove everything horror. I consume
+                horror-stories or videos on the daily. In spite of this, I get easily scared.
+                House-fires are my
+                deepest fears (along with tics, deer flies, snakes, and bees. I had to look up the
+                English word for deer fly, and the detailed images that Google showed me is enough
+                to give
+                me nightmares for days. I'm never never gonna go out into the woods again).
             </p>
             <p class="p-2">
                 <img src="../assets/images/WebsiteImages/P9042177.JPG" class="image">
@@ -48,10 +54,11 @@
             </p>
             <p class="p-2">
                 I already said I don't like bugs, but I equally do not like people who clearly value
-                friends based on social groups. Loyalty, however cliché it may sound, is sooo so
+                friends based on social groups. Loyalty, however cliché it may sound, is
                 important. It's insane how much people play fast and loose with friendships just to
                 satisfy their needs or to find popularity. I don't like fake friends. Fake friends
-                can eat a dick, then go hang out with other fake people (who can also eat a dick).
+                can eat a dick, then they can go hang out with other fake people (who can also eat a
+                dick).
             </p>
             <h1>Why make a website?</h1>
             <p class="p-2">
@@ -63,10 +70,11 @@
                 use. I previously made a very basic website using almost only HTML and CSS (and it
                 looked like absolute dog shit). I have worked with Vue during my work at Hibox
                 Systems (they make a bunch of stuff for a bunch of screens for a bunch of different
-                customers) and I got to rewrite some of their pages into Vue. It was a great
+                customers) and I got to rewrite some of their pages using Vue. It was a great
                 learning experience and that is why this website is implemented using Vue. I
                 seriously considered working with React, as I have programmed a website for a course
-                using it and it's <i>very popular</i>. However, Vue is more lightweight and easier
+                using it and it's a <i>very popular</i> library. However, Vue is more lightweight
+                and easier
                 to maintain. React did feel a bit overkill for a
                 personalized website with blog-like content.
             </p>
@@ -103,7 +111,8 @@
                 much
                 text. My website just is not made for your teeny tiny attention span and not
                 everything is made for everyone.
-
+            </p>
+            <p class="p-2">
                 It's worth noting that this page isn't made to be viewed on a small screen, such as
                 a
                 phone, and won't look great in that format. But also, who browses through
