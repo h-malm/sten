@@ -293,7 +293,7 @@ nav {
 }
 
 .homepage {
-  padding: 3rem;
+  padding: 0.5rem 3rem;
 }
 
 .overlay {
@@ -432,7 +432,7 @@ h1 {
 
 .scrollable-content {
   overflow: scroll;
-  margin: 2rem 0rem;
+  margin: 0rem;
   height: 70vh;
 }
 
@@ -522,7 +522,6 @@ h1 {
 
   .homepage {
     width: 100%;
-    margin: 0rem auto;
     padding: 0.8rem;
   }
 
@@ -637,5 +636,9 @@ h1 {
     display: flex;
 
     text-align: justify;
+  }
+
+  .scrollable-content {
+    margin: 0.5rem;
   }
 }
