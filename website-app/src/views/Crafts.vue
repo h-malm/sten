@@ -9,7 +9,7 @@
                         :src=" image ">
                     <div class="story lekton-regular">
                         <div v-for=" paragraph in formatText( item.text ) " :key=" paragraph ">
-                            <p style="margin: 1rem;">{{ paragraph }}</p>
+                            <p>{{ paragraph }}</p>
                         </div>
                     </div>
                 </div>
