@@ -26,12 +26,8 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 })
-
-if (process.env.NODE_ENV === 'production') {
-  app.get(/.*/, (req, res) => res.sendFile(__dirname + '/index.html'))
-}
 
 export default router
