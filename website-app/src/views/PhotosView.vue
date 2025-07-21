@@ -1,5 +1,5 @@
 <template>
-    <h1 class="silkscreen-regular page-header">Photos</h1>
+    <h1 class="silkscreen-regular page-header text-shadow">Photos</h1>
     <div class="scrollable-content">
         <p class="lekton-regular p-2">A collection of photos I have taken throughout the years.
             Some are taken with my old Oneplus 7 Pro, some with my new Google Pixel, and some with

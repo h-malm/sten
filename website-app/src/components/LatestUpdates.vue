@@ -2,7 +2,9 @@
 
     <Accordion :value=" [ '0' ] " multiple class="latest-updates">
         <div class="tiny5-regular">
-            Latest Updates
+            <div class="text-shadow">
+                Latest Updates
+            </div>
             <AccordionPanel value="0">
                 <AccordionHeader>Story: Moving In</AccordionHeader>
                 <AccordionContent>

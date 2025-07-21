@@ -36,7 +36,7 @@
   --pixelbuttonBoxShadow: #0e0e0e;
   --cancelButtonBackground: rgb(71, 18, 18);
   --cancelButtonBoxShadow: rgb(85, 24, 24);
-  --darkerRed: rgb(90, 29, 29);
+  --darkerRed: rgb(94, 19, 19);
   --darkestRed: rgb(49, 0, 0);
 }
 
@@ -211,6 +211,10 @@ nav {
   margin: 0.5rem 0.5rem;
   grid-row: 1;
   line-height: 1rem;
+}
+
+.text-shadow {
+  text-shadow: 3px 2px 0px rgb(139, 0, 0);
 }
 
 .nav-item:hover {
@@ -665,5 +669,9 @@ h1 {
   img,
   video {
     max-width: 60%;
+  }
+
+  .underlined {
+    text-decoration: underline;
   }
 }

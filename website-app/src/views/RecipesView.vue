@@ -1,10 +1,10 @@
 <template>
-    <h1 class="silkscreen-regular page-header">Recipes</h1>
+    <h1 class="silkscreen-regular page-header text-shadow">Recipes</h1>
     <div class="scrollable-content">
         <div class="content-container">
             <div v-for=" ( story, index ) in stories " :key=" index ">
                 <div class="pixelbutton silkscreen-regular inherit-width">
-                    <h1 class="silkscreen-regular">{{ story.header }}</h1>
+                    <h1 class="silkscreen-regular text-shadow">{{ story.header }}</h1>
                     <button class="cancel-button tiny5-regular" type="button"
                         @click="showDialog( index )">
                         Read
@@ -12,7 +12,7 @@
                 </div>
                 <Dialog :visible=" visibleIndex === index " @hide=" hideDialog ">
                     <div class="full-text lekton-regular">
-                        <h1 class="silkscreen-regular">
+                        <h1 class="silkscreen-regular text-shadow">
                             {{ story.header }}
                         </h1>
                         <div class="story">

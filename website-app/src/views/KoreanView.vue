@@ -1,5 +1,5 @@
 <template>
-    <h1 class="silkscreen-regular page-header">Korean Practice</h1>
+    <h1 class="silkscreen-regular page-header text-shadow">Korean Practice</h1>
     <div class="scrollable-content">
         <div class="content-container">
             <div v-for=" ( story, index ) in stories " :key=" index ">

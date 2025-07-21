@@ -33,72 +33,72 @@
     <div class="overlay" v-if=" isOverlayActive "></div>
     <!--Navbar-->
     <div class="website-title">
-      <div class="sten-smaller bytesized-regular">Sten
+      <div class="sten-smaller bytesized-regular text-shadow">Sten
       </div>
     </div>
-    <nav class="tiny5-regular">
-      <RouterLink class="nav-item" to="/">Home</RouterLink>
-      <RouterLink class="nav-item" to="/about">About Me</RouterLink>
-      <button class="nav-item" @click="visible = true">Content</button>
+    <nav class="tiny5-regular text-shadow">
+      <RouterLink class="nav-item underlined" to="/">Home</RouterLink>
+      <RouterLink class="nav-item underlined" to="/about">About Me</RouterLink>
+      <button class="nav-item underlined text-shadow" @click="visible = true">Content</button>
     </nav>
 
     <main>
       <RouterView />
     </main>
   </div>
-  <Dialog v-model:visible=" visible " modal class="tiny5-regular home-dialog">
+  <Dialog v-model:visible=" visible " modal class="tiny5-regular home-dialog text-shadow">
     <h1 class="header padding">What do you wanna see?</h1>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/art" @click="visible = false">
+      <RouterLink class="router underlined" to="/art" @click="visible = false">
         <div class="div1">&gt;</div>
         Art
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/crafts" @click="visible = false">
+      <RouterLink class="router underlined" to="/crafts" @click="visible = false">
         <div class="div1">&gt;</div>
         Crafts
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/horror" @click="visible = false">
+      <RouterLink class="router underlined" to="/horror" @click="visible = false">
         <div class="div1">&gt;</div>
         Horror
         <div class="div1 ">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/knitting" @click="visible = false">
+      <RouterLink class="router underlined" to="/knitting" @click="visible = false">
         <div class="div1">&gt;</div>
         Knitting
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/korean" @click="visible = false">
+      <RouterLink class="router underlined" to="/korean" @click="visible = false">
         <div class="div1">&gt;</div>
         Korean Practice
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/photos" @click="visible = false">
+      <RouterLink class="router underlined" to="/photos" @click="visible = false">
         <div class="div1">&gt;</div>
         Photos
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/plants" @click="visible = false">
+      <RouterLink class="router underlined" to="/plants" @click="visible = false">
         <div class="div1">&gt;</div>
         Plant tips
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
     <div class="body-text content-categories">
-      <RouterLink class="router" to="/recipes" @click="visible = false">
+      <RouterLink class="router underlined" to="/recipes" @click="visible = false">
         <div class="div1">&gt;</div>
         Recipes
         <div class="div1">&lt;</div>

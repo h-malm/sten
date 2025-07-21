@@ -1,10 +1,10 @@
 <template>
-    <h1 class="silkscreen-regular page-header">Crafts</h1>
+    <h1 class="silkscreen-regular page-header text-shadow">Crafts</h1>
     <div class="scrollable-content">
         <div v-for=" ( item, index ) in stories " :key=" index ">
             <div class="content-container-crafts">
                 <div class="pixelbutton silkscreen-regular">
-                    <h1 class="silkscreen-regular">{{ item.header }}</h1>
+                    <h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
                     <img v-for=" image in getImages( item ) " :key=" image " class="image1"
                         :src=" image ">
                     <div class="lekton-regular p-2">

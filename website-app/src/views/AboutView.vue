@@ -1,5 +1,5 @@
 <template>
-    <h1 class="silkscreen-regular page-header">About Me</h1>
+    <h1 class="silkscreen-regular page-header text-shadow">About Me</h1>
     <div class="scrollable-content">
         <div class="lekton-regular about-container justify">
             <p class="p-2">
@@ -15,7 +15,7 @@
                 resources for Master's students. Still, I learned a lot from it. It definitely
                 peaked my interest in accessibility, usability, and global website design trends.
             </p>
-            <h1>What does Sten like and dislike?</h1>
+            <h1 class="text-shadow">What does Sten like and dislike?</h1>
             <p class="p-2">
                 Aaaw, you want to get to know me moore~? Well, since you're so curious, I
                 like creative stuff, such as drawing, pottery, and painting. I also like building
@@ -60,7 +60,7 @@
                 can eat a dick, then they can go hang out with other fake people (who can also eat a
                 dick).
             </p>
-            <h1>Why make a website?</h1>
+            <h1 class="text-shadow">Why make a website?</h1>
             <p class="p-2">
                 Actually, the initial point of this website was to make something to show my
                 development and design skills when I apply for jobs. Since,
@@ -78,7 +78,7 @@
                 to maintain. React did feel a bit overkill for a
                 personalized website with blog-like content.
             </p>
-            <h1>Guide to Sten's website</h1>
+            <h1 class="text-shadow">Guide to Sten's website</h1>
             <p class="p-2">
                 A little guide for this website might be good :) I was inspired by the 90s
                 websites when the computer screens were much smaller (I'm implementing the website

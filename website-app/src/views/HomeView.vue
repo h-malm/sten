@@ -1,5 +1,5 @@
 <template>
-  <h1 class="silkscreen-regular page-header">Homepage</h1>
+  <h1 class="silkscreen-regular page-header text-shadow">Homepage</h1>
   <div class="home-container">
     <LatestUpdates></LatestUpdates>
     <div>
