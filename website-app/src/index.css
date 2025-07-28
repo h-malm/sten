@@ -726,6 +726,10 @@ h1 {
     right: 4rem;
     top: 0.5rem;
   }
+
+  .content-categories {
+    padding: 0.6rem 0rem;
+  }
 }
 
 @media only screen and (min-width: 900px) {
