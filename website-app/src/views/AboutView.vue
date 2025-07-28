@@ -50,7 +50,7 @@
                 around 50 people. Can't say it is much different than a women-dominated field.
                 Apparently, drama isn't exclusive to groups of girls, cause we've had a bunch of
                 drama in the last year of our studies, all originating from guys. I thought
-                drama would disappear as people becam adults.
+                drama would disappear as people became adults.
             </p>
             <p class="p-2">
                 I already said I don't like bugs, but I equally do not like people who clearly value
