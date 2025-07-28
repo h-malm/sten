@@ -617,8 +617,8 @@ h1 {
 
   .page-header {
     position: absolute;
-    font-size: 1rem;
-    top: 0rem;
+    font-size: 0.7rem;
+    top: 0.5rem;
     left: 4.1rem;
   }
 
