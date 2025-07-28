@@ -4,8 +4,6 @@
     'background-size': 'cover',
     'min-height': '100vh',
   } ">
-    <img v-on:click=" toggleImage " :src=" oldManActiveImage "
-      alt="An old man reading the newspaper" class="oldman">
     <img v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch" class="lightswitch">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +34,8 @@
     <!--Navbar-->
     <div class="website-title">
       <div class="sten-smaller bytesized-regular text-shadow">Sten
+        <img v-on:click=" toggleImage " :src=" oldManActiveImage "
+          alt="An old man reading the newspaper" class="oldman">
       </div>
     </div>
     <nav class="tiny5-regular text-shadow">
