@@ -720,4 +720,11 @@ h1 {
   .underlined {
     text-decoration: underline;
   }
+
+  .oldman {
+    height: 10%;
+    position: absolute;
+    top: 0.3rem;
+    right: 4rem;
+  }
 }
