@@ -5,8 +5,8 @@
             specific style, but mostly draw whatever is fun or I think will look good.
         </p>
         <Galleria :value=" images " :numVisible=" 9 "
-            containerStyle=" max-width: 40rem; margin: auto;" :circular=" true "
-            :autoPlay=" false ">
+            containerStyle=" max-width: 40rem; margin: auto;" :circular=" true " :autoPlay=" false "
+            :showItemNavigators=" true " :showItemNavigatorsOnHover=" true ">
             <template #item=" slotProps ">
                 <img :src=" slotProps.item " :alt=" slotProps.item "
                     style="max-height:27rem; display: block" />

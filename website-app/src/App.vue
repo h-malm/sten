@@ -4,6 +4,8 @@
     'background-size': 'cover',
     'min-height': '100vh',
   } ">
+    <img v-on:click=" toggleImage " :src=" oldManActiveImage "
+      alt="An old man reading the newspaper" class="oldman">
     <img v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch" class="lightswitch">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,16 +125,21 @@
   import image2 from '../src/assets/images/thumbnail_IMG_1005.jpg'
   import backgImage1 from '../src/assets/images/thumbnail_IMG_1001.png'
   import backgImage2 from '../src/assets/images/thumbnail_IMG_0999.png'
+  import oldMan1 from './assets/lightson.gif'
+  import oldMan2 from './assets/lightsoff.gif'
+
 
   const visible = ref( false );
 
   const activeImage = ref( image1 );
   const activeBackgImage = ref( backgImage1 );
+  const oldManActiveImage = ref( oldMan1 )
   const isOverlayActive = ref( false );
 
   function toggleImage()
   {
     activeImage.value = activeImage.value === image1 ? image2 : image1;
+    oldManActiveImage.value = oldManActiveImage.value === oldMan1 ? oldMan2 : oldMan1;
     activeBackgImage.value = activeBackgImage.value === backgImage1 ? backgImage2 : backgImage1;
     isOverlayActive.value = !isOverlayActive.value;
   }
