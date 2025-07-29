@@ -528,6 +528,10 @@ h1 {
     inset 0px 5px #b9b9b936;
 }
 
+.p-galleria-nav-button:not(.p-disabled):hover {
+  background: var(--darkestRed) !important;
+}
+
 .p-galleria-prev-button {
   background: var(--primaryButtonBackground);
   box-shadow:
