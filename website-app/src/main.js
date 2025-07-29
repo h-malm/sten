@@ -14,4 +14,4 @@ app.use(router)
 app.use(PrimeVue, {})
 setTimeout(() => {
   app.mount('#app')
-}, 4000)
+}, 3000)

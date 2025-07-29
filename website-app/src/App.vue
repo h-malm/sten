@@ -1,11 +1,10 @@
 <template>
-  <div class="homepage" :class=" { 'overlay-active': isOverlayActive } " :style=" {
+  <div loading="lazy" class="homepage" :class=" { 'overlay-active': isOverlayActive } " :style=" {
     'background-image': 'url(' + activeBackgImage + ' ) ',
     'background-size': 'cover',
     'min-height': '100vh',
   } ">
-    <img loading="lazy" v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch"
-      class="lightswitch">
+    <img v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch" class="lightswitch">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +34,7 @@
     <!--Navbar-->
     <div class="website-title">
       <div class="sten-smaller bytesized-regular text-shadow">Sten
-        <img v-on:click=" toggleImage " :src=" oldManActiveImage "
+        <img loading="lazy" v-on:click=" toggleImage " :src=" oldManActiveImage "
           alt="An old man reading the newspaper" class="oldman">
       </div>
     </div>
