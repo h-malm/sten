@@ -806,6 +806,12 @@ h1 {
   .p-galleria-nav-button:not(.p-disabled):hover {
     background: transparent !important;
   }
+
+  .loader:before,
+  .loader:after {
+    width: 1rem;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 900px) {
