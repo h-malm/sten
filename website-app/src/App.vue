@@ -4,7 +4,8 @@
     'background-size': 'cover',
     'min-height': '100vh',
   } ">
-    <img v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch" class="lightswitch">
+    <img loading="lazy" v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch"
+      class="lightswitch">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@
     <!--Navbar-->
     <div class="website-title">
       <div class="sten-smaller bytesized-regular text-shadow">Sten
-        <img v-on:click=" toggleImage " :src=" oldManActiveImage "
+        <img loading="lazy" v-on:click=" toggleImage " :src=" oldManActiveImage "
           alt="An old man reading the newspaper" class="oldman">
       </div>
     </div>
@@ -121,10 +122,10 @@
 <script setup lang="ts">
   import { ref } from 'vue';
   import Dialog from 'primevue/dialog';
-  import image1 from '../src/assets/images/thumbnail_IMG_1003.jpg';
-  import image2 from '../src/assets/images/thumbnail_IMG_1005.jpg'
-  import backgImage1 from '../src/assets/images/thumbnail_IMG_1001.png'
-  import backgImage2 from '../src/assets/images/thumbnail_IMG_0999.png'
+  import image1 from './assets/images/thumbnail_IMG_1003.jpg';
+  import image2 from './assets/images/thumbnail_IMG_1005.jpg'
+  import backgImage1 from './assets/images/thumbnail_IMG_1001.png'
+  import backgImage2 from './assets/images/thumbnail_IMG_0999.png'
   import oldMan1 from './assets/lightson.gif'
   import oldMan2 from './assets/lightsoff.gif'
 
