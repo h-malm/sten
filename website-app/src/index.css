@@ -739,7 +739,20 @@ h1 {
     height: 20rem;
     width: 8rem;
     top: 0;
-    opacity: 0 !important;
+    background-color: transparent;
+    box-shadow:
+      0px 5px transparent,
+      0px -5px transparent,
+      5px 0px transparent,
+      -5px 0px transparent,
+      0px 10px transparent,
+      5px 5px transparent,
+      -5px 5px transparent,
+      inset 0px 5px transparent;
+  }
+
+  .p-galleria-nav-button:not(.p-disabled):hover {
+    background: transparent !important;
   }
 }
 
