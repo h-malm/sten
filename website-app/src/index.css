@@ -749,6 +749,7 @@ h1 {
       5px 5px transparent,
       -5px 5px transparent,
       inset 0px 5px transparent;
+    margin: 0rem -3rem 0rem -3rem;
   }
 
   .p-galleria-nav-button:not(.p-disabled):hover {
