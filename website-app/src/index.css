@@ -374,12 +374,12 @@ h1 {
 }
 
 .lightswitch {
-  height: 5%;
+  height: 4%;
   z-index: 3;
   position: fixed;
   cursor: pointer;
   right: 2rem;
-  top: 2rem;
+  top: 1.2rem;
 }
 
 .p-2 {
@@ -674,7 +674,7 @@ h1 {
     position: absolute;
     font-size: 0.7rem;
     top: 0.5rem;
-    left: 4.1rem;
+    left: 4.2rem;
   }
 
   .pixelbutton {
@@ -777,9 +777,9 @@ h1 {
   }
 
   .oldman {
-    height: 4rem;
-    right: 4rem;
-    top: 0.5rem;
+    height: 4.5rem;
+    right: 10%;
+    top: 0rem;
   }
 
   .content-categories {
