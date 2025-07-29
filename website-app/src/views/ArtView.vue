@@ -6,7 +6,7 @@
         </p>
         <Galleria :value=" images " :numVisible=" 9 "
             containerStyle=" max-width: 40rem; margin: auto;" :circular=" true " :autoPlay=" false "
-            :showItemNavigators=" true " :showItemNavigatorsOnHover=" true ">
+            :showItemNavigators=" true " :showItemNavigatorsOnHover=" true " loading="lazy">
             <template #item=" slotProps ">
                 <img :src=" slotProps.item " :alt=" slotProps.item "
                     style="max-height:27rem; display: block" />
