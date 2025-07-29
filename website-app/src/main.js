@@ -9,8 +9,11 @@ import './index.css'
 
 const app = createApp(App)
 
+setTimeout(() => {
+  //if you
+  app.mount('#app')
+}, 4000)
+
 app.use(createPinia())
 app.use(router)
 app.use(PrimeVue, {})
-// import.meta.glob('../../images/*.{png,jpg,jpeg,svg}')
-app.mount('#app')

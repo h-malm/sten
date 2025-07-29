@@ -49,6 +49,7 @@
       <RouterView />
     </main>
   </div>
+
   <Dialog v-model:visible=" visible " modal class="tiny5-regular home-dialog text-shadow">
     <h1 class="header padding">What do you wanna see?</h1>
     <div class="body-text content-categories">
@@ -137,6 +138,8 @@
   const oldManActiveImage = ref( oldMan1 )
   const isOverlayActive = ref( false );
 
+
+
   function toggleImage()
   {
     activeImage.value = activeImage.value === image1 ? image2 : image1;
@@ -148,5 +151,3 @@
 
 
 </script>
-
-<style scoped></style>
