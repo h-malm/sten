@@ -35,7 +35,7 @@
     <!--Navbar-->
     <div class="website-title">
       <div class="sten-smaller bytesized-regular text-shadow">Sten
-        <img loading="lazy" v-on:click=" toggleImage " :src=" oldManActiveImage "
+        <img v-on:click=" toggleImage " :src=" oldManActiveImage "
           alt="An old man reading the newspaper" class="oldman">
       </div>
     </div>
