@@ -1,8 +1,6 @@
 <template>
   <div loading="lazy" class="homepage" :class=" { 'overlay-active': isOverlayActive } " :style=" {
     'background-image': 'url(' + activeBackgImage + ' ) ',
-    'background-size': 'cover',
-    'min-height': '100vh',
   } ">
     <img v-on:click=" toggleImage " :src=" activeImage " alt="A Lightswitch" class="lightswitch">
 
@@ -34,8 +32,8 @@
     <!--Navbar-->
     <div class="website-title">
       <div class="sten-smaller bytesized-regular text-shadow">Sten
-        <img loading="lazy" v-on:click=" toggleImage " :src=" oldManActiveImage "
-          alt="An old man reading the newspaper" class="oldman">
+        <img loading="lazy" :src=" oldManActiveImage " alt="An old man reading the newspaper"
+          class="oldman">
       </div>
     </div>
     <nav class="tiny5-regular text-shadow">
@@ -124,8 +122,8 @@
   import Dialog from 'primevue/dialog';
   import image1 from './assets/images/thumbnail_IMG_1003.jpg';
   import image2 from './assets/images/thumbnail_IMG_1005.jpg'
-  import backgImage1 from './assets/images/thumbnail_IMG_1001.png'
-  import backgImage2 from './assets/images/thumbnail_IMG_0999.png'
+  import backgImage1 from './assets/IMG_1084.GIF'
+  import backgImage2 from './assets/IMG_1085.GIF'
   import oldMan1 from './assets/lightson.gif'
   import oldMan2 from './assets/lightsoff.gif'
 
