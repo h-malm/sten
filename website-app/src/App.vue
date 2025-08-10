@@ -25,7 +25,7 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap"
       rel="stylesheet">
-    <link rel="icon" :href=" image1 " type="image/x-icon">
+    <link rel="icon" :href=" favIcon " type="image/x-icon">
 
 
     <div class="overlay" v-if=" isOverlayActive "></div>
@@ -126,7 +126,7 @@
   import backgImage2 from './assets/IMG_1085.GIF'
   import oldMan1 from './assets/lightson.gif'
   import oldMan2 from './assets/lightsoff.gif'
-
+  import favIcon from './assets/images/iconofrock.jpeg'
 
   const visible = ref( false );
 
