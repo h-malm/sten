@@ -10,6 +10,7 @@ import CraftsView from '../views/Crafts.vue'
 import KoreanView from '../views/KoreanView.vue'
 import ArtView from '@/views/ArtView.vue'
 import KnittingsView from '@/views/KnittingsView.vue'
+import Stopwatch from '@/views/StopwatchView.vue'
 
 const router = createRouter({
   routes: [
@@ -24,6 +25,7 @@ const router = createRouter({
     { path: '/korean', name: 'Korean Practice', component: KoreanView },
     { path: '/art', name: 'Art', component: ArtView },
     { path: '/knitting', name: 'Knitting', component: KnittingsView },
+    { path: '/stopwatch', name: 'Stopwatch', component: Stopwatch },
   ],
   history: createWebHistory(import.meta.env.BASE_URL),
 })

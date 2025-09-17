@@ -105,7 +105,13 @@
         <div class="div1">&lt;</div>
       </RouterLink>
     </div>
-
+    <div class="body-text content-categories">
+      <RouterLink class="router underlined" to="/stopwatch" @click="visible = false">
+        <div class="div1">&gt;</div>
+        Stopwatch
+        <div class="div1">&lt;</div>
+      </RouterLink>
+    </div>
 
     <div class="padding align-center pixelbutton body-text">
 

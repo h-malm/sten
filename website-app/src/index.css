@@ -32,12 +32,15 @@
 
 :root {
   --primaryButtonBackground: rgb(14, 14, 14);
-  --pixelbuttonBackground: rgb(12, 12, 12);
-  --pixelbuttonBoxShadow: #0e0e0e;
+  --pixelbuttonBackground: rgb(29, 29, 29);
+  --pixelbuttonBoxShadow: #111111;
   --cancelButtonBackground: rgb(71, 18, 18);
   --cancelButtonBoxShadow: rgb(85, 24, 24);
   --darkerRed: rgb(94, 19, 19);
   --darkestRed: rgb(49, 0, 0);
+  --darkGreen: rgb(37, 55, 35);
+  --darkerGreen: rgb(16, 29, 15);
+  --lighGreen: rgb(136, 143, 119);
 }
 
 #app {
@@ -500,7 +503,7 @@ h1 {
 }
 
 .p-galleria-thumbnail-item-current img {
-  border: rgb(82, 3, 3) solid 0.2rem;
+  border: rgb(229, 174, 174) solid 0.2rem;
   border-radius: 0.3rem;
 }
 
@@ -585,6 +588,99 @@ h1 {
   gap: 10px;
   font-size: 2rem;
   animation: l2-0 1s infinite;
+}
+
+.frame {
+  margin: 3rem auto;
+  color: white;
+  width: 70%;
+  background-color: var(--darkerRed);
+  box-shadow:
+    0px 5px var(--darkerRed),
+    0px -5px var(--darkerRed),
+    5px 0px var(--darkerRed),
+    -5px 0px var(--darkerRed),
+    0px 10px var(--darkestRed),
+    5px 5px var(--darkestRed),
+    -5px 5px var(--darkestRed),
+    inset 0px 5px #ffffff36;
+}
+
+.time {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stopwatch {
+  font-size: 4rem;
+  align-self: center;
+}
+
+.start-button,
+.stop-button,
+.reset-button {
+  margin: 1rem auto;
+  width: fit-content;
+  padding: 0.2rem 0.9rem;
+}
+
+.start-button {
+  background-color: var(--darkGreen);
+  box-shadow:
+    0px 5px var(--darkGreen),
+    0px -5px var(--darkGreen),
+    5px 0px var(--darkGreen),
+    -5px 0px var(--darkGreen),
+    0px 10px var(--darkerGreen),
+    5px 5px var(--darkerGreen),
+    -5px 5px var(--darkerGreen),
+    inset 0px 5px var(--lighGreen);
+}
+
+.stop-button {
+  background-color: var(--cancelButtonBackground);
+  box-shadow:
+    0px 5px var(--cancelButtonBackground),
+    0px -5px var(--cancelButtonBackground),
+    5px 0px var(--cancelButtonBackground),
+    -5px 0px var(--cancelButtonBackground),
+    0px 10px var(--darkestRed),
+    5px 5px var(--darkestRed),
+    -5px 5px var(--darkestRed),
+    inset 0px 5px #ffffff36;
+}
+
+.reset-button {
+  background-color: var(--pixelbuttonBackground);
+  box-shadow:
+    0px 5px var(--pixelbuttonBackground),
+    0px -5px var(--pixelbuttonBackground),
+    5px 0px var(--pixelbuttonBackground),
+    -5px 0px var(--pixelbuttonBackground),
+    0px 10px var(--pixelbuttonBoxShadow),
+    5px 5px var(--pixelbuttonBoxShadow),
+    -5px 5px var(--pixelbuttonBoxShadow),
+    inset 0px 5px #ffffff36;
+}
+
+.start-button:active,
+.stop-button:active,
+.reset-button:active,
+button:active {
+  transform: translateY(0.5rem);
+  background-color: var(--pixelbuttonBoxShadow);
+  box-shadow:
+    0px 5px var(--pixelbuttonBoxShadow),
+    0px -5px var(--pixelbuttonBoxShadow),
+    5px 0px var(--pixelbuttonBoxShadow),
+    -5px 0px var(--pixelbuttonBoxShadow),
+    0px 10px var(--pixelbuttonBoxShadow),
+    5px 5px var(--pixelbuttonBoxShadow),
+    -5px 5px var(--pixelbuttonBoxShadow),
+    inset 0px 5px #ffffff36;
 }
 
 /* under 900px bredd */
@@ -789,6 +885,23 @@ h1 {
   .loader:after {
     width: 1rem;
     justify-content: center;
+  }
+
+  .stopwatch {
+    font-size: 2rem;
+  }
+
+  .frame {
+    width: 80%;
+  }
+
+  .start-button,
+  .stop-button,
+  .reset-button {
+    margin: 0.8rem auto;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 0.1rem 0.7rem;
   }
 }
 
