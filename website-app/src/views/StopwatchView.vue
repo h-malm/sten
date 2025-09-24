@@ -3,7 +3,8 @@
         <h1 class="silkscreen-regular page-header text-shadow">Stopwatch</h1>
         <div class="time">
             <div class="stopwatch">{{ formattedTime }}</div>
-            <button class="start-button" @click=" start ">START</button>
+            <button class="start-button" @click=" start ">{{
+                stopOrContinue }}</button>
             <button class="stop-button" @click=" stop ">STOP</button>
             <button class="reset-button" @click=" reset ">RESET</button>
         </div>
@@ -16,6 +17,7 @@
     let clock = ref( 0 );
     let interval = ref( null );
     let offset = ref( 0 );
+    let stopOrContinue = ref( 'START' );
 
     const formattedTime = ref( '00:00:00' );
 
@@ -37,6 +39,7 @@
 
     function start () {
         if ( !interval.value ) {
+            stopOrContinue.value = 'START';
             offset.value = Date.now();
             interval.value = setInterval( update, 10 );
         }
@@ -46,10 +49,13 @@
         if ( interval.value ) {
             clearInterval( interval.value );
             interval.value = null;
+            console.log( 'stopped' )
+            stopOrContinue.value = 'CONTINUE';
         }
     }
 
     function reset () {
+        stopOrContinue.value = 'START';
         clock.value = 0;
         render();
         stop();
