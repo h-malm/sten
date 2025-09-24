@@ -418,7 +418,7 @@ h1 {
 
 .p-dialog-content {
   background-color: var(--darkestRed);
-  overflow: hidden !important;
+  /* overflow: hidden !important; */
   box-shadow:
     0px 5px var(--darkestRed),
     0px -5px var(--darkestRed),
@@ -582,12 +582,9 @@ h1 {
   text-align: center;
 }
 
-/* Source: css-loaders.com */
 .loader {
   display: inline-flex;
-  gap: 10px;
   font-size: 2rem;
-  animation: l2-0 1s infinite;
 }
 
 .frame {
@@ -668,8 +665,7 @@ h1 {
 
 .start-button:active,
 .stop-button:active,
-.reset-button:active,
-button:active {
+.reset-button:active {
   transform: translateY(0.5rem);
   background-color: var(--pixelbuttonBoxShadow);
   box-shadow:
@@ -770,7 +766,11 @@ button:active {
   }
 
   h1 {
-    margin: 0rem 2rem;
+    margin: 0rem 0.5rem;
+  }
+
+  .padding {
+    padding: 0.5rem;
   }
 
   .p-accordionpanel {
@@ -857,7 +857,7 @@ button:active {
   }
 
   .content-categories {
-    padding: 0.6rem 0rem;
+    padding: 0rem;
   }
 
   .p-galleria-hover-navigators .p-galleria-nav-button {
