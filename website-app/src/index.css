@@ -32,7 +32,7 @@
 
 :root {
   --primaryButtonBackground: rgb(14, 14, 14);
-  --pixelbuttonBackground: rgb(29, 29, 29);
+  --pixelbuttonBackground: rgb(15, 15, 15);
   --pixelbuttonBoxShadow: #111111;
   --cancelButtonBackground: rgb(71, 18, 18);
   --cancelButtonBoxShadow: rgb(85, 24, 24);
