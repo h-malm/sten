@@ -454,7 +454,7 @@ h1 {
 
 .home-container {
   overflow: scroll;
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -483,18 +483,20 @@ h1 {
 }
 
 .coffee-container {
+  position: static;
+  bottom: 0;
   width: 38rem;
-  margin: 2rem auto;
+  margin: 0rem auto;
   display: grid;
   grid-template-columns: auto auto;
 }
 
 .coffeecup {
-  height: 10rem;
+  height: 7rem;
 }
 
 .coffeetext {
-  padding: 4.5rem 0rem;
+  padding: 2.5rem 0rem;
 }
 
 .p-galleria {

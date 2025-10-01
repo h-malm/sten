@@ -39,13 +39,11 @@
 
     const visibleIndex = ref( null )
 
-    const showDialog = ( index ) =>
-    {
+    const showDialog = ( index ) => {
         visibleIndex.value = index
     }
 
-    const hideDialog = () =>
-    {
+    const hideDialog = () => {
         visibleIndex.value = null
     }
 </script>
