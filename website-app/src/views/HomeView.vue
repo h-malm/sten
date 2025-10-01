@@ -22,8 +22,10 @@
     </div>
   </div>
   <div class="coffee-container">
-    <img loading="lazy" src="../assets/images/IMG_1120.GIF" alt="An old man reading the newspaper"
-      class="coffeecup">
+    <a href="https://www.youtube.com/watch?v=33kIj__tD90">
+      <img loading="lazy" src="../assets/images/IMG_1120.GIF" alt="An old man reading the newspaper"
+        class="coffeecup">
+    </a>
     <div class="silkscreen-regular text-shadow coffeetext"> Grab a cup of coffee and take a peruse
       around my website
     </div>
