@@ -2,6 +2,7 @@
   <h1 class="silkscreen-regular page-header text-shadow">Homepage</h1>
   <div class="home-container">
     <LatestUpdates></LatestUpdates>
+
     <div>
       <p class='lekton-regular p-2 float-left'>
         This website is a personal website used to collect stuff I've made into one place! That
@@ -18,6 +19,13 @@
         recently
         implemented this website, but I look forward to filling it with my creative work!
       </p>
+    </div>
+  </div>
+  <div class="coffee-container">
+    <img loading="lazy" src="../assets/images/IMG_1120.GIF" alt="An old man reading the newspaper"
+      class="coffeecup">
+    <div class="silkscreen-regular text-shadow coffeetext"> Grab a cup of coffee and take a peruse
+      around my website
     </div>
   </div>
 </template>

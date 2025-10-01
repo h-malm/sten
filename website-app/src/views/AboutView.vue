@@ -3,6 +3,7 @@
     <div class="scrollable-content">
         <div class="lekton-regular about-container justify">
             <p class="p-2">
+                <img src="../assets/IMG_1117.jpg" class="portrait-image">
                 I'm a 23-year-old Computer Engineering student. My Master's thesis just got graded
                 (I got a 4 out of 5. One could say I am pretty fucking proud). My Master's thesis
                 discussed the
@@ -45,7 +46,7 @@
                 me nightmares for days. I'm never never gonna go out into the woods again).
             </p>
             <p class="p-2">
-                <img src="../assets/images/WebsiteImages/P9042177.JPG" class="image">
+
                 I study in a field of predominantly men. My class had three girls out of
                 around 50 people. Can't say it is much different than a women-dominated field.
                 Apparently, drama isn't exclusive to groups of girls, cause we've had a bunch of
