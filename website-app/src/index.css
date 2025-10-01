@@ -470,7 +470,6 @@ h1 {
   max-height: 30rem;
   float: right;
   margin: 0rem 2rem;
-  cursor: pointer;
   box-shadow:
     0px 5px var(--darkerRed),
     0px -5px var(--darkerRed),
@@ -720,6 +719,10 @@ h1 {
     margin: 0rem auto;
   }
 
+  .home-container {
+    margin: 1rem 0.8rem 1rem 0rem;
+  }
+
   .coffee-container {
     width: auto;
     margin: 2rem auto;
@@ -737,6 +740,11 @@ h1 {
   .coffeetext {
     padding: 0rem 0rem;
     font-size: 1rem;
+  }
+
+  .portrait-image {
+    max-height: 10rem;
+    margin: 2rem;
   }
 
   .website-title {
@@ -873,7 +881,7 @@ h1 {
   }
 
   .scrollable-content {
-    margin: 0.5rem;
+    margin: 1rem 0.8rem;
   }
 
   .p-galleri.img,
@@ -884,6 +892,7 @@ h1 {
 
   .p-galleria {
     margin: 1rem;
+    width: 18rem;
   }
 
   .p-galleria-items-container {
@@ -911,20 +920,19 @@ h1 {
   }
 
   .p-galleria-hover-navigators .p-galleria-nav-button {
-    height: 20rem;
-    width: 8rem;
-    top: 0;
-    background-color: transparent;
+    height: 2rem;
+    width: 2rem;
+    top: 70%;
+    background-color: var(--darkerRed);
     box-shadow:
-      0px 5px transparent,
-      0px -5px transparent,
-      5px 0px transparent,
-      -5px 0px transparent,
-      0px 10px transparent,
-      5px 5px transparent,
-      -5px 5px transparent,
-      inset 0px 5px transparent;
-    margin: 0rem -3rem 0rem -3rem;
+      0px 5px var(--darkerRed),
+      0px -5px var(--darkerRed),
+      5px 0px var(--darkerRed),
+      -5px 0px var(--darkerRed),
+      0px 10px var(--pixelbuttonBackground),
+      5px 5px var(--pixelbuttonBackground),
+      -5px 5px var(--pixelbuttonBackground),
+      inset 0px 5px #b9b9b936;
   }
 
   .p-galleria-nav-button:not(.p-disabled):hover {
