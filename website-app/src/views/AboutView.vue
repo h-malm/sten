@@ -18,7 +18,7 @@
             </p>
             <h1 class="text-shadow">What does Sten like and dislike?</h1>
             <p class="p-2">
-                Aaaw, you want to get to know me moore~? Well, since you're so curious, I
+                You want to get to know me moore~? Well, since you're so curious, I
                 like creative stuff, such as drawing, pottery, and painting. I also like building
                 stuff, which means I like woodworking, knitting, home-making, and sewing. I
                 love solving problems, which makes living alone easy as pie. If something is wrong
