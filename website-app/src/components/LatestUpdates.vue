@@ -9,11 +9,12 @@
                 <AccordionHeader>Story: Moving In</AccordionHeader>
                 <AccordionContent>
                     <p class="lekton-regular">
-                        A short thriller story.
+                        I just added a way for you to take a look at my 3D models! Take a look by
+                        clicking the link (not a virus).
                     </p>
-                    <RouterLink class="router lekton-regular" to="/horror" @click="visible = false">
-                        <u><b>Read now</b></u>
-                    </RouterLink>
+                    <u><b><a class="router lekton-regular" href="public/index.html">3D
+                                Models</a></b></u>
+
                 </AccordionContent>
             </AccordionPanel>
             <AccordionPanel value="1">

@@ -47,6 +47,7 @@
     </main>
   </div>
 
+
   <Dialog v-model:visible=" visible " modal class="tiny5-regular home-dialog text-shadow">
     <h1 class="header padding">What do you wanna see?</h1>
     <div class="body-text content-categories">
@@ -143,8 +144,7 @@
 
 
 
-  function toggleImage()
-  {
+  function toggleImage() {
     activeImage.value = activeImage.value === image1 ? image2 : image1;
     oldManActiveImage.value = oldManActiveImage.value === oldMan1 ? oldMan2 : oldMan1;
     activeBackgImage.value = activeBackgImage.value === backgImage1 ? backgImage2 : backgImage1;
