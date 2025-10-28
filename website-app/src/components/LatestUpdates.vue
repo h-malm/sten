@@ -6,7 +6,7 @@
                 Latest Updates
             </div>
             <AccordionPanel value="0">
-                <AccordionHeader>Story: Moving In</AccordionHeader>
+                <AccordionHeader><b>New feature!</b></AccordionHeader>
                 <AccordionContent>
                     <p class="lekton-regular">
                         I just added a way for you to take a look at my 3D models! Take a look by
