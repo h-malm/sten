@@ -40,8 +40,7 @@
       <RouterLink class="nav-item underlined" to="/">Home</RouterLink>
       <RouterLink class="nav-item underlined" to="/about">About Me</RouterLink>
       <Dropdown v-model=" selectedCategory " :options=" categories " optionLabel="label"
-        @change=" navigateToCategory " class="nav-item underlined text-shadow"
-        placeholder="Content">
+        @change=" navigateToCategory " class="nav-item underlined " placeholder="Content">
         <template #option=" slotProps ">
           {{ slotProps.option.label }}
         </template>

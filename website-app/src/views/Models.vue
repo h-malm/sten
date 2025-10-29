@@ -1,5 +1,6 @@
 <template>
-    <div style="width: 100%; height: 100%;" ref="canvasContainer"></div>
+    <h1 class="silkscreen-regular page-header text-shadow">3D Models</h1>
+    <div class="models-container" ref="canvasContainer"></div>
 </template>
 
 <script setup>
@@ -31,7 +32,7 @@
         controls.update();
 
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color( "white" );
+        scene.background = new THREE.Color( "black" );
 
         addLight( 0xcc0000, 2.5, 10, 4, 2 );
         addLight( 0x7ab920, 2.5, -12, 2, -5 );
@@ -50,17 +51,6 @@
             scene.add( light );
             scene.add( light.target );
         }
-
-        const planeGeometry = new THREE.PlaneGeometry( 20, 20, 32, 32 );
-        const planeMaterial = new THREE.MeshStandardMaterial( {
-            color: "black",
-        } );
-
-        const plane = new THREE.Mesh( planeGeometry, planeMaterial );
-        plane.rotation.x = Math.PI / 2;
-        plane.position.set( 0, 0.8, 0 );
-        plane.receiveShadow = true;
-        scene.add( plane );
 
         function frameArea ( sizeToFitOnScreen, boxSize, boxCenter, camera ) {
             const halfSizeToFitOnScreen = sizeToFitOnScreen * 0.5;

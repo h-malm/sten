@@ -41,6 +41,7 @@
   --darkGreen: rgb(37, 55, 35);
   --darkerGreen: rgb(16, 29, 15);
   --lighGreen: rgb(136, 143, 119);
+  --hoverColor: rgb(207, 126, 126);
 }
 
 #app {
@@ -100,6 +101,38 @@ p {
 
 .p-select-dropdown .p-icon {
   color: white;
+  padding: 0.3rem;
+}
+
+.p-select {
+  width: 9rem;
+}
+
+.p-select-list-container {
+  max-height: 20rem !important;
+}
+
+.p-select-list-container .p-select-list {
+  background-color: var(--darkerRed);
+  padding: 0.5rem 0.4rem;
+  margin: 0.5rem;
+  box-shadow:
+    0px 5px var(--darkerRed),
+    0px -5px var(--darkerRed),
+    5px 0px var(--darkerRed),
+    -5px 0px var(--darkerRed),
+    0px 10px var(--darkerRed),
+    5px 5px var(--darkerRed),
+    -5px 5px var(--darkerRed),
+    inset 0px 5px #da757536;
+  cursor: pointer;
+  font-family: 'Tiny5', sans-serif;
+  font-size: 1rem;
+}
+
+.p-select-option:not(.p-select-option-selected):not(.p-disabled).p-focus:hover {
+  cursor: pointer;
+  color: var(--hoverColor);
 }
 
 .p-button.btns {
@@ -220,13 +253,14 @@ nav {
   line-height: 1rem;
 }
 
-.text-shadow {
-  text-shadow: 3px 2px 0px rgb(139, 0, 0);
-}
-
 .nav-item:hover {
   cursor: pointer;
   text-decoration: underline;
+  color: var(--hoverColor);
+}
+
+.text-shadow {
+  text-shadow: 3px 2px 0px rgb(139, 0, 0);
 }
 
 .content-categories {
@@ -278,15 +312,15 @@ nav {
 }
 
 .p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled) > .p-accordionheader:hover {
-  background: var(--cancelButtonBoxShadow) !important;
+  background: var(--darkestRed) !important;
   box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
+    0px 5px var(--darkestRed),
+    0px -5px var(--darkestRed),
+    5px 0px var(--darkestRed),
+    -5px 0px var(--darkestRed),
+    0px 10px var(--cancelButtonBackground),
+    5px 5px var(--cancelButtonBackground),
+    -5px 5px var(--cancelButtonBackground),
     inset 0px 5px #b9b9b936;
 }
 
@@ -721,6 +755,12 @@ h1 {
     5px 5px var(--pixelbuttonBoxShadow),
     -5px 5px var(--pixelbuttonBoxShadow),
     inset 0px 5px #ffffff36;
+}
+
+canvas {
+  height: 100%;
+  padding: 2rem;
+  width: 100%;
 }
 
 /* under 900px bredd */
