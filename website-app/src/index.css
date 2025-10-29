@@ -98,6 +98,10 @@ p {
   font-size: 5rem;
 }
 
+.p-select-dropdown .p-icon {
+  color: white;
+}
+
 .p-button.btns {
   background-color: var(--primaryButtonBackground);
 }

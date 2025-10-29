@@ -12,9 +12,9 @@
                         I just added a way for you to take a look at my 3D models! Take a look by
                         clicking the link (not a virus).
                     </p>
-                    <u><b><a class="router lekton-regular" href="public/index.html">3D
-                                Models</a></b></u>
-
+                    <RouterLink class="router lekton-regular" to="/models" @click="visible = false">
+                        <u><b>Take a look</b></u>
+                    </RouterLink>
                 </AccordionContent>
             </AccordionPanel>
             <AccordionPanel value="1">

@@ -39,94 +39,25 @@
     <nav class="tiny5-regular text-shadow">
       <RouterLink class="nav-item underlined" to="/">Home</RouterLink>
       <RouterLink class="nav-item underlined" to="/about">About Me</RouterLink>
-      <button class="nav-item underlined text-shadow" @click="visible = true">Content</button>
+      <Dropdown v-model=" selectedCategory " :options=" categories " optionLabel="label"
+        @change=" navigateToCategory " class="nav-item underlined text-shadow"
+        placeholder="Content">
+        <template #option=" slotProps ">
+          {{ slotProps.option.label }}
+        </template>
+      </Dropdown>
     </nav>
 
     <main>
       <RouterView />
     </main>
   </div>
-
-
-  <Dialog v-model:visible=" visible " modal class="tiny5-regular home-dialog text-shadow">
-    <h1 class="header padding">What do you wanna see?</h1>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/art" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Art
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/crafts" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Crafts
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/horror" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Horror
-        <div class="div1 ">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/knitting" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Knitting
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/korean" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Korean Practice
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/photos" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Photos
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/plants" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Plant tips
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/recipes" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Recipes
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-    <div class="body-text content-categories">
-      <RouterLink class="router underlined" to="/stopwatch" @click="visible = false">
-        <div class="div1">&gt;</div>
-        Stopwatch
-        <div class="div1">&lt;</div>
-      </RouterLink>
-    </div>
-
-    <div class="padding align-center pixelbutton body-text">
-
-      <button class="cancel-button" type="button" @click="visible = false">
-        Cancel
-      </button>
-    </div>
-  </Dialog>
-
 </template>
 
 <script setup lang="ts">
   import { ref } from 'vue';
   import Dialog from 'primevue/dialog';
+  import Dropdown from 'primevue/dropdown';
   import image1 from './assets/images/thumbnail_IMG_1003.jpg';
   import image2 from './assets/images/thumbnail_IMG_1005.jpg'
   import backgImage1 from './assets/IMG_1084.GIF'
@@ -134,15 +65,39 @@
   import oldMan1 from './assets/lightson.gif'
   import oldMan2 from './assets/lightsoff.gif'
   import favIcon from './assets/images/iconofrock.jpeg'
+  import { useRouter } from 'vue-router';
 
   const visible = ref( false );
+
+  const router = useRouter();
 
   const activeImage = ref( image1 );
   const activeBackgImage = ref( backgImage1 );
   const oldManActiveImage = ref( oldMan1 )
   const isOverlayActive = ref( false );
 
+  const selectedCategory = ref( null );
 
+  const categories = ref( [
+    { label: 'Art', to: '/art' },
+    { label: 'Crafts', to: '/crafts' },
+    { label: 'Horror', to: '/horror' },
+    { label: 'Knitting', to: '/knitting' },
+    { label: 'Korean Practice', to: '/korean' },
+    { label: 'Photos', to: '/photos' },
+    { label: 'Plant tips', to: '/plants' },
+    { label: 'Recipes', to: '/recipes' },
+    { label: 'Stopwatch', to: '/stopwatch' },
+    { label: '3D Models', to: '/models' },
+  ] );
+
+  function navigateToCategory( event ) {
+    const category = event.value;
+    if ( category ) {
+      router.push( { path: category.to } );
+      visible.value = false;
+    }
+  }
 
   function toggleImage() {
     activeImage.value = activeImage.value === image1 ? image2 : image1;
@@ -150,7 +105,5 @@
     activeBackgImage.value = activeBackgImage.value === backgImage1 ? backgImage2 : backgImage1;
     isOverlayActive.value = !isOverlayActive.value;
   }
-
-
 
 </script>

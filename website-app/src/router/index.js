@@ -11,6 +11,7 @@ import KoreanView from '../views/KoreanView.vue'
 import ArtView from '@/views/ArtView.vue'
 import KnittingsView from '@/views/KnittingsView.vue'
 import Stopwatch from '@/views/StopwatchView.vue'
+import Models from '@/views/Models.vue'
 
 const router = createRouter({
   routes: [
@@ -26,6 +27,7 @@ const router = createRouter({
     { path: '/art', name: 'Art', component: ArtView },
     { path: '/knitting', name: 'Knitting', component: KnittingsView },
     { path: '/stopwatch', name: 'Stopwatch', component: Stopwatch },
+    { path: '/models', name: '3D Models', component: Models },
   ],
   history: createWebHistory(import.meta.env.BASE_URL),
 })

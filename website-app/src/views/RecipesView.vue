@@ -48,26 +48,22 @@
         { header: 'Meatballs', text: '' }
     ] )
 
-    onMounted( () =>
-    {
+    onMounted( () => {
         stories.value[ 0 ].text = Pancakes
         stories.value[ 1 ].text = ChocolateChipCookies
         stories.value[ 2 ].text = Mudcake
         stories.value[ 3 ].text = Meatballs
     } )
 
-    const showDialog = ( index ) =>
-    {
+    const showDialog = ( index ) => {
         visibleIndex.value = index
     }
 
-    const hideDialog = () =>
-    {
+    const hideDialog = () => {
         visibleIndex.value = null
     }
 
-    const formatText = ( text ) =>
-    {
+    const formatText = ( text ) => {
         const paragraphs = text.split( '\n' );
         return paragraphs;
     }
