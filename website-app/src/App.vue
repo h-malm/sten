@@ -39,8 +39,8 @@
     <nav class="tiny5-regular text-shadow">
       <RouterLink class="nav-item underlined" to="/">Home</RouterLink>
       <RouterLink class="nav-item underlined" to="/about">About Me</RouterLink>
-      <Dropdown v-model=" selectedCategory " :options=" categories " optionLabel="label"
-        @change=" navigateToCategory " class="nav-item underlined" placeholder="Content">
+      <Dropdown v-model=" selectedCategory " :options=" categories " optionLabel="header"
+        @change=" navigateToCategory " placeholder="Content" class="nav-item underlined">
         <template #option=" slotProps ">
           {{ slotProps.option.label }}
         </template>
@@ -55,7 +55,6 @@
 
 <script setup lang="ts">
   import { ref } from 'vue';
-  import Dialog from 'primevue/dialog';
   import Dropdown from 'primevue/dropdown';
   import image1 from './assets/images/thumbnail_IMG_1003.jpg';
   import image2 from './assets/images/thumbnail_IMG_1005.jpg'
@@ -78,16 +77,16 @@
   const selectedCategory = ref( null );
 
   const categories = ref( [
-    { label: 'Art', to: '/art' },
-    { label: 'Crafts', to: '/crafts' },
-    { label: 'Horror', to: '/horror' },
-    { label: 'Knitting', to: '/knitting' },
-    { label: 'Korean Practice', to: '/korean' },
-    { label: 'Photos', to: '/photos' },
-    { label: 'Plant tips', to: '/plants' },
-    { label: 'Recipes', to: '/recipes' },
-    { label: 'Stopwatch', to: '/stopwatch' },
-    { label: '3D Models', to: '/models' },
+    { label: 'Art', to: '/art', header: 'Content' },
+    { label: 'Crafts', to: '/crafts', header: 'Content' },
+    { label: 'Horror', to: '/horror', header: 'Content' },
+    { label: 'Knitting', to: '/knitting', header: 'Content' },
+    { label: 'Korean Practice', to: '/korean', header: 'Content' },
+    { label: 'Photos', to: '/photos', header: 'Content' },
+    { label: 'Plant tips', to: '/plants', header: 'Content' },
+    { label: 'Recipes', to: '/recipes', header: 'Content' },
+    { label: 'Stopwatch', to: '/stopwatch', header: 'Content' },
+    { label: '3D Models', to: '/models', header: 'Content' },
   ] );
 
   function navigateToCategory( event ) {

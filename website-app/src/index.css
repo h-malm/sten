@@ -99,22 +99,53 @@ p {
   font-size: 5rem;
 }
 
+nav {
+  grid-template-columns: max-content;
+  position: relative;
+  height: 2rem;
+  /* top: 8rem; */
+  left: 23m;
+  box-shadow:
+    0px 5px var(--cancelButtonBackground),
+    0px -5px var(--cancelButtonBackground),
+    5px 0px var(--cancelButtonBackground),
+    -5px 0px var(--cancelButtonBackground),
+    0px 10px var(--cancelButtonBoxShadow),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+  background-color: var(--cancelButtonBackground);
+  display: flex;
+  width: 45%;
+}
+
 .p-select-dropdown .p-icon {
-  color: var(--hoverColor);
-  padding: 0.3rem;
+  color: transparent;
+}
+
+.nav-item {
+  width: 35%;
+  grid-row: 1;
+  line-height: 2rem;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  text-decoration: underline;
 }
 
 .p-select {
-  width: 8rem;
+  max-width: 10rem;
+  text-decoration: underline;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--hoverColor);
 }
 
 .p-select-list-container {
   max-height: 20rem !important;
   overflow: visible !important;
-}
-
-.p-select-label {
-  text-align: right;
 }
 
 .p-select-list-container .p-select-list {
@@ -229,39 +260,6 @@ p {
 
 .align-center {
   text-align: center;
-}
-
-nav {
-  grid-template-columns: max-content;
-  position: relative;
-  height: 2rem;
-  /* top: 8rem; */
-  left: 23m;
-  box-shadow:
-    0px 5px var(--cancelButtonBackground),
-    0px -5px var(--cancelButtonBackground),
-    5px 0px var(--cancelButtonBackground),
-    -5px 0px var(--cancelButtonBackground),
-    0px 10px var(--cancelButtonBoxShadow),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
-  background-color: var(--cancelButtonBackground);
-  display: flex;
-  width: fit-content;
-}
-
-.nav-item {
-  width: 7rem;
-  margin: 0.5rem 0rem;
-  grid-row: 1;
-  line-height: 1rem;
-}
-
-.nav-item:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: var(--hoverColor);
 }
 
 .text-shadow {
@@ -843,11 +841,26 @@ canvas {
   }
 
   .nav-item {
-    width: 30%;
+    width: 33%;
     grid-row: 1;
-    line-height: 2rem;
+    line-height: 3rem;
     white-space: nowrap;
     font-size: 1rem;
+  }
+
+  .dropdown-button {
+    width: 7rem;
+    margin: auto 0rem;
+    grid-row: 1;
+    line-height: 2rem;
+  }
+
+  .p-select {
+    max-width: 10rem;
+  }
+
+  .p-select-label {
+    text-align: center;
   }
 
   .content-container {
