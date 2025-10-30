@@ -1032,6 +1032,10 @@ canvas {
     font-size: 1rem;
     padding: 0.1rem 0.7rem;
   }
+
+  canvas {
+    max-height: 10rem;
+  }
 }
 
 @media only screen and (min-width: 900px) {
