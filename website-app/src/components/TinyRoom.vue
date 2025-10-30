@@ -33,18 +33,13 @@
         const scene = new THREE.Scene();
         scene.background = new THREE.Color( "black" );
 
-        // addLight( 0xf6b26b, 7, 15, 20, 40 );
-        addDirectionalLight( 0x3D85C6, 6, -5, 10, -20 );
-        addPointLight( 0xF6B26B, 60, 3, 3, 0, 10 );
-        addPointLight( 0xF6B26B, 40, -1.7, 4.5, -3.4, 10 );
-        addPointLight( 0xF6B26B, 30, 1.2, 4, -3.8, 10 );
+        addDirectionalLight( 0x3d85c6, 6, -5, 10, -20 );
+        addDirectionalLight( 0xf6b26b, 2, 5, 10, 10 );
 
-        addPointLight( 0xF6B26B, 20, -3.5, 5, -3.4, 5 );
-
-        function addAmbientLight ( color ) {
-            const light = new THREE.AmbientLight( color ); // soft white light
-            scene.add( light );
-        }
+        addPointLight( 0xf6b26b, 60, 3, 3, 0, 10 );
+        addPointLight( 0xf6b26b, 40, -1.7, 4.5, -3.4, 10 );
+        addPointLight( 0xf6b26b, 30, 1.2, 4, -3.8, 10 );
+        addPointLight( 0xf6b26b, 20, -3.5, 5, -3.4, 5 );
 
         function addDirectionalLight ( color, intensity, x, y, z ) {
             const light = new THREE.DirectionalLight( color, intensity );
@@ -64,8 +59,6 @@
             const light = new THREE.PointLight( color, intensity, range );
             light.position.set( x, y, z );
             light.castShadow = true;
-
-
 
             scene.add( light );
             scene.add( light.target );

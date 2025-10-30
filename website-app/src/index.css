@@ -167,6 +167,7 @@ nav {
 
 .p-select-option:not(.p-select-option-selected):not(.p-disabled).p-focus:hover {
   cursor: pointer;
+  text-decoration: underline;
   color: var(--hoverColor);
 }
 
