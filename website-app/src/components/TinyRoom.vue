@@ -41,6 +41,11 @@
 
         addPointLight( 0xF6B26B, 20, -3.5, 5, -3.4, 5 );
 
+        function addAmbientLight ( color ) {
+            const light = new THREE.AmbientLight( color ); // soft white light
+            scene.add( light );
+        }
+
         function addDirectionalLight ( color, intensity, x, y, z ) {
             const light = new THREE.DirectionalLight( color, intensity );
             light.position.set( x, y, z );

@@ -36,7 +36,6 @@
         addLight( 0xcc0000, 2.5, 10, 4, 2 );
         addLight( 0x7ab920, 2.5, -12, 2, -5 );
         addLight( 0xf6b26b, 2.5, 0, 5, 15 );
-        addAmbientLight( 0xcc0000 )
 
         function addAmbientLight ( color ) {
             const light = new THREE.AmbientLight( color ); // soft white light

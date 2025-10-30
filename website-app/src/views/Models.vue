@@ -13,6 +13,8 @@
                 <Dialog :visible=" visibleIndex === index " @hide=" hideDialog ">
                     <div class="full-text lekton-regular">
                         <component :is=" model.content " />
+                        <div style="text-align: center;">Be patient. It takes a while to render.
+                        </div>
                     </div>
                     <div class="align-center pixelbutton tiny5-regular">
                         <button class="cancel-button" @click=" hideDialog ">
