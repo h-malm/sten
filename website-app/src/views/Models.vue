@@ -1,5 +1,5 @@
 <template>
-    <h1 class="silkscreen-regular page-header text-shadow">Recipes</h1>
+    <h1 class="silkscreen-regular page-header text-shadow">3D Models</h1>
     <div class="scrollable-content">
         <div class="content-container">
             <div v-for=" ( model, index ) in models " :key=" index ">
