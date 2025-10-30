@@ -1,5 +1,5 @@
 <template>
-    <div class="models-container" ref="canvasContainer"></div>
+    <div ref="canvasContainer"></div>
 </template>
 
 <script setup>
