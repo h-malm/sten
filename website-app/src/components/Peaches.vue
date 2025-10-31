@@ -85,7 +85,7 @@
 
 
         const gltfLoader = new GLTFLoader();
-        gltfLoader.load( '/threeAssets/peaches.gltf', ( gltf ) => {
+        gltfLoader.load( '/threeAssets/peach.gltf', ( gltf ) => {
             const root = gltf.scene;
             scene.add( root );
             root.traverse( ( obj ) => {
