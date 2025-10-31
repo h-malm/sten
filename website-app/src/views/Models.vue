@@ -32,11 +32,13 @@
     import Dialog from 'primevue/dialog'
     import Cactus from '@/components/Cactus.vue'
     import TinyRoom from '@/components/TinyRoom.vue'
+    import Peaches from '@/components/Peaches.vue'
 
     const visibleIndex = ref( null )
     const models = ref( [
         { header: 'Cactus', content: Cactus },
         { header: 'Tiny Room', content: TinyRoom },
+        { header: 'Peaches', content: Peaches },
     ] )
 
     const showDialog = ( index ) => {
