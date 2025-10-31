@@ -33,9 +33,9 @@
         const scene = new THREE.Scene();
         scene.background = new THREE.Color( "black" );
 
-        addDirectionalLight( 0xf6b26b, 10, 5, 1, 10 );
-        addDirectionalLight( 0xf6b26b, 20, -5, 10, -10 );
-        addDirectionalLight( 0xf6b26b, 10, 0, -10, 5 );
+        addLight( 0xcc0000, 15, 10, 4, 2 );
+        addLight( 0x7ab920, 10, -12, 2, -5 );
+        addLight( 0xf6b26b, 5, 0, 5, 15 );
 
         function addAmbientLight ( color ) {
             const light = new THREE.AmbientLight( color ); // soft white light
