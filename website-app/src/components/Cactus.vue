@@ -33,7 +33,7 @@
         const scene = new THREE.Scene();
         scene.background = new THREE.Color( "black" );
 
-        addLight( 0xcc0000, 15, 10, 4, 2 );
+        addLight( 0xf6b26b, 15, 10, 4, 2 );
         addLight( 0x7ab920, 10, -12, 2, -5 );
         addLight( 0xf6b26b, 5, 0, 5, 15 );
 
