@@ -5,7 +5,7 @@
             <div class="content-container-crafts">
                 <div class="pixelbutton silkscreen-regular">
                     <h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
-                    <img v-for=" image in getImages( item ) " :key=" image " class="image1"
+                    <img v-for=" image in getImages( item ) " :key=" image " class="image-item"
                         :src=" image ">
                     <div class="lekton-regular p-2">
                         <div v-for=" paragraph in formatText( item.text ) " :key=" paragraph ">
@@ -36,8 +36,7 @@
 
     ] )
 
-    onMounted( () =>
-    {
+    onMounted( () => {
         stories.value[ 0 ].text = WrenchText;
         stories.value[ 0 ].image1 = i1;
 
@@ -49,14 +48,12 @@
         stories.value[ 2 ].image1 = i4;
     } )
 
-    const formatText = ( text ) =>
-    {
+    const formatText = ( text ) => {
         const paragraphs = text.split( '\n' );
         return paragraphs;
     }
 
-    const getImages = ( item ) =>
-    {
+    const getImages = ( item ) => {
         return [ item.image1, item.image2 ].filter( image => image && image !== '' );
     }
 </script>
