@@ -44,6 +44,12 @@
   --hoverColor: rgb(207, 126, 126);
 }
 
+.bg-image {
+  background-image: url('/src/assets/background.png');
+  background-size: 10%;
+  opacity: .7;
+}
+
 #app {
   text-align: center;
   width: 1010px;
@@ -53,7 +59,7 @@
 
 body {
   scrollbar-color: var(--cancelButtonBackground) rgba(0, 0, 0, 0);
-  background-color: #380202;
+  background-color: #000000;
   color: white;
   width: auto;
   height: auto;
@@ -62,25 +68,6 @@ body {
 
 p {
   color: #fff;
-}
-
-.latest-updates {
-  background-color: var(--cancelButtonBackground);
-  width: 20rem;
-  height: fit-content;
-  padding: 1rem;
-  margin: 3rem 1rem;
-  display: inline-flex;
-  float: right;
-  box-shadow:
-    0px 5px var(--cancelButtonBackground),
-    0px -5px var(--cancelButtonBackground),
-    5px 0px var(--cancelButtonBackground),
-    -5px 0px var(--cancelButtonBackground),
-    0px 10px var(--darkerRed),
-    5px 5px var(--darkerRed),
-    -5px 5px var(--darkerRed),
-    inset 0px 5px #ffffff36;
 }
 
 .homepage .p-accordionpanel {
@@ -523,23 +510,6 @@ h1 {
     inset 0px 5px #b9b9b936;
 }
 
-.coffee-container {
-  position: static;
-  bottom: 0;
-  width: 38rem;
-  margin: 0rem auto;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.coffeecup {
-  height: 7rem;
-}
-
-.coffeetext {
-  padding: 2.5rem 0rem;
-}
-
 .p-galleria {
   img,
   video {
@@ -780,25 +750,6 @@ canvas {
     margin: 1rem 0.8rem 1rem 0rem;
   }
 
-  .coffee-container {
-    width: auto;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  .coffeecup {
-    position: absolute;
-    margin: 0rem;
-    top: 35rem;
-    left: -0.1rem;
-  }
-
-  .coffeetext {
-    padding: 0rem 0rem;
-    font-size: 1rem;
-  }
-
   .portrait-image {
     max-height: 10rem;
     margin: 2rem;
@@ -819,12 +770,6 @@ canvas {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
-  }
-
-  .latest-updates {
-    width: 8rem;
-    margin: 0.5rem 0.5rem;
-    padding: 0.2rem;
   }
 
   .homepage .p-accordionpanel {

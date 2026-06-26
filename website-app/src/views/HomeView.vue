@@ -1,8 +1,6 @@
 <template>
   <h1 class="silkscreen-regular page-header text-shadow">Homepage</h1>
   <div class="home-container">
-    <LatestUpdates></LatestUpdates>
-
     <div>
       <p class='lekton-regular p-2 float-left'>
         This website is a personal website used to collect stuff I've made into one place! That
@@ -21,17 +19,10 @@
       </p>
     </div>
   </div>
-  <div class="coffee-container">
-    <a href="https://www.youtube.com/watch?v=33kIj__tD90">
-      <img loading="lazy" src="../assets/images/IMG_1120.GIF" alt="An old man reading the newspaper"
-        class="coffeecup">
-    </a>
     <div class="silkscreen-regular text-shadow coffeetext"> Grab a cup of coffee and take a peruse
       around my website
     </div>
-  </div>
 </template>
 
 <script setup>
-  import LatestUpdates from '../components/LatestUpdates.vue';
 </script>
