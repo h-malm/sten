@@ -4,8 +4,7 @@
         <div class="lekton-regular about-container justify">
             <p class="p-2">
                 <img src="../assets/IMG_1117.jpg" class="portrait-image">
-                I'm a 23-year-old Computer Engineering student. My Master's thesis just got graded
-                (I got a 4 out of 5. One could say I am pretty fucking proud). My Master's thesis
+                I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis. One could say I am pretty fucking proud). My Master's thesis
                 discussed the
                 evolution of website design, focusing on
                 layout,
