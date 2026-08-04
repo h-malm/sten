@@ -42,19 +42,49 @@
   --darkerGreen: rgb(16, 29, 15);
   --lighGreen: rgb(136, 143, 119);
   --hoverColor: rgb(207, 126, 126);
+
+  --box-shadow-red:
+    0px 5px var(--cancelButtonBackground),
+    0px -5px var(--cancelButtonBackground),
+    5px 0px var(--cancelButtonBackground),
+    -5px 0px var(--cancelButtonBackground),
+    0px 10px var(--cancelButtonBoxShadow),
+    5px 5px var(--cancelButtonBoxShadow),
+    -5px 5px var(--cancelButtonBoxShadow),
+    inset 0px 5px #ffffff36;
+
+  --box-shadow-darker-red:
+    0px 5px var(--darkestRed),
+    0px -5px var(--darkestRed),
+    5px 0px var(--darkestRed),
+    -5px 0px var(--darkestRed),
+    0px 10px var(--darkestRed),
+    5px 5px var(--darkestRed),
+    -5px 5px var(--darkestRed),
+    inset 0px 5px #00000000;
+
+  --box-shadow-lighter-red:
+    0px 5px var(--darkerRed),
+    0px -5px var(--darkerRed),
+    5px 0px var(--darkerRed),
+    -5px 0px var(--darkerRed),
+    0px 10px var(--darkerRed),
+    5px 5px var(--darkerRed),
+    -5px 5px var(--darkerRed),
+    inset 0px 5px #da757536;
 }
 
 .bg-image {
-  background-image: url('/src/assets/background.png');
-  background-size: 10%;
-  opacity: .7;
+  background: rgb(30, 21, 21);
+  background-image: radial-gradient(rgb(78, 27, 27) 2px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 11px 47px;
 }
 
 #app {
   text-align: center;
-  width: 1010px;
+  width: 800px;
   margin: 0rem auto;
-  font-size: 1.4rem;
 }
 
 body {
@@ -71,7 +101,7 @@ p {
 }
 
 .homepage .p-accordionpanel {
-  width: 18rem;
+  width: 8rem;
 }
 
 .website-title {
@@ -90,17 +120,8 @@ nav {
   grid-template-columns: max-content;
   position: relative;
   height: 2rem;
-  /* top: 8rem; */
   left: 23m;
-  box-shadow:
-    0px 5px var(--cancelButtonBackground),
-    0px -5px var(--cancelButtonBackground),
-    5px 0px var(--cancelButtonBackground),
-    -5px 0px var(--cancelButtonBackground),
-    0px 10px var(--cancelButtonBoxShadow),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
+  box-shadow: var(--box-shadow-red);
   background-color: var(--cancelButtonBackground);
   display: flex;
   width: 45%;
@@ -119,15 +140,15 @@ nav {
   text-decoration: underline;
 }
 
-.p-select {
-  max-width: 10rem;
-  text-decoration: underline;
-}
-
 .nav-item:hover {
   cursor: pointer;
   text-decoration: underline;
   color: var(--hoverColor);
+}
+
+.p-select {
+  max-width: 10rem;
+  text-decoration: underline;
 }
 
 .p-select-list-container {
@@ -138,15 +159,7 @@ nav {
 .p-select-list-container .p-select-list {
   background-color: var(--darkerRed);
   padding: 0.5rem 0.4rem;
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--darkerRed),
-    5px 5px var(--darkerRed),
-    -5px 5px var(--darkerRed),
-    inset 0px 5px #da757536;
+  box-shadow: var(--box-shadow-lighter-red);
   cursor: pointer;
   font-family: 'Tiny5', sans-serif;
   font-size: 1rem;
@@ -167,66 +180,49 @@ nav {
 }
 
 .pixelbutton {
-  button,
-  .cancel-button {
-    height: 1rem;
-    line-height: 0.2;
-    margin: 1rem 1rem;
-    padding: 0.9rem 1rem;
-    border: 0;
-  }
+  margin: 1rem 1rem;
+  padding: .0rem .5rem;
 
-  .cancel-button:active,
-  button:active {
-    transform: translateY(0.5rem);
-  }
+}
 
-  button,
-  .dialogbutton {
-    background-color: var(--pixelbuttonBackground);
-    box-shadow:
-      0px 5px var(--pixelbuttonBackground),
-      0px -5px var(--pixelbuttonBackground),
-      5px 0px var(--pixelbuttonBackground),
-      -5px 0px var(--pixelbuttonBackground),
-      0px 10px var(--pixelbuttonBoxShadow),
-      5px 5px var(--pixelbuttonBoxShadow),
-      -5px 5px var(--pixelbuttonBoxShadow),
-      inset 0px 5px #ffffff36;
-    cursor: pointer;
-  }
+.cancel-button:active,
+button:active {
+  transform: translateY(0.5rem);
+}
 
-  .cancel-button {
-    background-color: var(--cancelButtonBackground);
-    box-shadow:
-      0px 5px var(--cancelButtonBackground),
-      0px -5px var(--cancelButtonBackground),
-      5px 0px var(--cancelButtonBackground),
-      -5px 0px var(--cancelButtonBackground),
-      0px 10px var(--cancelButtonBoxShadow),
-      5px 5px var(--cancelButtonBoxShadow),
-      -5px 5px var(--cancelButtonBoxShadow),
-      inset 0px 5px #ffffff36;
-    cursor: pointer;
-  }
+button,
+.dialogbutton {
+  background-color: var(--pixelbuttonBackground);
+  box-shadow: var(--box-shadow-red);
+  cursor: pointer;
+}
 
-  button:active {
-    box-shadow:
-      0px 5px var(--pixelbuttonBoxShadow),
-      0px -5px var(--pixelbuttonBoxShadow),
-      5px 0px var(--pixelbuttonBoxShadow),
-      -5px 0px var(--pixelbuttonBoxShadow),
-      inset 0px 5px var(--pixelbuttonBoxShadow);
-  }
+.cancel-button {
+  background-color: var(--cancelButtonBackground);
+  box-shadow: var(--box-shadow-red);
+  cursor: pointer;
+}
 
-  .cancel-button:active {
-    box-shadow:
-      0px 5px var(--cancelButtonBoxShadow),
-      0px -5px var(--cancelButtonBoxShadow),
-      5px 0px var(--cancelButtonBoxShadow),
-      -5px 0px var(--cancelButtonBoxShadow),
-      inset 0px 5px var(--cancelButtonBoxShadow);
-  }
+button:active {
+  box-shadow:
+    0px 5px var(--pixelbuttonBoxShadow),
+    0px -5px var(--pixelbuttonBoxShadow),
+    5px 0px var(--pixelbuttonBoxShadow),
+    -5px 0px var(--pixelbuttonBoxShadow),
+    inset 0px 5px var(--pixelbuttonBoxShadow);
+}
+
+.close-button {
+  background-color: var(--cancelButtonBackground);
+  box-shadow: var(--box-shadow-red);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.cancel-button:active,
+.close-button:active {
+  box-shadow: var(--box-shadow-darker-red);
 }
 
 .p-icon {
@@ -235,10 +231,6 @@ nav {
 
 .p-overlay-mask-enter {
   background: #000000b8 !important;
-}
-
-.padding {
-  padding: 2rem;
 }
 
 .header {
@@ -254,10 +246,6 @@ nav {
   text-shadow: 3px 2px 0px rgb(139, 0, 0);
 }
 
-.content-categories {
-  text-align: center;
-}
-
 .router:hover .div1 {
   display: inline-block;
 }
@@ -270,62 +258,6 @@ nav {
 
 .router:hover {
   font-weight: 800;
-}
-
-.homepage .p-accordionheader {
-  border-width: 2px;
-  border-color: transparent;
-  background-color: var(--darkerRed);
-  margin: 0.5rem;
-  padding: 0.2rem;
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
-    inset 0px 5px #b9b9b936;
-}
-
-.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader {
-  background: var(--darkestRed) !important;
-  box-shadow:
-    0px 5px var(--darkestRed),
-    0px -5px var(--pixelbuttonBackground),
-    5px 0px var(--pixelbuttonBackground),
-    -5px 0px var(--pixelbuttonBackground),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBoxShadow),
-    inset 0px 5px #00000036;
-}
-
-.p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled) > .p-accordionheader:hover {
-  background: var(--darkestRed) !important;
-  box-shadow:
-    0px 5px var(--darkestRed),
-    0px -5px var(--darkestRed),
-    5px 0px var(--darkestRed),
-    -5px 0px var(--darkestRed),
-    0px 10px var(--cancelButtonBackground),
-    5px 5px var(--cancelButtonBackground),
-    -5px 5px var(--cancelButtonBackground),
-    inset 0px 5px #b9b9b936;
-}
-
-.homepage .p-accordionpanel {
-  border: solid 2px transparent;
-  border-radius: 2rem;
-}
-
-.homepage .p-accordioncontent-content {
-  border-color: transparent;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0.6rem 1rem;
-  text-align: left;
-  width: 21rem;
 }
 
 .homepage {
@@ -349,15 +281,6 @@ nav {
 
 .justify {
   text-align: justify;
-}
-
-.panorama-frame {
-  background-color: rgb(45, 59, 45);
-  width: 80rem;
-  height: 50rem;
-  position: relative;
-  display: flex;
-  margin: auto;
 }
 
 .content-container {
@@ -386,7 +309,7 @@ nav {
     inset 0px 5px #b9b9b936;
 }
 
-.content-container > div {
+.content-container>div {
   background-color: var(--darkerRed);
   padding: 0.7rem;
   box-shadow:
@@ -447,16 +370,7 @@ h1 {
 
 .p-dialog-content {
   background-color: var(--darkestRed);
-  /* overflow: hidden !important; */
-  box-shadow:
-    0px 5px var(--darkestRed),
-    0px -5px var(--darkestRed),
-    5px 0px var(--darkestRed),
-    -5px 0px var(--darkestRed),
-    0px 10px var(--darkestRed),
-    5px 5px var(--darkestRed),
-    -5px 5px var(--darkestRed),
-    inset 0px 5px #00000000;
+  box-shadow: var(--box-shadow-red);
 }
 
 .p-dialog {
@@ -496,9 +410,9 @@ h1 {
 }
 
 .portrait-image {
-  max-height: 30rem;
+  max-height: 20rem;
   float: right;
-  margin: 0rem 2rem;
+  margin: 2rem 2rem;
   box-shadow:
     0px 5px var(--darkerRed),
     0px -5px var(--darkerRed),
@@ -511,6 +425,7 @@ h1 {
 }
 
 .p-galleria {
+
   img,
   video {
     max-width: 70%;
@@ -531,15 +446,7 @@ h1 {
   overflow: hidden;
   border-color: #00000000 !important;
   background-color: var(--pixelbuttonBackground);
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
-    inset 0px 5px #b9b9b936;
+  box-shadow: var(--box-shadow-red);
 }
 
 .p-galleria-thumbnail-item {
@@ -547,8 +454,24 @@ h1 {
 }
 
 .p-galleria-thumbnail-item-current img {
-  border: rgb(229, 174, 174) solid 0.2rem;
-  border-radius: 0.3rem;
+  border: rgb(231, 57, 57) solid 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.p-galleria-hover-navigators .p-galleria-nav-button {
+  height: 3rem;
+  width: 1rem;
+  background-color: var(--darkerRed);
+  opacity: 1 !important;
+  box-shadow: var(--box-shadow-lighter-red);
+}
+
+.p-galleria-nav-button:not(.p-disabled):hover {
+  background: var(--darkestRed);
+}
+
+.p-galleria-thumbnail-nav-button {
+  display: none !important;
 }
 
 .image-item {
@@ -570,43 +493,6 @@ h1 {
 .links {
   text-decoration: underline;
   font-size: 1rem;
-}
-
-.p-galleria-hover-navigators .p-galleria-nav-button {
-  height: 2rem;
-  width: 2rem;
-  background-color: var(--darkerRed);
-  opacity: 1 !important;
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
-    inset 0px 5px #b9b9b936;
-}
-
-.p-galleria-nav-button:not(.p-disabled):hover {
-  background: var(--darkestRed) !important;
-}
-
-.p-galleria-prev-button {
-  background: var(--primaryButtonBackground);
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
-    inset 0px 5px #b9b9b936;
-}
-
-.p-galleria-next-button {
-  background: var(--primaryButtonBackground);
 }
 
 .p-icon {
@@ -884,7 +770,7 @@ canvas {
     font-size: 1.5rem;
   }
 
-  .content-container > div {
+  .content-container>div {
     line-height: 1rem;
   }
 
@@ -930,10 +816,6 @@ canvas {
     height: 4.5rem;
     right: 10%;
     top: 0rem;
-  }
-
-  .content-categories {
-    padding: 0rem;
   }
 
   .p-galleria-hover-navigators .p-galleria-nav-button {
