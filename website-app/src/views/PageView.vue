@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <p>PAGE VIEW</p>
-    </div>
+	<div>
+		<p>PAGE VIEW</p>
+	</div>
 
 </template>
 

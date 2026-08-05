@@ -5,13 +5,11 @@
 </template>
 
 <script>
-  export default {
-    mounted ()
-    {
-      setTimeout( () =>
-      {
-        this.$el.style.display = 'none'
-      }, 2000 )
-    },
-  }
+export default {
+  mounted () {
+    setTimeout( () => {
+      this.$el.style.display = 'none'
+    }, 2000 )
+  },
+}
 </script>

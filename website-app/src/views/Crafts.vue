@@ -1,20 +1,20 @@
 <template>
-    <h1 class="silkscreen-regular page-header text-shadow">Crafts</h1>
-    <div class="scrollable-content">
-        <div v-for=" ( item, index ) in stories " :key="index">
-            <div class="content-container-crafts">
-                <div class="pixelbutton silkscreen-regular">
-                    <h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
-                    <img v-for=" image in getImages( item ) " :key="image" class="image-item" :src="image">
-                    <div class="lekton-regular p-2">
-                        <div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
-                            <p>{{ paragraph }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<h1 class="silkscreen-regular page-header text-shadow">Crafts</h1>
+	<div class="scrollable-content">
+		<div v-for=" ( item, index ) in stories " :key="index">
+			<div class="content-container-crafts">
+				<div class="pixelbutton silkscreen-regular">
+					<h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
+					<img v-for=" image in getImages( item ) " :key="image" class="image-item" :src="image">
+					<div class="lekton-regular">
+						<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
+							<p>{{ paragraph }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script setup>
@@ -29,30 +29,30 @@ import i3 from '/src/assets/images/Crafts/shelf2.jpg';
 import i4 from '/src/assets/images/Crafts/skirt.jpg';
 
 const stories = ref( [
-    { header: 'Wrench Holder', text: '', image1: '', image2: '', },
-    { header: 'Tiny Shelf', text: '', image1: '', image2: '', },
-    { header: 'Pillow', text: '', image1: '', image2: '', },
+	{ header: 'Wrench Holder', text: '', image1: '', image2: '', },
+	{ header: 'Tiny Shelf', text: '', image1: '', image2: '', },
+	{ header: 'Pillow', text: '', image1: '', image2: '', },
 
 ] )
 
 onMounted( () => {
-    stories.value[0].text = WrenchText;
-    stories.value[0].image1 = i1;
+	stories.value[0].text = WrenchText;
+	stories.value[0].image1 = i1;
 
-    stories.value[1].text = ShelfText;
-    stories.value[1].image1 = i2;
-    stories.value[1].image2 = i3;
+	stories.value[1].text = ShelfText;
+	stories.value[1].image1 = i2;
+	stories.value[1].image2 = i3;
 
-    stories.value[2].text = PillowText;
-    stories.value[2].image1 = i4;
+	stories.value[2].text = PillowText;
+	stories.value[2].image1 = i4;
 } )
 
 const formatText = ( text ) => {
-    const paragraphs = text.split( '\n' );
-    return paragraphs;
+	const paragraphs = text.split( '\n' );
+	return paragraphs;
 }
 
 const getImages = ( item ) => {
-    return [item.image1, item.image2].filter( image => image && image !== '' );
+	return [item.image1, item.image2].filter( image => image && image !== '' );
 }
 </script>
