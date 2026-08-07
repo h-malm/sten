@@ -3,7 +3,7 @@
 	<div>
 		<div v-for=" ( item, index ) in stories " :key="index">
 			<div class="content-container-single-col">
-				<div class="pixelbutton silkscreen-regular">
+				<div class="silkscreen-regular">
 					<h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
 					<img v-for=" image in getImages( item ) " :key="image" class="image2" :src="image">
 					<div class="lekton-regular">

@@ -1,12 +1,12 @@
 <template>
-	<div class="silkscreen-regular frame">
-		<h1 class="silkscreen-regular text-shadow stopwatch">Stopwatch</h1>
-		<div class="time">
-			<div class="stopwatch">{{ formattedTime }}</div>
-			<button class="start-button" @click="start">{{
+	<div class="silkscreen-regular">
+		<h1 class="silkscreen-regular text-shadow">Stopwatch</h1>
+		<div>
+			<div>{{ formattedTime }}</div>
+			<button @click="start">{{
 				stopOrContinue }}</button>
-			<button class="stop-button" @click="stop">STOP</button>
-			<button class="reset-button" @click="reset">RESET</button>
+			<button @click="stop">STOP</button>
+			<button @click="reset">RESET</button>
 		</div>
 	</div>
 </template>

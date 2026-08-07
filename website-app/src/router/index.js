@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import StenView from '../views/StenView.vue'
 import HorrorView from '../views/HorrorView.vue'
-import PageView from '../views/PageView.vue'
 import PhotosView from '../views/PhotosView.vue'
 import PlantView from '../views/PlantView.vue'
 import RecipesView from '../views/RecipesView.vue'
@@ -13,8 +12,7 @@ import Models from '@/views/Models.vue'
 
 const router = createRouter({
   routes: [
-    { path: '/', name: 'home', component: HomeView },
-    { path: '/pageview', name: 'Page', component: PageView },
+    { path: '/', name: 'home', component: StenView },
     { path: '/horror', name: 'Horror', component: HorrorView },
     { path: '/photos', name: 'Photos', component: PhotosView },
     { path: '/plants', name: 'Plants', component: PlantView },

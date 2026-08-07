@@ -3,15 +3,15 @@
 	<div>
 		<div v-for=" ( item, index ) in stories " :key="index">
 			<div class="content-container-single-col">
-				<div class="pixelbutton silkscreen-regular">
+				<div class="silkscreen-regular">
 					<h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
 					<a :href="item.url">{{ item.url }}</a>
-					<div class="story-container lekton-regular">
+					<div class="lekton-regular">
 						<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
 							<p style="margin: .5rem;">{{ paragraph }}</p>
 						</div>
 					</div>
-					<img v-for=" image in getImages( item ) " :key="image" class="image-item" :src="image">
+					<img v-for=" image in getImages( item ) " :key="image" :src="image">
 				</div>
 			</div>
 		</div>

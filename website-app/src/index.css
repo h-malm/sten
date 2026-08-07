@@ -1,5 +1,17 @@
 @import 'tailwindcss';
 
+:root {
+  --box-shadow-red:
+    0px 3px var(--cancelButtonBackground),
+    0px -3px var(--cancelButtonBackground),
+    3px 0px var(--cancelButtonBackground),
+    -3px 0px var(--cancelButtonBackground),
+    0px 6px var(--cancelButtonBoxShadow),
+    3px 3px var(--cancelButtonBoxShadow),
+    -3px 3px var(--cancelButtonBoxShadow),
+    inset 0px 3px #ffffff36;
+}
+
 /**fonts**/
 .silkscreen-regular {
   font-family: 'Silkscreen', sans-serif;
@@ -26,79 +38,6 @@
   font-size: 1.3rem;
 }
 
-:root {
-  --primaryButtonBackground: rgb(14, 14, 14);
-  --pixelbuttonBackground: rgb(15, 15, 15);
-  --pixelbuttonBoxShadow: #111111;
-  --cancelButtonBackground: rgb(71, 18, 18);
-  --cancelButtonBoxShadow: rgb(85, 24, 24);
-  --darkerRed: rgb(94, 19, 19);
-  --darkestRed: rgb(49, 0, 0);
-  --darkGreen: rgb(37, 55, 35);
-  --darkerGreen: rgb(16, 29, 15);
-  --lighGreen: rgb(136, 143, 119);
-  --hoverColor: rgb(207, 126, 126);
-
-  --box-shadow-red:
-    0px 3px var(--cancelButtonBackground),
-    0px -3px var(--cancelButtonBackground),
-    3px 0px var(--cancelButtonBackground),
-    -3px 0px var(--cancelButtonBackground),
-    0px 6px var(--cancelButtonBoxShadow),
-    3px 3px var(--cancelButtonBoxShadow),
-    -3px 3px var(--cancelButtonBoxShadow),
-    inset 0px 3px #ffffff36;
-
-  --box-shadow-darker-red:
-    0px 3px var(--darkestRed),
-    0px -3px var(--darkestRed),
-    3px 0px var(--darkestRed),
-    -3px 0px var(--darkestRed),
-    0px 6px var(--darkestRed),
-    3px 3px var(--darkestRed),
-    -3px 3px var(--darkestRed),
-    inset 0px 3px #00000000;
-
-  --box-shadow-lighter-red:
-    0px 3px var(--darkerRed),
-    0px -3px var(--darkerRed),
-    3px 0px var(--darkerRed),
-    -3px 0px var(--darkerRed),
-    0px 6px var(--darkerRed),
-    3px 3px var(--darkerRed),
-    -3px 3px var(--darkerRed),
-    inset 0px 3px #da757536;
-
-  --box-shadow-without-inset:
-    0px 3px var(--darkerRed),
-    0px -3px var(--darkerRed),
-    3px 0px var(--darkerRed),
-    -3px 0px var(--darkerRed),
-    0px 6px var(--pixelbuttonBackground),
-    3px 3px var(--pixelbuttonBackground),
-    -3px 3px var(--pixelbuttonBackground),
-    inset 0px 3px #b9b9b936;
-
-  --box-shadow-green:
-    0px 3px var(--darkGreen),
-    0px -3px var(--darkGreen),
-    3px 0px var(--darkGreen),
-    -3px 0px var(--darkGreen),
-    0px 6px var(--darkerGreen),
-    3px 3px var(--darkerGreen),
-    -3px 3px var(--darkerGreen),
-    inset 0px 3px var(--lighGreen);
-
-  --box-shadow-gray: 0px 3px var(--pixelbuttonBoxShadow),
-    0px -3px var(--pixelbuttonBoxShadow),
-    3px 0px var(--pixelbuttonBoxShadow),
-    -3px 0px var(--pixelbuttonBoxShadow),
-    0px 6px var(--pixelbuttonBoxShadow),
-    3px 3px var(--pixelbuttonBoxShadow),
-    -3px 3px var(--pixelbuttonBoxShadow),
-    inset 0px 3px #ffffff36;
-}
-
 #app {
   text-align: center;
   width: 800px;
@@ -106,25 +45,11 @@
 }
 
 body {
-  scrollbar-color: var(--cancelButtonBackground) rgba(0, 0, 0, 0);
   background-color: #000000;
   color: white;
   width: auto;
   height: auto;
   cursor: url('https://www.svgrepo.com/show/62818/circle-outline-of-small-size.svg');
-}
-
-h1 {
-  font-weight: 700;
-}
-
-p {
-  color: #fff;
-}
-
-a {
-  text-decoration: underline;
-  font-size: 1rem;
 }
 
 nav {
@@ -135,22 +60,6 @@ nav {
   margin: 1.5rem 0;
   display: grid;
   width: 32rem;
-}
-
-canvas {
-  max-height: 35rem;
-  padding: 2rem;
-  margin: 0rem auto;
-  width: auto;
-}
-
-.bio {
-  font-size: .7rem;
-  line-height: 2rem;
-}
-
-.homepage .p-accordionpanel {
-  width: 8rem;
 }
 
 .home-nav-container {
@@ -175,13 +84,6 @@ canvas {
   background-position: top;
 }
 
-.bg-image {
-  background: rgb(30, 21, 21);
-  background-image: radial-gradient(rgb(66, 61, 61) 1px, #000 0);
-  background-size: 7px 7px;
-  background-position: 5px 5px;
-}
-
 .nav-item {
   line-height: 1.3rem;
   white-space: nowrap;
@@ -195,49 +97,14 @@ canvas {
   color: var(--hoverColor);
 }
 
-.website-title {
-  float: left;
-  width: 101%;
-  line-height: 6rem;
-}
-
-.header {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.korean-header {
-  font-size: 2.5rem;
-}
-
 .page-header {
   margin: 1rem 0rem 0rem 0rem;
   font-size: 1.5rem;
   text-align: left;
 }
 
-.sten-smaller {
-  position: relative;
-  display: flex;
-  font-size: 5rem;
-}
-
 .text-shadow {
   text-shadow: 3px 2px 0px rgb(139, 0, 0);
-}
-
-.router:hover .div1 {
-  display: inline-block;
-}
-
-.router {
-  .div1 {
-    display: none;
-  }
-}
-
-.router:hover {
-  font-weight: 800;
 }
 
 .overlay {
@@ -275,11 +142,6 @@ canvas {
   line-height: 2rem;
 }
 
-.story-text {
-  padding: 4rem;
-  text-align: justify;
-}
-
 .lightswitch {
   z-index: 5;
   max-height: 5rem;
@@ -294,40 +156,6 @@ canvas {
   margin: 0 auto;
 }
 
-.korean-stories {
-  padding: 4rem;
-  text-align: justify;
-  font-size: 2rem;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.story-container {
-  max-height: 40vh;
-  overflow: scroll;
-  margin: 2rem 0rem;
-}
-
-.about-container {
-  text-align: justify;
-}
-
-.image-item {
-  max-height: 13rem;
-  display: inline;
-  margin: 1rem;
-  border: rgb(82, 3, 3) solid 0.2rem;
-  border-radius: 0.3rem;
-}
-
-.image2 {
-  max-height: 11rem;
-  display: inline;
-  margin: 1rem;
-  border: rgb(82, 3, 3) solid 0.2rem;
-  border-radius: 0.3rem;
-}
-
 .portrait-image {
   float: right;
   box-shadow: var(--box-shadow-without-inset);
@@ -340,439 +168,10 @@ canvas {
   right: 2rem;
 }
 
-.loadingscreen {
-  position: absolute;
-  top: 0;
-  background: black;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.loader {
-  display: inline-flex;
-  font-size: 2rem;
-}
-
-.frame {
-  color: white;
-  background-color: var(--darkerRed);
-  box-shadow: var(--box-shadow-red);
-}
-
-.time {
-  color: white;
-  padding: .5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.stopwatch {
-  font-size: .7rem;
-  align-self: center;
-  padding: .5rem;
-}
-
-.pixelbutton {
-  margin: 1rem 1rem;
-  padding: .0rem .5rem;
-
-}
-
-button,
-.dialogbutton {
-  background-color: var(--pixelbuttonBackground);
-  box-shadow: var(--box-shadow-red);
-  cursor: pointer;
-}
-
-.cancel-button {
-  background-color: var(--cancelButtonBackground);
-  box-shadow: var(--box-shadow-red);
-  cursor: pointer;
-}
-
-.close-button {
-  background-color: var(--cancelButtonBackground);
-  box-shadow: var(--box-shadow-red);
-  position: absolute;
-  top: 2rem;
-  right: 1rem;
-}
-
-.start-button,
-.stop-button,
-.reset-button {
-  margin: .5rem auto;
-  width: fit-content;
-  padding: 0.2rem 0.2rem;
-}
-
-.start-button {
-  background-color: var(--darkGreen);
-  box-shadow: var(--box-shadow-green);
-}
-
-.stop-button {
-  background-color: var(--cancelButtonBackground);
-  box-shadow: var(--box-shadow-red);
-}
-
-.reset-button {
-  background-color: var(--pixelbuttonBackground);
-  box-shadow: var(--box-shadow-gray);
-}
-
-.start-button:active,
-.reset-button:active {
-  background-color: var(--pixelbuttonBoxShadow);
-}
-
-button:active {
-  box-shadow: var(--box-shadow-gray);
-}
-
-button:active,
-.cancel-button:active,
-.start-button:active,
-.stop-button:active,
-.reset-button:active {
-  transform: translateY(0.5rem);
-}
-
-.cancel-button:active {
-  box-shadow: var(--box-shadow-darker-red);
-}
-
-.close-button:active,
-.stop-button:active {
-  box-shadow: var(--box-shadow-darker-red);
-  background-color: var(--darkestRed);
-}
-
-.p-select-dropdown .p-icon {
-  color: transparent;
-}
-
-.p-select {
-  max-width: 10rem;
-  text-decoration: underline;
-}
-
-.p-select-list-container {
-  max-height: 20rem !important;
-  overflow: visible !important;
-}
-
-.p-select-list-container .p-select-list {
-  background-color: var(--darkerRed);
-  padding: 0.5rem 0.4rem;
-  box-shadow: var(--box-shadow-lighter-red);
-  cursor: pointer;
-  font-family: 'Tiny5', sans-serif;
-  font-size: 1rem;
-}
-
-.p-select-option:not(.p-select-option-selected):not(.p-disabled).p-focus:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: var(--hoverColor);
-}
-
-.p-button.btns {
-  background-color: var(--primaryButtonBackground);
-}
-
-.p-button.btns:not(:disabled):hover {
-  background: var(--primaryButtonBackground);
-}
-
-.p-icon {
-  color: rgba(255, 255, 255, 0);
-}
-
-.p-overlay-mask-enter {
-  background: #000000b8 !important;
-}
-
-.p-dialog-mask {
-  background-color: rgba(0, 0, 0, 0.37);
-  z-index: 2;
-}
-
-.p-dialog-header-actions {
-  display: none;
-}
-
-.p-dialog-content {
-  background-color: var(--darkestRed);
-  box-shadow: var(--box-shadow-red);
-}
-
-.p-galleria {
-
-  img {
-    max-width: 70%;
-    margin-top: 5rem;
-  }
-}
-
-.p-galleria-thumbnails-viewport {
-  margin-top: 2rem;
-}
-
-.p-galleria-items-container {
-  height: 12rem;
-  margin: 6rem;
-}
-
-.p-galleria {
-  overflow: hidden;
-  border-color: #00000000 !important;
-  background-color: var(--pixelbuttonBackground);
-  box-shadow: var(--box-shadow-red);
-}
-
-.p-galleria-thumbnail-item {
-  opacity: 0.4;
-}
-
-.p-galleria-thumbnail-item-current img {
-  border: rgb(231, 57, 57) solid 0.2rem;
-  border-radius: 0.5rem;
-}
-
-.p-galleria-hover-navigators .p-galleria-nav-button {
-  height: 3rem;
-  width: 1rem;
-  background-color: var(--darkerRed);
-  opacity: 1 !important;
-  box-shadow: var(--box-shadow-lighter-red);
-}
-
-.p-galleria-nav-button:not(.p-disabled):hover {
-  background: var(--darkestRed);
-}
-
-.p-galleria-thumbnail-nav-button {
-  display: none !important;
-}
-
-.p-dialog {
-  width: 50rem;
-  z-index: 5;
-}
-
-.p-icon {
-  color: var(--pixelbuttonBackground);
-  width: 2rem;
-  height: 2rem;
-}
-
 @media only screen and (max-width: 900px) {
   #app {
     text-align: center;
     width: 100%;
     margin: 0rem auto;
-  }
-
-  .lekton-regular {
-    font-size: 0.85rem;
-  }
-
-  .tiny5-regular {
-    font-size: 1rem;
-  }
-
-  h1 {
-    margin: 0rem 0.5rem;
-  }
-
-  p {
-    padding: .5rem;
-  }
-
-  img {
-    max-width: 60%;
-  }
-
-  nav {
-    width: 100%;
-    height: 3rem;
-  }
-
-  canvas {
-    max-height: 20rem;
-  }
-
-  .website-title {
-    line-height: 4.7rem;
-  }
-
-  .sten-smaller {
-    font-size: 5rem;
-  }
-
-  .header {
-    font-size: 1.2rem;
-  }
-
-  .homepage {
-    width: 100%;
-    padding: 0.8rem;
-    background-size: 10rem;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-
-  .homepage .p-accordionpanel {
-    width: 7.6rem;
-    line-height: 1rem;
-  }
-
-  .homepage .p-accordioncontent-content {
-    width: 7.5rem;
-    padding: 0.5rem 0rem;
-  }
-
-  .portrait-image {
-    max-height: 10rem;
-    margin: 2rem;
-  }
-
-  .nav-item {
-    width: 33%;
-    grid-row: 1;
-    line-height: 3rem;
-    white-space: nowrap;
-    font-size: 1rem;
-  }
-
-  .p-select {
-    max-width: 10rem;
-  }
-
-  .p-select-label {
-    text-align: center;
-  }
-
-  .p-accordionpanel {
-    line-height: 2rem;
-  }
-
-  .p-dialog {
-    width: 22rem;
-  }
-
-  .p-dialog-content {
-    font-size: 1rem;
-  }
-
-  .p-galleri.img,
-  .p-galleri.video {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
-
-  .p-galleria {
-    margin: 1rem;
-    width: 18rem;
-  }
-
-  .p-galleria-items-container {
-    height: 12rem;
-    margin: 2rem;
-  }
-
-  .p-galleria-hover-navigators .p-galleria-nav-button {
-    height: 2rem;
-    width: 2rem;
-    top: 70%;
-    background-color: var(--darkerRed);
-    box-shadow: var(--box-shadow-without-inset);
-  }
-
-  .p-galleria-nav-button:not(.p-disabled):hover {
-    background: transparent !important;
-  }
-
-  .home-dialog.p-dialog {
-    width: 15rem;
-    z-index: 5;
-  }
-
-  .content-container {
-    grid-template-columns: 100%;
-    gap: 4rem;
-    margin: 1rem 1rem;
-    padding: 1rem 1rem;
-  }
-
-  .page-header {
-    position: absolute;
-    font-size: 0.7rem;
-    top: 0.5rem;
-    left: 4.2rem;
-  }
-
-  .pixelbutton {
-    font-size: 1rem;
-  }
-
-  .start-button,
-  .stop-button,
-  .reset-button {
-    margin: 0.8rem auto;
-    width: fit-content;
-    font-size: 1rem;
-    padding: 0.1rem 0.7rem;
-  }
-
-  .story {
-    font-size: 0.7rem;
-    margin: 0rem 0rem;
-  }
-
-  .story-text {
-    padding: 1rem;
-  }
-
-  .korean-header {
-    font-size: 1.8rem;
-  }
-
-  .korean-stories {
-    padding: 2rem;
-    text-align: justify;
-    font-size: 1.5rem;
-  }
-
-  .content-container>div {
-    line-height: 1rem;
-  }
-
-  .oldman {
-    height: 4.5rem;
-    right: 10%;
-    top: 0rem;
-  }
-
-  .loader:before,
-  .loader:after {
-    width: 1rem;
-    justify-content: center;
-  }
-
-  .stopwatch {
-    font-size: 2rem;
-  }
-
-  .frame {
-    width: 80%;
   }
 }

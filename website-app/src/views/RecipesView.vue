@@ -3,24 +3,24 @@
 	<div>
 		<div class="content-container">
 			<div v-for=" ( story, index ) in stories " :key="index">
-				<div class="silkscreen-regular inherit-width">
+				<div class="silkscreen-regular">
 					<h1 class="silkscreen-regular text-shadow">{{ story.header }}</h1>
-					<button class="pixelbutton cancel-button tiny5-regular" type="button" @click="showDialog( index )">
+					<button class="tiny5-regular" type="button" @click="showDialog( index )">
 						Read
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
-					<div class="story-text lekton-regular">
+					<div class="lekton-regular">
 						<h1 class="silkscreen-regular text-shadow">
 							{{ story.header }}
 						</h1>
-						<div class="story-container">
+						<div>
 							<div v-for=" paragraph in formatText( story.text ) " :key="paragraph">
 								<p style="margin: 1rem;">{{ paragraph }}</p>
 							</div>
 						</div>
 					</div>
-					<button class="pixelbutton tiny5-regular close-button" @click="hideDialog">
+					<button class="tiny5-regular" @click="hideDialog">
 						Close
 					</button>
 				</Dialog>

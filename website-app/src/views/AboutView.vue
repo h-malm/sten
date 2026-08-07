@@ -1,7 +1,7 @@
 <template>
 	<h1 class="silkscreen-regular page-header text-shadow">About Me</h1>
 	<div>
-		<div class="lekton-regular about-container">
+		<div class="lekton-regular">
 			<p>
 				I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis. One could say
 				I am pretty fucking proud). My Master's thesis
@@ -44,7 +44,6 @@
 				me nightmares for days. I'm never never going out into the woods again).
 			</p>
 			<p>
-
 				I study in a field of predominantly men. My class had three girls out of
 				around 50 people. Can't say there is much different than a women-dominated field.
 				You see, drama isn't exclusive to groups of girls, cause there's been a bunch of
@@ -129,13 +128,10 @@
 				spotted and clicked on. This rant may or may not be fueled by some of the research I
 				did for my Master's and I think it is a valuable point, but I digress for now.
 			</p>
-
-
 			<p>
 				Whew! There's a lot more text than I thought there'd be. Apparently, I'm a yapper in
 				text-form.
 			</p>
-
 			<p>Anyways, enjoy the page and lmk if you hate it <3 </p>
 		</div>
 	</div>

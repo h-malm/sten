@@ -1,15 +1,10 @@
 <template>
   <nav class="tiny5-regular text-shadow">
-    <RouterLink class="nav-item" to="/">Home</RouterLink>
-    <RouterLink class="nav-item" to="/art">Art</RouterLink>
+    <RouterLink class="nav-item" to="/">Sten</RouterLink>
     <RouterLink class="nav-item" to="/crafts">Crafts</RouterLink>
-    <RouterLink class="nav-item" to="/knitting">Knitting</RouterLink>
-    <RouterLink class="nav-item" to="/korean">Languages</RouterLink>
     <RouterLink class="nav-item" to="/photos">Photos</RouterLink>
     <RouterLink class="nav-item" to="/plants">Plants</RouterLink>
     <RouterLink class="nav-item" to="/recipes">Recipes</RouterLink>
-    <RouterLink class="nav-item" to="/stopwatch">Stopwatch</RouterLink>
-    <RouterLink class="nav-item" to="/models">3D Models</RouterLink>
   </nav>
   <main>
     <RouterView />
@@ -28,5 +23,4 @@ function toggleImage() {
   activeImage.value = activeImage.value === image1 ? image2 : image1;
   isOverlayActive.value = !isOverlayActive.value;
 }
-
 </script>

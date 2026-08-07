@@ -3,19 +3,19 @@
 	<div>
 		<div class="content-container">
 			<div v-for=" ( model, index ) in models " :key="index">
-				<div class="pixelbutton silkscreen-regular inherit-width">
+				<div class="silkscreen-regular">
 					<h1 class="silkscreen-regular text-shadow">{{ model.header }}</h1>
-					<button class="cancel-button tiny5-regular" type="button" @click="showDialog( index )">
+					<button class="tiny5-regular" type="button" @click="showDialog( index )">
 						Show
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
-					<div class="story-text lekton-regular">
+					<div class="lekton-regular">
 						<component :is="model.content" />
 						<div style="text-align: center;">Be patient. It takes a while to render.
 						</div>
 					</div>
-					<button class="pixelbutton tiny5-regular close-button" @click="hideDialog">
+					<button class="tiny5-regular" @click="hideDialog">
 						Close
 					</button>
 				</Dialog>

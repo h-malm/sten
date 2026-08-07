@@ -16,7 +16,7 @@
 			<div>
 				<Stopwatch />
 			</div>
-			<div class="about-container">
+			<div>
 				<p>
 					This website is a personal website used to collect stuff I've made into one place! That
 					includes horror stories I've written, stuff I've made like knitting and baking, and stuff
@@ -36,9 +36,9 @@
 			<div>
 				STEN (me)
 				<div>
-					<img src="../assets/IMG_1117.jpg" class="portrait-image">
+					<img src="../assets/portrait-dithered.png" class="portrait-image">
 				</div>
-				<p class="bio">
+				<p>
 					24 ⊹ Frontend Dev ⊹ she/her
 				</p>
 			</div>
@@ -48,7 +48,7 @@
 				<img class="gifs" src="/src/assets/neocities.gif" />
 				<img class="gifs" src="/src/assets/geocities.gif" />
 			</div>
-			<div class="about-container">
+			<div>
 				<h1 class="text-shadow"">ABOUT ME</h1>
 				<p>
 					I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis. One
@@ -210,46 +210,19 @@
 <script setup>
 import Stopwatch from '../components/StopwatchView.vue';
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-import Dropdown from 'primevue/dropdown';
 import image1 from '/src/assets/images/thumbnail_IMG_1003.jpg';
 import image2 from '/src/assets/images/thumbnail_IMG_1005.jpg';
 import oldMan1 from '/src/assets/lightson.gif';
 import oldMan2 from '/src/assets/lightsoff.gif';
 import Navbars from '../components/Navbars.vue';
 
-const visible = ref( false );
-const router = useRouter();
 const activeImage = ref( image1 );
 const oldManActiveImage = ref( oldMan1 )
 const isOverlayActive = ref( false );
-const selectedCategory = ref( null );
-
-const categories = ref( [
-	{ label: 'Art', to: '/art', header: 'Content' },
-	{ label: 'Crafts', to: '/crafts', header: 'Content' },
-	{ label: 'Horror', to: '/horror', header: 'Content' },
-	{ label: 'Knitting', to: '/knitting', header: 'Content' },
-	{ label: 'Korean Practice', to: '/korean', header: 'Content' },
-	{ label: 'Photos', to: '/photos', header: 'Content' },
-	{ label: 'Plant tips', to: '/plants', header: 'Content' },
-	{ label: 'Recipes', to: '/recipes', header: 'Content' },
-	{ label: 'Stopwatch', to: '/stopwatch', header: 'Content' },
-	{ label: '3D Models', to: '/models', header: 'Content' },
-] );
-
-function navigateToCategory ( event ) {
-	const category = event.value;
-	if ( category ) {
-		router.push( { path: category.to } );
-		visible.value = false;
-	}
-}
 
 function toggleImage () {
 	activeImage.value = activeImage.value === image1 ? image2 : image1;
 	oldManActiveImage.value = oldManActiveImage.value === oldMan1 ? oldMan2 : oldMan1;
-	activeBackgImage.value = activeBackgImage.value === backgImage1 ? backgImage2 : backgImage1;
 	isOverlayActive.value = !isOverlayActive.value;
 }
 </script>
