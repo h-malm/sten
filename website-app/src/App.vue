@@ -15,9 +15,11 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap" rel="stylesheet">
   <link rel="icon" :href="favIcon" type="image/x-icon">
-  <Navbar />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <script setup lang="ts">
-import Navbar from './components/Navbar.vue';
+import favIcon from '/src/assets/images/iconofrock.jpeg'
 </script>

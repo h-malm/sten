@@ -1,6 +1,6 @@
 <template>
     <h1 class="silkscreen-regular page-header text-shadow">Art</h1>
-    <div class="scrollable-content">
+    <div>
         <p class="lekton-regular">A collection of stuff I've drawn or painted. I don't have a
             specific style, but mostly draw whatever is fun or I think will look good.
         </p>

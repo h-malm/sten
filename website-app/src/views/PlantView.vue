@@ -1,8 +1,8 @@
 <template>
 	<h1 class="silkscreen-regular page-header text-shadow">Plants</h1>
-	<div class="scrollable-content">
+	<div>
 		<div v-for=" ( item, index ) in stories " :key="index">
-			<div class="content-container-crafts">
+			<div class="content-container-single-col">
 				<div class="pixelbutton silkscreen-regular">
 					<h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
 					<img v-for=" image in getImages( item ) " :key="image" class="image2" :src="image">

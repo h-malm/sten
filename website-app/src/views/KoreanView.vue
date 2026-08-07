@@ -1,18 +1,19 @@
 <template>
 	<h1 class="silkscreen-regular page-header text-shadow">Korean Practice</h1>
-	<div class="scrollable-content">
+	<div>
 		<div class="content-container">
 			<div v-for=" ( story, index ) in stories " :key="index">
 				<div class=" tiny5-regular">
 					<h1 class="dongle-regular korean-header">
 						{{ story.header }}
 					</h1>
-					<button class="pixelbutton cancel-button" type="button" severity="secondary" @click="showDialog( index )">
+					<button class="pixelbutton cancel-button" type="button" severity="secondary"
+						@click="showDialog( index )">
 						Read
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
-					<div class="full-text dongle-regular">
+					<div class="story-text dongle-regular">
 						<h1 class="korean-header">
 							{{ story.header }}
 						</h1>

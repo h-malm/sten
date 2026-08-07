@@ -1,6 +1,6 @@
 <template>
   <h1 class="silkscreen-regular page-header text-shadow">Horror Stories</h1>
-  <div class="scrollable-content">
+  <div>
     <div class="content-container">
       <div v-for=" ( story, index ) in stories " :key="index">
         <div class=" silkscreen-regular">
@@ -10,11 +10,11 @@
           </button>
         </div>
         <Dialog :visible="visibleIndex === index" @hide="hideDialog">
-          <div class="full-text lekton-regular">
+          <div class="story-text lekton-regular">
             <h1 class="silkscreen-regular text-shadow">
               {{ story.header }}
             </h1>
-            <div class="story">
+            <div class="story-container">
               <div v-for=" paragraph in formatText( story.text ) " :key="paragraph">
                 <p style="margin: 1rem;">{{ paragraph }}</p>
               </div>

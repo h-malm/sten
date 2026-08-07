@@ -1,9 +1,8 @@
 <template>
 	<h1 class="silkscreen-regular page-header text-shadow">About Me</h1>
-	<div class="scrollable-content">
+	<div>
 		<div class="lekton-regular about-container">
 			<p>
-				<img src="../assets/IMG_1117.jpg" class="portrait-image">
 				I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis. One could say
 				I am pretty fucking proud). My Master's thesis
 				discussed the

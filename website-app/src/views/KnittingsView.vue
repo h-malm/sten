@@ -1,12 +1,12 @@
 <template>
 	<h1 class="silkscreen-regular page-header text-shadow">Knitting</h1>
-	<div class="scrollable-content">
+	<div>
 		<div v-for=" ( item, index ) in stories " :key="index">
-			<div class="content-container-crafts">
+			<div class="content-container-single-col">
 				<div class="pixelbutton silkscreen-regular">
 					<h1 class="silkscreen-regular text-shadow">{{ item.header }}</h1>
-					<a class="links" :href="item.url">{{ item.url }}</a>
-					<div class="story lekton-regular">
+					<a :href="item.url">{{ item.url }}</a>
+					<div class="story-container lekton-regular">
 						<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
 							<p style="margin: .5rem;">{{ paragraph }}</p>
 						</div>

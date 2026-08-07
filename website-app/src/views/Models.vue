@@ -1,6 +1,6 @@
 <template>
 	<h1 class="silkscreen-regular page-header text-shadow">3D Models</h1>
-	<div class="scrollable-content">
+	<div>
 		<div class="content-container">
 			<div v-for=" ( model, index ) in models " :key="index">
 				<div class="pixelbutton silkscreen-regular inherit-width">
@@ -10,7 +10,7 @@
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
-					<div class="full-text lekton-regular">
+					<div class="story-text lekton-regular">
 						<component :is="model.content" />
 						<div style="text-align: center;">Be patient. It takes a while to render.
 						</div>

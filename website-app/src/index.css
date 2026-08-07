@@ -12,7 +12,7 @@
 
 .lekton-regular {
   font-family: 'Lekton', monospace;
-  font-size: 1.2rem;
+  font-size: .9rem;
 }
 
 .dongle-regular {
@@ -40,34 +40,63 @@
   --hoverColor: rgb(207, 126, 126);
 
   --box-shadow-red:
-    0px 5px var(--cancelButtonBackground),
-    0px -5px var(--cancelButtonBackground),
-    5px 0px var(--cancelButtonBackground),
-    -5px 0px var(--cancelButtonBackground),
-    0px 10px var(--cancelButtonBoxShadow),
-    5px 5px var(--cancelButtonBoxShadow),
-    -5px 5px var(--cancelButtonBoxShadow),
-    inset 0px 5px #ffffff36;
+    0px 3px var(--cancelButtonBackground),
+    0px -3px var(--cancelButtonBackground),
+    3px 0px var(--cancelButtonBackground),
+    -3px 0px var(--cancelButtonBackground),
+    0px 6px var(--cancelButtonBoxShadow),
+    3px 3px var(--cancelButtonBoxShadow),
+    -3px 3px var(--cancelButtonBoxShadow),
+    inset 0px 3px #ffffff36;
 
   --box-shadow-darker-red:
-    0px 5px var(--darkestRed),
-    0px -5px var(--darkestRed),
-    5px 0px var(--darkestRed),
-    -5px 0px var(--darkestRed),
-    0px 10px var(--darkestRed),
-    5px 5px var(--darkestRed),
-    -5px 5px var(--darkestRed),
-    inset 0px 5px #00000000;
+    0px 3px var(--darkestRed),
+    0px -3px var(--darkestRed),
+    3px 0px var(--darkestRed),
+    -3px 0px var(--darkestRed),
+    0px 6px var(--darkestRed),
+    3px 3px var(--darkestRed),
+    -3px 3px var(--darkestRed),
+    inset 0px 3px #00000000;
 
   --box-shadow-lighter-red:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--darkerRed),
-    5px 5px var(--darkerRed),
-    -5px 5px var(--darkerRed),
-    inset 0px 5px #da757536;
+    0px 3px var(--darkerRed),
+    0px -3px var(--darkerRed),
+    3px 0px var(--darkerRed),
+    -3px 0px var(--darkerRed),
+    0px 6px var(--darkerRed),
+    3px 3px var(--darkerRed),
+    -3px 3px var(--darkerRed),
+    inset 0px 3px #da757536;
+
+  --box-shadow-without-inset:
+    0px 3px var(--darkerRed),
+    0px -3px var(--darkerRed),
+    3px 0px var(--darkerRed),
+    -3px 0px var(--darkerRed),
+    0px 6px var(--pixelbuttonBackground),
+    3px 3px var(--pixelbuttonBackground),
+    -3px 3px var(--pixelbuttonBackground),
+    inset 0px 3px #b9b9b936;
+
+  --box-shadow-green:
+    0px 3px var(--darkGreen),
+    0px -3px var(--darkGreen),
+    3px 0px var(--darkGreen),
+    -3px 0px var(--darkGreen),
+    0px 6px var(--darkerGreen),
+    3px 3px var(--darkerGreen),
+    -3px 3px var(--darkerGreen),
+    inset 0px 3px var(--lighGreen);
+
+  --box-shadow-gray: 0px 3px var(--pixelbuttonBoxShadow),
+    0px -3px var(--pixelbuttonBoxShadow),
+    3px 0px var(--pixelbuttonBoxShadow),
+    -3px 0px var(--pixelbuttonBoxShadow),
+    0px 6px var(--pixelbuttonBoxShadow),
+    3px 3px var(--pixelbuttonBoxShadow),
+    -3px 3px var(--pixelbuttonBoxShadow),
+    inset 0px 3px #ffffff36;
 }
 
 #app {
@@ -93,15 +122,19 @@ p {
   color: #fff;
 }
 
+a {
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
 nav {
-  grid-template-columns: max-content;
-  position: relative;
-  height: 2rem;
-  left: 23m;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   box-shadow: var(--box-shadow-red);
   background-color: var(--cancelButtonBackground);
   display: flex;
-  width: 45%;
+  margin: 1.5rem 0;
+  display: grid;
+  width: 32rem;
 }
 
 canvas {
@@ -111,35 +144,48 @@ canvas {
   width: auto;
 }
 
-.bg-image {
-  background: rgb(30, 21, 21);
-  background-image: radial-gradient(rgb(78, 27, 27) 2px, transparent 0);
-  background-size: 24px 24px;
-  background-position: 11px 47px;
+.bio {
+  font-size: .7rem;
+  line-height: 2rem;
 }
 
 .homepage .p-accordionpanel {
   width: 8rem;
 }
 
-.website-title {
-  float: left;
-  width: 100%;
-  line-height: 6rem;
+.home-nav-container {
+  display: grid;
+  grid-template-columns: 190px auto;
+  gap: 1rem;
+  height: 4rem;
 }
 
-.sten-smaller {
-  position: relative;
-  display: flex;
-  font-size: 5rem;
+.home-content-container {
+  display: grid;
+  grid-template-columns: 100px 435px 170px;
+  gap: 1rem;
+}
+
+.homepage {
+  padding: 1.5rem 1.5rem;
+  background-color: var(--pixelbuttonBoxShadow);
+  background-size: 20rem;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.bg-image {
+  background: rgb(30, 21, 21);
+  background-image: radial-gradient(rgb(66, 61, 61) 1px, #000 0);
+  background-size: 7px 7px;
+  background-position: 5px 5px;
 }
 
 .nav-item {
-  width: 35%;
-  grid-row: 1;
-  line-height: 2rem;
+  line-height: 1.3rem;
   white-space: nowrap;
-  font-size: 1.1rem;
+  font-size: .8rem;
   text-decoration: underline;
 }
 
@@ -147,6 +193,12 @@ canvas {
   cursor: pointer;
   text-decoration: underline;
   color: var(--hoverColor);
+}
+
+.website-title {
+  float: left;
+  width: 101%;
+  line-height: 6rem;
 }
 
 .header {
@@ -161,6 +213,13 @@ canvas {
 .page-header {
   margin: 1rem 0rem 0rem 0rem;
   font-size: 1.5rem;
+  text-align: left;
+}
+
+.sten-smaller {
+  position: relative;
+  display: flex;
+  font-size: 5rem;
 }
 
 .text-shadow {
@@ -181,15 +240,6 @@ canvas {
   font-weight: 800;
 }
 
-.homepage {
-  padding: 0.5rem 3rem;
-  background-color: var(--pixelbuttonBoxShadow);
-  background-size: 20rem;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -208,56 +258,40 @@ canvas {
   padding: 2rem 0rem;
 }
 
-.content-container-crafts {
+.content-container-single-col {
   display: grid;
   grid-template-columns: auto;
   gap: 2rem;
   margin: 5rem 1rem 1rem 1rem;
   padding: 1rem 1rem;
   background-color: var(--pixelbuttonBackground);
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
-    inset 0px 5px #b9b9b936;
+  box-shadow: var(--box-shadow-without-inset);
 }
 
 .content-container>div {
   background-color: var(--darkerRed);
   padding: 0.7rem;
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--darkerRed),
-    5px 5px var(--darkerRed),
-    -5px 5px var(--darkerRed),
-    inset 0px 5px #ffffff36;
+  box-shadow: var(--box-shadow-darker-red);
   line-height: 2rem;
 }
 
-.full-text {
+.story-text {
   padding: 4rem;
   text-align: justify;
 }
 
 .lightswitch {
-  height: 4%;
-  z-index: 3;
-  position: fixed;
+  z-index: 5;
+  max-height: 5rem;
   cursor: pointer;
-  right: 2rem;
-  top: 1.2rem;
+  position: absolute;
+  top: 30rem;
+  left: 5rem;
 }
 
-.float-left {
-  float: left;
-  text-align: justify;
+.gifs {
+  width: 5rem;
+  margin: 0 auto;
 }
 
 .korean-stories {
@@ -268,34 +302,14 @@ canvas {
   overflow-y: auto;
 }
 
-.story {
+.story-container {
   max-height: 40vh;
   overflow: scroll;
   margin: 2rem 0rem;
 }
 
-.scrollable-content {
-  overflow: scroll;
-  margin: 0rem;
-  height: 70vh;
-}
-
-.home-container {
-  overflow: scroll;
-  margin: 0rem 0rem 0rem 0rem;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
 .about-container {
   text-align: justify;
-}
-
-.image {
-  max-height: 30rem;
-  float: right;
-  margin: 0rem 2rem;
-  cursor: pointer;
 }
 
 .image-item {
@@ -315,30 +329,15 @@ canvas {
 }
 
 .portrait-image {
-  max-height: 20rem;
   float: right;
-  margin: 2rem 2rem;
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--pixelbuttonBackground),
-    5px 5px var(--pixelbuttonBackground),
-    -5px 5px var(--pixelbuttonBackground),
-    inset 0px 5px #b9b9b936;
-}
-
-.links {
-  text-decoration: underline;
-  font-size: 1rem;
+  box-shadow: var(--box-shadow-without-inset);
 }
 
 .oldman {
-  height: 20%;
+  height: 15rem;
   position: absolute;
-  top: 2rem;
-  right: 35rem;
+  top: 4rem;
+  right: 2rem;
 }
 
 .loadingscreen {
@@ -359,43 +358,29 @@ canvas {
 }
 
 .frame {
-  margin: 3rem auto;
   color: white;
-  width: 70%;
   background-color: var(--darkerRed);
-  box-shadow:
-    0px 5px var(--darkerRed),
-    0px -5px var(--darkerRed),
-    5px 0px var(--darkerRed),
-    -5px 0px var(--darkerRed),
-    0px 10px var(--darkestRed),
-    5px 5px var(--darkestRed),
-    -5px 5px var(--darkestRed),
-    inset 0px 5px #ffffff36;
+  box-shadow: var(--box-shadow-red);
 }
 
 .time {
   color: white;
-  padding: 1rem;
+  padding: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .stopwatch {
-  font-size: 4rem;
+  font-size: .7rem;
   align-self: center;
+  padding: .5rem;
 }
 
 .pixelbutton {
   margin: 1rem 1rem;
   padding: .0rem .5rem;
 
-}
-
-.cancel-button:active,
-button:active {
-  transform: translateY(0.5rem);
 }
 
 button,
@@ -411,15 +396,6 @@ button,
   cursor: pointer;
 }
 
-button:active {
-  box-shadow:
-    0px 5px var(--pixelbuttonBoxShadow),
-    0px -5px var(--pixelbuttonBoxShadow),
-    5px 0px var(--pixelbuttonBoxShadow),
-    -5px 0px var(--pixelbuttonBoxShadow),
-    inset 0px 5px var(--pixelbuttonBoxShadow);
-}
-
 .close-button {
   background-color: var(--cancelButtonBackground);
   box-shadow: var(--box-shadow-red);
@@ -428,75 +404,54 @@ button:active {
   right: 1rem;
 }
 
-.cancel-button:active {
-  box-shadow: var(--box-shadow-darker-red);
-}
-
-.close-button:active {
-  box-shadow: var(--box-shadow-darker-red);
-}
-
 .start-button,
 .stop-button,
 .reset-button {
-  margin: 1rem auto;
+  margin: .5rem auto;
   width: fit-content;
-  padding: 0.2rem 0.9rem;
+  padding: 0.2rem 0.2rem;
 }
 
 .start-button {
   background-color: var(--darkGreen);
-  box-shadow:
-    0px 5px var(--darkGreen),
-    0px -5px var(--darkGreen),
-    5px 0px var(--darkGreen),
-    -5px 0px var(--darkGreen),
-    0px 10px var(--darkerGreen),
-    5px 5px var(--darkerGreen),
-    -5px 5px var(--darkerGreen),
-    inset 0px 5px var(--lighGreen);
+  box-shadow: var(--box-shadow-green);
 }
 
 .stop-button {
   background-color: var(--cancelButtonBackground);
-  box-shadow:
-    0px 5px var(--cancelButtonBackground),
-    0px -5px var(--cancelButtonBackground),
-    5px 0px var(--cancelButtonBackground),
-    -5px 0px var(--cancelButtonBackground),
-    0px 10px var(--darkestRed),
-    5px 5px var(--darkestRed),
-    -5px 5px var(--darkestRed),
-    inset 0px 5px #ffffff36;
+  box-shadow: var(--box-shadow-red);
 }
 
 .reset-button {
   background-color: var(--pixelbuttonBackground);
-  box-shadow:
-    0px 5px var(--pixelbuttonBackground),
-    0px -5px var(--pixelbuttonBackground),
-    5px 0px var(--pixelbuttonBackground),
-    -5px 0px var(--pixelbuttonBackground),
-    0px 10px var(--pixelbuttonBoxShadow),
-    5px 5px var(--pixelbuttonBoxShadow),
-    -5px 5px var(--pixelbuttonBoxShadow),
-    inset 0px 5px #ffffff36;
+  box-shadow: var(--box-shadow-gray);
 }
 
+.start-button:active,
+.reset-button:active {
+  background-color: var(--pixelbuttonBoxShadow);
+}
+
+button:active {
+  box-shadow: var(--box-shadow-gray);
+}
+
+button:active,
+.cancel-button:active,
 .start-button:active,
 .stop-button:active,
 .reset-button:active {
   transform: translateY(0.5rem);
-  background-color: var(--pixelbuttonBoxShadow);
-  box-shadow:
-    0px 5px var(--pixelbuttonBoxShadow),
-    0px -5px var(--pixelbuttonBoxShadow),
-    5px 0px var(--pixelbuttonBoxShadow),
-    -5px 0px var(--pixelbuttonBoxShadow),
-    0px 10px var(--pixelbuttonBoxShadow),
-    5px 5px var(--pixelbuttonBoxShadow),
-    -5px 5px var(--pixelbuttonBoxShadow),
-    inset 0px 5px #ffffff36;
+}
+
+.cancel-button:active {
+  box-shadow: var(--box-shadow-darker-red);
+}
+
+.close-button:active,
+.stop-button:active {
+  box-shadow: var(--box-shadow-darker-red);
+  background-color: var(--darkestRed);
 }
 
 .p-select-dropdown .p-icon {
@@ -560,8 +515,7 @@ button:active {
 
 .p-galleria {
 
-  img,
-  video {
+  img {
     max-width: 70%;
     margin-top: 5rem;
   }
@@ -626,13 +580,33 @@ button:active {
     margin: 0rem auto;
   }
 
-  .home-container {
-    margin: 1rem 0.8rem 1rem 0rem;
+  .lekton-regular {
+    font-size: 0.85rem;
   }
 
-  .portrait-image {
-    max-height: 10rem;
-    margin: 2rem;
+  .tiny5-regular {
+    font-size: 1rem;
+  }
+
+  h1 {
+    margin: 0rem 0.5rem;
+  }
+
+  p {
+    padding: .5rem;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  nav {
+    width: 100%;
+    height: 3rem;
+  }
+
+  canvas {
+    max-height: 20rem;
   }
 
   .website-title {
@@ -641,6 +615,10 @@ button:active {
 
   .sten-smaller {
     font-size: 5rem;
+  }
+
+  .header {
+    font-size: 1.2rem;
   }
 
   .homepage {
@@ -662,9 +640,9 @@ button:active {
     padding: 0.5rem 0rem;
   }
 
-  nav {
-    width: 100%;
-    height: 3rem;
+  .portrait-image {
+    max-height: 10rem;
+    margin: 2rem;
   }
 
   .nav-item {
@@ -675,19 +653,57 @@ button:active {
     font-size: 1rem;
   }
 
-  .dropdown-button {
-    width: 7rem;
-    margin: auto 0rem;
-    grid-row: 1;
-    line-height: 2rem;
-  }
-
   .p-select {
     max-width: 10rem;
   }
 
   .p-select-label {
     text-align: center;
+  }
+
+  .p-accordionpanel {
+    line-height: 2rem;
+  }
+
+  .p-dialog {
+    width: 22rem;
+  }
+
+  .p-dialog-content {
+    font-size: 1rem;
+  }
+
+  .p-galleri.img,
+  .p-galleri.video {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .p-galleria {
+    margin: 1rem;
+    width: 18rem;
+  }
+
+  .p-galleria-items-container {
+    height: 12rem;
+    margin: 2rem;
+  }
+
+  .p-galleria-hover-navigators .p-galleria-nav-button {
+    height: 2rem;
+    width: 2rem;
+    top: 70%;
+    background-color: var(--darkerRed);
+    box-shadow: var(--box-shadow-without-inset);
+  }
+
+  .p-galleria-nav-button:not(.p-disabled):hover {
+    background: transparent !important;
+  }
+
+  .home-dialog.p-dialog {
+    width: 15rem;
+    z-index: 5;
   }
 
   .content-container {
@@ -708,9 +724,13 @@ button:active {
     font-size: 1rem;
   }
 
-  .home-dialog.p-dialog {
-    width: 15rem;
-    z-index: 5;
+  .start-button,
+  .stop-button,
+  .reset-button {
+    margin: 0.8rem auto;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 0.1rem 0.7rem;
   }
 
   .story {
@@ -718,44 +738,8 @@ button:active {
     margin: 0rem 0rem;
   }
 
-  .full-text {
+  .story-text {
     padding: 1rem;
-  }
-
-  h1 {
-    margin: 0rem 0.5rem;
-  }
-
-  p {
-    padding: .5rem;
-  }
-
-  .padding {
-    padding: 0.5rem;
-  }
-
-  .p-accordionpanel {
-    line-height: 2rem;
-  }
-
-  .p-dialog {
-    width: 22rem;
-  }
-
-  .header {
-    font-size: 1.2rem;
-  }
-
-  .p-dialog-content {
-    font-size: 1rem;
-  }
-
-  .lekton-regular {
-    font-size: 0.85rem;
-  }
-
-  .tiny5-regular {
-    font-size: 1rem;
   }
 
   .korean-header {
@@ -772,64 +756,10 @@ button:active {
     line-height: 1rem;
   }
 
-  .float-left {
-    display: flex;
-    text-align: justify;
-  }
-
-  .scrollable-content {
-    margin: 1rem 0.8rem;
-  }
-
-  .p-galleri.img,
-  .p-galleri.video {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
-
-  .p-galleria {
-    margin: 1rem;
-    width: 18rem;
-  }
-
-  .p-galleria-items-container {
-    height: 12rem;
-    margin: 2rem;
-  }
-
-  img,
-  video {
-    max-width: 60%;
-  }
-
-  .underlined {
-    text-decoration: underline;
-  }
-
   .oldman {
     height: 4.5rem;
     right: 10%;
     top: 0rem;
-  }
-
-  .p-galleria-hover-navigators .p-galleria-nav-button {
-    height: 2rem;
-    width: 2rem;
-    top: 70%;
-    background-color: var(--darkerRed);
-    box-shadow:
-      0px 5px var(--darkerRed),
-      0px -5px var(--darkerRed),
-      5px 0px var(--darkerRed),
-      -5px 0px var(--darkerRed),
-      0px 10px var(--pixelbuttonBackground),
-      5px 5px var(--pixelbuttonBackground),
-      -5px 5px var(--pixelbuttonBackground),
-      inset 0px 5px #b9b9b936;
-  }
-
-  .p-galleria-nav-button:not(.p-disabled):hover {
-    background: transparent !important;
   }
 
   .loader:before,
@@ -844,25 +774,5 @@ button:active {
 
   .frame {
     width: 80%;
-  }
-
-  .start-button,
-  .stop-button,
-  .reset-button {
-    margin: 0.8rem auto;
-    width: fit-content;
-    font-size: 1rem;
-    padding: 0.1rem 0.7rem;
-  }
-
-  canvas {
-    max-height: 20rem;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .oldman {
-    height: 10rem;
-    right: 0rem;
   }
 }
