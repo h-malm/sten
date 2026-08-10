@@ -6,17 +6,44 @@
 		<div class="overlay" v-if=" isOverlayActive "></div>
 		<div class="home-nav-container">
 			<div>
-				<h1 class="silkscreen-regular page-header text-shadow">Homepage</h1>
+				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
 			</div>
 			<div>
-				<Navbars />
+				<h1 class="silkscreen-regular page-header">Homepage</h1>
 			</div>
+			<Navbars />
 		</div>
 		<div class="home-content-container">
-			<div>
+			<div id="left-panel">
+				<div class="section" id="calendar">
+					<div class="calendar lekton-regular">
+						<div class="calendar-header tiny5-regular">
+							<div id="month-year"></div>
+						</div>
+						<div class="calendar-body">
+							<div class="calendar-weekdays">
+								<div>M</div>
+								<div>T</div>
+								<div>W</div>
+								<div>T</div>
+								<div>F</div>
+								<div>S</div>
+								<div>S</div>
+							</div>
+							<div class="calendar-dates">
+							</div>
+						</div>
+					</div>
+				</div>
 				<Stopwatch />
+				<div id="gifs">
+					<img class="gifs" src="/src/assets/bestonphone.gif" />
+					<img class="gifs" src="/src/assets/waves.gif" />
+					<img class="gifs" src="/src/assets/neocities.gif" />
+					<img class="gifs" src="/src/assets/geocities.gif" />
+				</div>
 			</div>
-			<div>
+			<div id="main-content">
 				<p>
 					This website is a personal website used to collect stuff I've made into one place! That
 					includes horror stories I've written, stuff I've made like knitting and baking, and stuff
@@ -32,24 +59,7 @@
 					recently
 					implemented this website, but I look forward to filling it with my creative work!
 				</p>
-			</div>
-			<div>
-				STEN (me)
-				<div>
-					<img src="../assets/portrait-dithered.png" class="portrait-image">
-				</div>
-				<p>
-					24 ⊹ Frontend Dev ⊹ she/her
-				</p>
-			</div>
-			<div>
-				<img class="gifs" src="/src/assets/bestonphone.gif" />
-				<img class="gifs" src="/src/assets/waves.gif" />
-				<img class="gifs" src="/src/assets/neocities.gif" />
-				<img class="gifs" src="/src/assets/geocities.gif" />
-			</div>
-			<div>
-				<h1 class="text-shadow"">ABOUT ME</h1>
+				<h1>ABOUT ME</h1>
 				<p>
 					I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis. One
 					could
@@ -64,8 +74,8 @@
 					depth of research I would have wanted to. Still, I learned a lot from it. It definitely
 					peaked my interest in accessibility, usability, and global website design trends.
 				</p>
-				<br/>
-				<h1 class=" text-shadow">What does Sten like and dislike?</h1>
+				<br />
+				<h1>What does Sten like and dislike?</h1>
 				<p>
 					You want to get to know me moore~? Well, since you're so curious, I
 					like creative stuff, such as drawing, pottery, and painting. I also like building
@@ -114,7 +124,7 @@
 					dick).
 				</p>
 				<br />
-				<h1 class="text-shadow">Why make a website?</h1>
+				<h1>Why make a website?</h1>
 				<p>
 					Actually, the initial point of this website was to make something to show my
 					development and design skills when I apply for jobs. Since,
@@ -135,7 +145,7 @@
 					personalized website with blog-like content.
 				</p>
 				<br />
-				<h1 class="text-shadow">Guide to Sten's website</h1>
+				<h1>Guide to Sten's website</h1>
 				<p>
 					A little guide for this website might be good :) I was inspired by the 90s
 					websites when the computer screens were much smaller (I'm implementing the website
@@ -200,8 +210,22 @@
 				<br />
 				<p>Anyways, enjoy the page and lmk if you hate it <3 </p>
 			</div>
-			<div>
-				<img src="/src/assets/reading.gif" />
+			<div id="right-panel">
+				<div>
+					<p>STEN (me)</p>
+					<div class="profile">
+						<div class="portrait-image">
+							<img src="/src/assets/portrait-dithered.png" class="dithered" />
+							<img src="/src/assets/portrait.jpg" class="undithered" />
+						</div>
+					</div>
+					<p>
+						24 ⊹ Frontend Dev ⊹ she/her
+					</p>
+				</div>
+				<div>
+					<img src="/src/assets/reading.gif" />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -209,7 +233,7 @@
 
 <script setup>
 import Stopwatch from '../components/StopwatchView.vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import image1 from '/src/assets/images/thumbnail_IMG_1003.jpg';
 import image2 from '/src/assets/images/thumbnail_IMG_1005.jpg';
 import oldMan1 from '/src/assets/lightson.gif';
@@ -220,9 +244,62 @@ const activeImage = ref( image1 );
 const oldManActiveImage = ref( oldMan1 )
 const isOverlayActive = ref( false );
 
+
 function toggleImage () {
 	activeImage.value = activeImage.value === image1 ? image2 : image1;
 	oldManActiveImage.value = oldManActiveImage.value === oldMan1 ? oldMan2 : oldMan1;
 	isOverlayActive.value = !isOverlayActive.value;
 }
+
+onMounted( () => {
+	const calendarDates = document.querySelector( '.calendar-dates' );
+	const monthYear = document.getElementById( 'month-year' );
+
+	let currentDate = new Date();
+	let currentMonth = currentDate.getMonth();
+	let currentYear = currentDate.getFullYear();
+
+	const months = [
+		'January', 'February', 'March', 'April', 'May', 'June',
+		'July', 'August', 'September', 'October', 'November', 'December'
+	];
+
+	function renderCalendar ( month, year ) {
+		monthYear.textContent = `${months[month]} ${year}`;
+
+		// Get today's date
+		const today = new Date();
+
+		// Gets the weekday by number, i.e. Wednesday returns 3.
+		const firstDay = new Date( year, month, 0 ).getDay();
+
+		// Gets the number of days in the month 
+		const daysInMonth = new Date( year, month + 1, 0 ).getDate();
+
+		// Insert blank spaces before the first date of the month 
+		for ( let i = 0; i < firstDay; i++ ) {
+			const blank = document.createElement( 'div' );
+			calendarDates.appendChild( blank );
+		}
+
+		// Insert the days of the month as divs 
+		for ( let i = 1; i <= daysInMonth; i++ ) {
+			const day = document.createElement( 'div' );
+			day.textContent = i;
+
+			// Highlight today's date 
+			if (
+				i === today.getDate() &&
+				year === today.getFullYear() &&
+				month === today.getMonth()
+			) {
+				day.classList.add( 'current-date' );
+			}
+
+			calendarDates.appendChild( day );
+		}
+	}
+
+	renderCalendar( currentMonth, currentYear );
+} )
 </script>
