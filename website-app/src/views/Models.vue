@@ -1,10 +1,19 @@
 <template>
-	<h1 class="silkscreen-regular page-header text-shadow">3D Models</h1>
-	<div>
+	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+		<img src="../assets/forrest-dithered-top.png" />
+		<div class="home-nav-container">
+			<div>
+				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
+			</div>
+			<div>
+				<h1 class="silkscreen-regular page-header">3D Models</h1>
+			</div>
+			<Navbars />
+		</div>
 		<div class="content-container">
 			<div v-for=" ( model, index ) in models " :key="index">
 				<div class="silkscreen-regular">
-					<h1 class="silkscreen-regular text-shadow">{{ model.header }}</h1>
+					<h1 class="silkscreen-regular ">{{ model.header }}</h1>
 					<button class="tiny5-regular" type="button" @click="showDialog( index )">
 						Show
 					</button>
@@ -28,6 +37,7 @@
 import { ref } from 'vue'
 import Dialog from 'primevue/dialog'
 import Cactus from '@/components/Cactus.vue'
+import Navbars from '@/components/Navbars.vue'
 import TinyRoom from '@/components/TinyRoom.vue'
 import Peaches from '@/components/Peaches.vue'
 

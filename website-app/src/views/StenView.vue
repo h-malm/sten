@@ -1,7 +1,5 @@
 <template>
 	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
-		<img src="../assets/under construction.gif" style="position:fixed; width: 12rem; left: 0;" />
-		<img src="../assets/under construction.gif" style="position:fixed; width: 12rem; bottom:0; right: 0;" />
 		<img src="../assets/forrest-dithered-top.png" />
 		<img loading="lazy" :src="oldManActiveImage" alt="An old man reading the newspaper" class="oldman">
 		<img v-on:click="toggleImage" :src="activeImage" alt="A Lightswitch" class="lightswitch">
@@ -11,7 +9,7 @@
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
 			</div>
 			<div>
-				<h1 class="silkscreen-regular page-header">Homepage</h1>
+				<h1 class="silkscreen-regular page-header">Sten</h1>
 			</div>
 			<Navbars />
 		</div>

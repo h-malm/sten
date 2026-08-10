@@ -1,17 +1,26 @@
 <template>
-	<h1 class="silkscreen-regular page-header text-shadow">Recipes</h1>
-	<div>
+	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+		<img src="../assets/forrest-dithered-top.png" />
+		<div class="home-nav-container">
+			<div>
+				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
+			</div>
+			<div>
+				<h1 class="silkscreen-regular page-header">Recipes</h1>
+			</div>
+			<Navbars />
+		</div>
 		<div class="content-container">
 			<div v-for=" ( story, index ) in stories " :key="index">
 				<div class="silkscreen-regular">
-					<h1 class="silkscreen-regular text-shadow">{{ story.header }}</h1>
+					<h1 class="silkscreen-regular ">{{ story.header }}</h1>
 					<button class="tiny5-regular" type="button" @click="showDialog( index )">
 						Read
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
 					<div class="lekton-regular">
-						<h1 class="silkscreen-regular text-shadow">
+						<h1 class="silkscreen-regular ">
 							{{ story.header }}
 						</h1>
 						<div>
@@ -31,11 +40,12 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import Dialog from 'primevue/dialog'
-import Pancakes from '../textfiles/recipes/Pancakes.txt?raw'
 import ChocolateChipCookies from '../textfiles/recipes/ChocolateChipCookies.txt?raw'
+import Dialog from 'primevue/dialog'
 import Mudcake from '../textfiles/recipes/Mudcake.txt?raw'
 import Meatballs from '../textfiles/recipes/Meatballs.txt?raw'
+import Navbars from '@/components/Navbars.vue'
+import Pancakes from '../textfiles/recipes/Pancakes.txt?raw'
 
 const visibleIndex = ref( null )
 const stories = ref( [

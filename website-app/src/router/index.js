@@ -1,27 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import StenView from '../views/StenView.vue'
+import ArtView from '@/views/ArtView.vue'
+import HandiworkView from '@/views/HandiworkView.vue'
 import HorrorView from '../views/HorrorView.vue'
+import KoreanView from '../views/KoreanView.vue'
+import KnittingsView from '@/views/KnittingsView.vue'
+import MicroblogView from '@/views/MicroblogView.vue'
+import Models from '@/views/Models.vue'
 import PhotosView from '../views/PhotosView.vue'
 import PlantView from '../views/PlantView.vue'
 import RecipesView from '../views/RecipesView.vue'
-import CraftsView from '../views/Crafts.vue'
-import KoreanView from '../views/KoreanView.vue'
-import ArtView from '@/views/ArtView.vue'
-import KnittingsView from '@/views/KnittingsView.vue'
-import Models from '@/views/Models.vue'
+import StenView from '../views/StenView.vue'
 
 const router = createRouter({
   routes: [
     { path: '/', name: 'home', component: StenView },
+    { path: '/art', name: 'Art', component: ArtView },
+    { path: '/handiwork', name: 'Handiwork', component: HandiworkView },
     { path: '/horror', name: 'Horror', component: HorrorView },
+    { path: '/knitting', name: 'Knitting', component: KnittingsView },
+    { path: '/korean', name: 'Korean Practice', component: KoreanView },
+    { path: '/microblog', name: 'Blog', component: MicroblogView },
+    { path: '/models', name: '3D Models', component: Models },
     { path: '/photos', name: 'Photos', component: PhotosView },
     { path: '/plants', name: 'Plants', component: PlantView },
     { path: '/recipes', name: 'Recipes', component: RecipesView },
-    { path: '/crafts', name: 'Crafts', component: CraftsView },
-    { path: '/korean', name: 'Korean Practice', component: KoreanView },
-    { path: '/art', name: 'Art', component: ArtView },
-    { path: '/knitting', name: 'Knitting', component: KnittingsView },
-    { path: '/models', name: '3D Models', component: Models },
   ],
   history: createWebHistory(import.meta.env.BASE_URL),
 })

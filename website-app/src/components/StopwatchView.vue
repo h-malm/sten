@@ -1,6 +1,6 @@
 <template>
 	<div class="silkscreen-regular">
-		<h1 class="silkscreen-regular text-shadow">Stopwatch</h1>
+		<h1 class="silkscreen-regular ">Stopwatch</h1>
 		<div>
 			<div>{{ formattedTime }}</div>
 			<button @click="start">{{

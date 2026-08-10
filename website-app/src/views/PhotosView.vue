@@ -1,6 +1,16 @@
 <template>
-	<h1 class="silkscreen-regular page-header text-shadow">Photos</h1>
-	<div>
+	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+		<img src="../assets/forrest-dithered-top.png" />
+		<div class="home-nav-container">
+			<div>
+				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
+			</div>
+			<div>
+				<h1 class="silkscreen-regular page-header">Photos</h1>
+			</div>
+			<Navbars />
+		</div>
+
 		<p class="lekton-regular">A collection of photos I have taken throughout the years.
 			Some are taken with my old Oneplus 7 Pro, some with my new Google Pixel, and some with
 			good cameras (e.g. ixus, lumix, olympus, or nikon).
@@ -20,6 +30,8 @@
 <script setup>
 import { ref } from "vue";
 import { Galleria } from "primevue";
+import Navbars from "@/components/Navbars.vue";
+
 const images = ref( [] );
 
 const modules = import.meta.glob( '../assets/images/WebsiteImages/*', {
