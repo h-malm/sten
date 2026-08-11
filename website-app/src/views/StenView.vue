@@ -38,7 +38,6 @@
 				<Stopwatch />
 				<div id="gifs">
 					<img class="gifs" src="/src/assets/bestonphone.gif" />
-					<img class="gifs" src="/src/assets/waves.gif" />
 					<img class="gifs" src="/src/assets/neocities.gif" />
 					<img class="gifs" src="/src/assets/geocities.gif" />
 				</div>
