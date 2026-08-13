@@ -122,6 +122,12 @@ nav {
 .nav-item:hover {
   cursor: pointer;
   transform: translateY(-2px);
+  background-color: rgb(145, 21, 21);
+}
+
+.nav-item:active {
+  cursor: pointer;
+  transform: translateY(-2px);
   background-color: var(--nav-hover-background);
   box-shadow: var(--box-shadow-pixelated-hover);
 }

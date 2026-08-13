@@ -231,22 +231,23 @@
 </template>
 
 <script setup>
-import Stopwatch from '../components/StopwatchView.vue';
-import { ref, onMounted } from 'vue';
 import image1 from '/src/assets/images/thumbnail_IMG_1003.jpg';
 import image2 from '/src/assets/images/thumbnail_IMG_1005.jpg';
+import Navbars from '../components/Navbars.vue';
 import oldMan1 from '/src/assets/lightson.gif';
 import oldMan2 from '/src/assets/lightsoff.gif';
-import Navbars from '../components/Navbars.vue';
+import { ref, onMounted } from 'vue';
+import Stopwatch from '../components/StopwatchView.vue';
 
 const activeImage = ref( image1 );
 const oldManActiveImage = ref( oldMan1 )
 const isOverlayActive = ref( false );
 
-
 function toggleImage () {
+	// Switch between gifs of the old man reading/not reading and the lightswitch on/off
 	activeImage.value = activeImage.value === image1 ? image2 : image1;
 	oldManActiveImage.value = oldManActiveImage.value === oldMan1 ? oldMan2 : oldMan1;
+	// Add an overlay over the page to simulate "turning off the lights"
 	isOverlayActive.value = !isOverlayActive.value;
 }
 
@@ -275,13 +276,13 @@ onMounted( () => {
 		// Gets the number of days in the month 
 		const daysInMonth = new Date( year, month + 1, 0 ).getDate();
 
-		// Insert blank spaces before the first date of the month 
+		// Insert blank spaces for the weekdays before the first date of the month 
 		for ( let i = 0; i < firstDay; i++ ) {
 			const blank = document.createElement( 'div' );
 			calendarDates.appendChild( blank );
 		}
 
-		// Insert the days of the month as divs 
+		// Create the days of the month as divs 
 		for ( let i = 1; i <= daysInMonth; i++ ) {
 			const day = document.createElement( 'div' );
 			day.textContent = i;
@@ -289,8 +290,8 @@ onMounted( () => {
 			// Highlight today's date 
 			if (
 				i === today.getDate() &&
-				year === today.getFullYear() &&
-				month === today.getMonth()
+				month === today.getMonth() &&
+				year === today.getFullYear()
 			) {
 				day.classList.add( 'current-date' );
 			}
