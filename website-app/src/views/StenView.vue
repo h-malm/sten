@@ -58,21 +58,28 @@
 					recently
 					implemented this website, but I look forward to filling it with my creative work!
 				</p>
-				<h1>ABOUT ME</h1>
-				<p>
-					I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis. One
-					could
-					say
-					I am pretty fucking proud). My Master's thesis
-					discussed the
-					evolution of website design, focusing on
-					layout,
-					colors, navigation, and
-					visualized interactivity. Can't say it was anything special. I did not really reach
-					the
-					depth of research I would have wanted to. Still, I learned a lot from it. It definitely
-					peaked my interest in accessibility, usability, and global website design trends.
-				</p>
+				<h1 class="about-header">ABOUT ME</h1>
+				<div>
+					<div class="about-me-container">
+						<img src="/src/assets/reading.gif" class="reading-gif" />
+						<p>
+							I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis.
+							One
+							could
+							say
+							I am pretty fucking proud). My Master's thesis
+							discussed the
+							evolution of website design, focusing on
+							layout,
+							colors, navigation, and
+							visualized interactivity. </p>
+					</div>
+					<p>Can't say it was anything special. I did not really reach
+						the
+						depth of research I would have wanted to. Still, I learned a lot from it. It definitely
+						peaked my interest in accessibility, usability, and global website design trends.
+					</p>
+				</div>
 				<br />
 				<h1>What does Sten like and dislike?</h1>
 				<p>
@@ -223,7 +230,6 @@
 					</p>
 				</div>
 				<div>
-					<img src="/src/assets/reading.gif" />
 				</div>
 			</div>
 		</div>
