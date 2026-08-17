@@ -1,7 +1,6 @@
 <template>
 	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
 		<img src="../assets/forrest-dithered-top.png" />
-		<img loading="lazy" :src="oldManActiveImage" alt="An old man reading the newspaper" class="oldman">
 		<img v-on:click="toggleImage" :src="activeImage" alt="A Lightswitch" class="lightswitch">
 		<div class="overlay" v-if=" isOverlayActive "></div>
 		<div class="home-nav-container">
@@ -35,7 +34,9 @@
 						</div>
 					</div>
 				</div>
-				<Stopwatch />
+				<div id="stopwatch">
+					<Stopwatch />
+				</div>
 				<div id="gifs">
 					<img class="gifs" src="/src/assets/bestonphone.gif" />
 					<img class="gifs" src="/src/assets/neocities.gif" />
@@ -80,7 +81,6 @@
 						peaked my interest in accessibility, usability, and global website design trends.
 					</p>
 				</div>
-				<br />
 				<h1>What does Sten like and dislike?</h1>
 				<p>
 					You want to get to know me moore~? Well, since you're so curious, I
@@ -95,13 +95,11 @@
 					something that really makes me happy because it always results in a feeling of
 					accomplishment and self-sufficiency. And I learn something new!
 				</p>
-				<br />
 				<p>
 					I love a challenge. And by keeping an abundance
 					of plants, I have something that shows both progression from my hard-work and
 					something that gives me something back, like oxygen and hopefully vegetables.
 				</p>
-				<br />
 				<p>
 					Dude, I
 					looove everything horror. I consume
@@ -112,7 +110,6 @@
 					to give
 					me nightmares for days. I'm never never going out into the woods again).
 				</p>
-				<br />
 				<p>
 					I study in a field of predominantly men. My class had three girls out of
 					around 50 people. Can't say there is much different than a women-dominated field.
@@ -120,7 +117,6 @@
 					drama in the last year of our studies, all originating from guys. I thought
 					drama would disappear as people became adults, but I guess not.
 				</p>
-				<br />
 				<p>
 					I already said I don't like bugs, but I equally much do not like people who clearly value
 					friends based on social groups. Loyalty, however cliché it may sound, is
@@ -129,7 +125,6 @@
 					can eat a dick. Then they can go hang out with other fake people (who can also eat a
 					dick).
 				</p>
-				<br />
 				<h1>Why make a website?</h1>
 				<p>
 					Actually, the initial point of this website was to make something to show my
@@ -150,7 +145,6 @@
 					to maintain. React did feel a bit overkill for a
 					personalized website with blog-like content.
 				</p>
-				<br />
 				<h1>Guide to Sten's website</h1>
 				<p>
 					A little guide for this website might be good :) I was inspired by the 90s
@@ -163,7 +157,6 @@
 					any personal info here. You never know what websites are scraped for data to train
 					AI models.
 				</p>
-				<br />
 				<p>
 					There are horror stories I've written under <i>Content > Horror</i>, plant tips
 					under <i>Content > Plant Tips</i>, and so on. If you happen to be a native Korean
@@ -177,7 +170,6 @@
 					categories
 					and sort them).
 				</p>
-				<br />
 				<p>
 					I'd say my website is majorly focused on reading, so if you're not interested in
 					that, I'd like to suggest that you get
@@ -189,7 +181,6 @@
 					to
 					be here :)
 				</p>
-				<br />
 				<p>
 					It's worth noting that this page isn't made to be viewed on a small screen, such as
 					a
@@ -208,12 +199,10 @@
 					spotted and clicked on. This rant may or may not be fueled by some of the research I
 					did for my Master's and I think it is a valuable point, but I digress for now.
 				</p>
-				<br />
 				<p>
 					Whew! There's a lot more text than I thought there'd be. Apparently, I'm a yapper in
 					text-form.
 				</p>
-				<br />
 				<p>Anyways, enjoy the page and lmk if you hate it <3 </p>
 			</div>
 			<div id="right-panel">
@@ -225,11 +214,12 @@
 							<img src="/src/assets/portrait.jpg" class="undithered" />
 						</div>
 					</div>
-					<p>
-						24 ⊹ Frontend Dev ⊹ she/her
-					</p>
+					<p class="bio">24</p>
+					<p class="bio">Frontend Dev</p>
+					<p class="bio">she/her</p>
 				</div>
-				<div>
+				<div class="oldman">
+					<img loading="lazy" :src="oldManActiveImage" alt="An old man reading the newspaper">
 				</div>
 			</div>
 		</div>

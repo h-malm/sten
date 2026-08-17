@@ -1,6 +1,6 @@
 <template>
-  <img src="../assets/under construction.gif" style="position:fixed; width: 12rem; top:0;left: 0;" />
-  <img src="../assets/under construction.gif" style="position:fixed; width: 12rem; bottom:0; right: 0;" />
+  <!--<img src="../assets/under construction.gif" style="position:fixed; width: 12rem; top:0;left: 0;" />
+  <img src="../assets/under construction.gif" style="position:fixed; width: 12rem; bottom:0; right: 0;" />-->
   <nav class="tiny5-regular ">
 
     <RouterLink class="nav-item" to="/">Sten</RouterLink>
