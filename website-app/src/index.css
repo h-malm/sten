@@ -67,6 +67,11 @@
   font-size: 1.3rem;
 }
 
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-style: normal;
+}
+
 #app {
   text-align: center;
   width: 800px;
@@ -75,6 +80,11 @@
 
 #main-content {
   padding: .5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Lavishly Yours", cursive;
 }
 
 /**Items with border*/
