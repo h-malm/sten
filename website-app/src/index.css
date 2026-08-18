@@ -49,13 +49,14 @@
 
 .covered-by-your-grace-regular {
   font-family: "Covered By Your Grace", cursive;
-  font-weight: 400;
 }
 
 .nanum-gothic-coding-regular {
   font-family: "Nanum Gothic Coding", monospace;
-  font-weight: 400;
-  font-style: normal;
+}
+
+.kode-mono {
+  font-family: "Kode Mono", monospace;
 }
 
 
@@ -66,7 +67,7 @@
 }
 
 #main-content {
-  padding: .5rem;
+  padding: 1rem;
 }
 
 p {
@@ -77,6 +78,7 @@ p {
 
 h1 {
   font-size: 3rem;
+  text-align: left;
 }
 
 h2 {
@@ -244,7 +246,7 @@ nav {
 }
 
 .craft-item:hover {
-  background: url(./assets/button-borders-hover3.png);
+  background-image: url(./assets/button-borders-hover3.png);
   background-size: cover;
   color: var(--black);
 }
@@ -299,11 +301,11 @@ nav {
 
 .lightswitch {
   z-index: 5;
-  max-height: 5rem;
+  max-height: 2rem;
   cursor: pointer;
   position: absolute;
-  top: 30rem;
-  left: 5rem;
+  top: 22.5rem;
+  right: 32.5rem;
 }
 
 .gifs {
@@ -376,9 +378,11 @@ nav {
 #month-year {
   font-size: 1rem;
   font-weight: bold;
+  margin: 0 auto;
 }
 
-.calendar-weekdays, .calendar-dates {
+.calendar-weekdays,
+.calendar-dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
@@ -398,6 +402,70 @@ nav {
 .current-date {
   color: var(--black);
   background: white;
+}
+
+#stopwatch {
+  height: 14rem;
+}
+
+.stopwatch>img {
+  position: absolute;
+  top: 1.5rem;
+}
+
+.stopwatch>.undithered {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.stopwatch:hover>.undithered {
+  opacity: 1;
+}
+
+.stopwatch {
+  position: relative;
+  width: 9rem;
+  margin: 0rem auto;
+}
+
+.start-button,
+.stop-button,
+.reset-button {
+  font-size: .6rem;
+  font-family: "Kode Mono", monospace;
+  position: absolute;
+  padding-bottom: 2rem;
+}
+
+.start-button:hover,
+.stop-button:hover,
+.reset-button:hover {
+  cursor: pointer;
+}
+
+.stop-button {
+  top: 34.3rem;
+  left: 22rem;
+  transform: rotate(-45deg);
+}
+
+.start-button {
+  top: 34.1rem;
+  left: 27.9rem;
+  transform: rotate(40deg);
+}
+
+.reset-button {
+  top: 34rem;
+  left: 24.9rem;
+}
+
+#time {
+  position: absolute;
+  font-size: 1rem;
+  top: 38.3rem;
+  left: 23.4rem;
+  font-family: "Kode Mono", monospace;
 }
 
 @media only screen and (max-width: 800px) {

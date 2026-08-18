@@ -13,7 +13,7 @@
 		<div class="content-container">
 			<div v-for=" ( model, index ) in models " :key="index">
 				<div>
-					<h1>{{ model.header }}</h1>
+					<h2>{{ model.header }}</h2>
 					<button type="button" @click="showDialog( index )">
 						Show
 					</button>

@@ -2,6 +2,7 @@
   <nav>
     <RouterLink class="nav-item button-border1" to="/">Sten</RouterLink>
     <RouterLink class="nav-item button-border2" to="/microblog">Microblog</RouterLink>
+    <RouterLink class="nav-item button-border2" to="/recipes">Recipes</RouterLink>
     <div class="crafts-menu">
       <button class="nav-item button-border3">
         Crafts
@@ -13,7 +14,6 @@
         </RouterLink>
       </div>
     </div>
-    <RouterLink class="nav-item button-border2" to="/recipes">Recipes</RouterLink>
     <RouterLink class="nav-item button-border1" to="/photos">Photos</RouterLink>
     <RouterLink class="nav-item button-border3" to="/plants">Plants</RouterLink>
   </nav>

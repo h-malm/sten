@@ -13,7 +13,7 @@
 		<div v-for=" ( item, index ) in stories " :key="index">
 			<div class="content-container-single-col">
 				<div>
-					<h1>{{ item.header }}</h1>
+					<h2>{{ item.header }}</h2>
 					<img v-for=" image in getImages( item ) " :key="image" class="image2" :src="image">
 					<div>
 						<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">

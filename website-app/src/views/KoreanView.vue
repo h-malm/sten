@@ -4,18 +4,18 @@
 		<div class="content-container">
 			<div v-for=" ( story, index ) in stories " :key="index">
 				<div>
-					<h1 class="dongle-regular">
+					<h2>
 						{{ story.header }}
-					</h1>
+					</h2>
 					<button type="button" severity="secondary" @click="showDialog( index )">
 						Read
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
-					<div class="dongle-regular">
-						<h1>
+					<div>
+						<h2>
 							{{ story.header }}
-						</h1>
+						</h2>
 						<div>
 							{{ story.text }}
 						</div>

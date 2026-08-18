@@ -1,13 +1,14 @@
 <template>
 	<div>
 		<h3>Stopwatch</h3>
-		<div>
-			<div>{{ formattedTime }}</div>
-			<button @click="start">{{
-				stopOrContinue }}</button>
-			<button @click="stop">STOP</button>
-			<button @click="reset">RESET</button>
+		<div class="stopwatch">
+			<img src="../assets/stopwatch.png">
 		</div>
+		<div id="time">{{ formattedTime }}</div>
+		<button @click="start" class="start-button">{{
+			stopOrContinue }}</button>
+		<button @click="stop" class="stop-button">STOP</button>
+		<button @click="reset" class="reset-button">RESET</button>
 	</div>
 </template>
 

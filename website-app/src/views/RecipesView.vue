@@ -13,16 +13,16 @@
 		<div class="content-container">
 			<div v-for=" ( story, index ) in stories " :key="index">
 				<div>
-					<h1>{{ story.header }}</h1>
+					<h2>{{ story.header }}</h2>
 					<button type="button" @click="showDialog( index )">
 						Read
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
 					<div>
-						<h1>
+						<h2>
 							{{ story.header }}
-						</h1>
+						</h2>
 						<div>
 							<div v-for=" paragraph in formatText( story.text ) " :key="paragraph">
 								<p style="margin: 1rem;">{{ paragraph }}</p>
