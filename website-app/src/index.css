@@ -559,4 +559,39 @@ nav {
   .button-border1, .button-border2, .button-border3, .button-border1:hover, .button-border2:hover, .button-border3:hover {
     background-size: 5.2rem 1rem;
   }
+
+  .start-button,
+  .stop-button,
+  .reset-button {
+    font-size: .4rem;
+  }
+
+  #stopwatch {
+    height: 9rem;
+  }
+
+  .stopwatch {
+    width: 5rem;
+  }
+
+  .start-button {
+    top: 27.8rem;
+    left: 3.5rem;
+  }
+
+  .stop-button {
+    top: 27.8rem;
+    left: 1.3rem;
+  }
+
+  .reset-button {
+    top: 27.5rem;
+    left: 2.3rem;
+  }
+
+  #time {
+    font-size: .6rem;
+    top: 30.3rem;
+    left: 1.5rem;
+  }
 }
