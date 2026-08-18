@@ -16,10 +16,32 @@
 			<div id="left-panel">
 				<Calendar />
 				<Stopwatch id="stopwatch" />
+				<div id="interests">
+					<h3>
+						What I'm into now
+					</h3>
+					<p>
+						Movie: Leviticus
+					</p>
+					<p>
+						Music: NCT Dream
+					</p>
+					<p>
+						Food: apples and oats
+					</p>
+					<p>
+						Books: The Haunting of Hill House
+					</p>
+				</div>
 				<div id="gifs">
 					<img class="gifs" src="/src/assets/bestonphone.gif" />
-					<img class="gifs" src="/src/assets/neocities.gif" />
-					<img class="gifs" src="/src/assets/geocities.gif" />
+				</div>
+				<div id="musicplayer">
+					<iframe width="100%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2253490541&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+
 				</div>
 			</div>
 			<div id="main-content">
@@ -37,12 +59,13 @@
 					free
 					to roam around and explore.
 				</p>
-				<h2 class="about-header">About Me</h2>
+				<h2 class="subheaders-right">About Me</h2>
 				<div>
 					<div class="about-me-container">
 						<img src="/src/assets/reading.gif" class="reading-gif" />
 						<p>
-							I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's thesis.
+							I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's
+							thesis.
 							One
 							could
 							say
@@ -59,12 +82,12 @@
 						peaked my interest in accessibility, usability, and global website design trends.
 					</p>
 				</div>
-				<h2>What does Sten like and dislike?</h2>
+				<h2 class="subheaders-left">What does Sten like and dislike?</h2>
 				<p>
 					You want to get to know me moore~? Well, since you're so curious, I
-					like creative stuff, such as drawing, pottery, and painting. I also like building
+					like all stuff creative, including drawing, pottery, and painting. I also like building
 					stuff, which means I like woodworking, knitting, home-making, and sewing. I
-					love problen-solving, which makes living alone easy as pie. If something's wrong
+					love problem-solving, which makes living alone easy as pie. If something's wrong
 					in my apartment or I'm missing something, I'll fix it by looking up the manual or
 					finding a video about it, or I'll DIY the thing I'm missing. Some people
 					may prefer to save time and spend money by paying someone else to fix or make
@@ -103,7 +126,7 @@
 					can eat a dick. Then they can go hang out with other fake people (who can also eat a
 					dick).
 				</p>
-				<h2>Why make a website?</h2>
+				<h2 class="subheaders-left">Why make a website?</h2>
 				<p>
 					Actually, the initial point of this website was to make something to show my
 					development and design skills when I apply for jobs. Since,
@@ -123,7 +146,7 @@
 					to maintain. React did feel a bit overkill for a
 					personalized website with blog-like content.
 				</p>
-				<h2>Guide to Sten's website</h2>
+				<h2 class="subheaders-right">Guide to Sten's website</h2>
 				<p>
 					A little guide for this website might be good :) I was inspired by the 90s
 					websites when the computer screens were much smaller (I'm implementing the website
@@ -196,8 +219,33 @@
 						24 - frontend dev - she/her
 					</div>
 				</div>
+				<div id="musicplayer">
+					<iframe width="100%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2286756479&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+				</div>
 				<div class="oldman">
 					<img loading="lazy" :src="oldManActiveImage" alt="An old man reading the newspaper">
+
+					This is the reading nook. Here, you are to read. So pick up a book, news paper, magazine, or
+					fire
+					up
+					a webtoon/manga on your phone, and take a few minutes to immerse yourself in another world. Read
+					it
+					as if you were a side character without significance. Aim to understand the world as it is
+					written,
+					and avoid connecting that world to your own real world. Try to let go of chores, obligations,
+					and
+					every project that could be done or started, and let the absence of responsibilites in fiction
+					seep
+					into you.
+				</div>
+				<div id="musicplayer">
+					<iframe width="100%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A319564427&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
 				</div>
 			</div>
 		</div>

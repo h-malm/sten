@@ -2,43 +2,12 @@
 
 :root {
   --first: #070707;
-  --white: white;
+  --white: rgb(199, 199, 199);
   --black: black;
-
   --nav-button-background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 50%, rgba(0, 0, 0, 1) 100%);
   --nav-button-hover-background: linear-gradient(180deg, rgb(55, 6, 17) 0%, rgb(88, 26, 46) 42%, rgb(55, 6, 14) 100%);
-
   --body-primary: #383838;
-  --body-secondary: #0f0606;
-  --bsborder-color: rgb(97, 5, 5);
-  --bsborder-color-hover: rgb(44, 0, 0);
-  --box-shadow-pixelated:
-    0px 2px var(--bsborder-color),
-    0px -2px var(--bsborder-color),
-    2px 0px var(--bsborder-color),
-    -2px 0px var(--bsborder-color),
-    0px 2px var(--bsborder-color),
-    0px 0px var(--bsborder-color),
-    inset 2px 2px rgba(230, 217, 217, 0.726),
-    inset -2px -2px #1d01017c;
-  --box-shadow-pixelated-hover:
-    0px 2px var(--bsborder-color-hover),
-    0px -2px var(--bsborder-color-hover),
-    2px 0px var(--bsborder-color-hover),
-    -2px 0px var(--bsborder-color-hover),
-    0px 2px var(--bsborder-color-hover),
-    inset 2px 2px rgba(205, 205, 205, 0.87),
-    inset -2px -2px #9d9d9d7c;
-  --box-shadow-pixelated:
-    0px 2px var(--body-secondary),
-    0px -2px var(--body-secondary),
-    2px 0px var(--body-secondary),
-    -2px 0px var(--body-secondary),
-    0px 2px var(--body-secondary),
-    0px 0px var(--body-secondary),
-    inset 2px 2px rgba(230, 217, 217, 0.726),
-    inset -2px -2px #6665657c;
-  --dotted-border: 1px dashed white;
+  --dotted-border: 1px dashed var(--white);
 }
 
 /**fonts**/
@@ -82,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h1,
@@ -106,6 +75,8 @@ h3,
 #calendar,
 #stopwatch,
 #gifs,
+#musicplayer,
+#interests,
 .bio {
   border-bottom: var(--dotted-border);
 }
@@ -258,9 +229,14 @@ nav {
   display: inline;
 }
 
-.about-header {
+.subheaders-right {
   text-align: right;
-  margin-right: 1rem;
+  margin: 1rem 0rem;
+}
+
+.subheaders-left {
+  text-align: left;
+  margin: 1rem 0rem;
 }
 
 .page-header {
@@ -346,19 +322,23 @@ nav {
 }
 
 .oldman {
-  height: 11rem;
+  height: 43rem;
   width: auto;
   border-bottom: var(--dotted-border);
+  padding: 1rem;
+  font-size: .8rem;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 #calendar {
-  background-color: var(--first);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .calendar {
   width: 9rem;
-  background-color: var(--first);
-  margin: .9rem auto;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .calendar-header {
@@ -400,8 +380,8 @@ nav {
 }
 
 .current-date {
-  color: var(--black);
-  background: white;
+  color: var(--white);
+  background: var(--black);
 }
 
 #stopwatch {
@@ -466,6 +446,19 @@ nav {
   top: 38.3rem;
   left: 23.4rem;
   font-family: "Kode Mono", monospace;
+}
+
+#musicplayer {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+#interests {
+  padding: .5rem;
+}
+
+#interests p {
+  margin: .5rem 0;
 }
 
 @media only screen and (max-width: 800px) {
