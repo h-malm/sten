@@ -1,8 +1,9 @@
 <template>
     <div class="section" id="calendar">
-        <div class="calendar lekton-regular">
-            <div class="calendar-header tiny5-regular">
-                <div id="month-year"></div>
+        <div class="calendar">
+            <div class="calendar-header rubik-iso-regular">
+                <h3 id="month-year">
+                </h3>
             </div>
             <div class="calendar-body">
                 <div class="calendar-weekdays">

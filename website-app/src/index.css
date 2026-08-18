@@ -42,39 +42,26 @@
 }
 
 /**fonts**/
-.silkscreen-regular {
-  font-family: 'Silkscreen', sans-serif;
+
+.kranky-regular {
+  font-family: "Kranky", serif;
 }
 
-.bytesized-regular {
-  font-family: 'Bytesized', sans-serif;
-  font-size: 1.4rem;
+.covered-by-your-grace-regular {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
 }
 
-.lekton-regular {
-  font-family: 'Lekton', monospace;
-  font-size: .9rem;
-}
-
-.dongle-regular {
-  font-family: 'Dongle', sans-serif;
+.nanum-gothic-coding-regular {
+  font-family: "Nanum Gothic Coding", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
-.tiny5-regular {
-  font-family: 'Tiny5', sans-serif;
-  font-size: 1.3rem;
-}
-
-.lavishly-yours-regular {
-  font-family: "Lavishly Yours", cursive;
-  font-style: normal;
-}
 
 #app {
   text-align: center;
-  width: 800px;
+  width: 840px;
   margin: 0rem auto;
 }
 
@@ -82,9 +69,28 @@
   padding: .5rem;
 }
 
+p {
+  font-size: .9rem;
+  text-align: justify;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
 h1 {
+  font-size: 3rem;
+}
+
+h2 {
   font-size: 2rem;
-  font-family: "Lavishly Yours", cursive;
+}
+
+h1,
+h2,
+h3,
+.nav-item,
+.craft-item,
+#calendar {
+  font-family: "Kranky", serif;
+
 }
 
 /**Items with border*/
@@ -98,8 +104,13 @@ h1 {
 #calendar,
 #stopwatch,
 #gifs,
-.profile {
+.bio {
   border-bottom: var(--dotted-border);
+}
+
+#gifs,
+#stopwatch {
+  padding: .3rem;
 }
 
 #left-panel {
@@ -135,7 +146,7 @@ nav {
 
 .home-content-container {
   display: grid;
-  grid-template-columns: 140px auto 170px;
+  grid-template-columns: 176px auto 177px;
 }
 
 .homepage {
@@ -145,7 +156,7 @@ nav {
 
 .home-nav-container {
   display: grid;
-  grid-template-columns: 3rem auto 32rem;
+  grid-template-columns: 3rem auto 34rem;
 }
 
 .about-me-container {
@@ -153,27 +164,57 @@ nav {
   grid-template-columns: auto auto;
 }
 
+.button-border1 {
+  background-image: url(./assets/button-borders1.png);
+  background-size: cover;
+}
+
+.button-border2 {
+  background-size: cover;
+  background-image: url(./assets/button-borders4.png);
+}
+
+.button-border3 {
+  background-size: cover;
+  background-image: url(./assets/button-borders3.png);
+}
+
+.button-border1:hover,
+.button-border2:hover,
+.button-border3:hover {
+  color: var(--black);
+}
+
+.button-border1:hover {
+  background-image: url(./assets/button-borders-hover3.png);
+  background-size: cover;
+}
+
+.button-border2:hover {
+  background-size: cover;
+  background-image: url(./assets/button-borders-hover1.png);
+}
+
+.button-border3:hover {
+  background-image: url(./assets/button-borders-hover4.png);
+  background-size: cover;
+}
+
 .nav-item {
   white-space: nowrap;
-  font-size: .7rem;
-  height: 1.8rem;
-  line-height: 1.8rem;
-  min-width: 4.6rem;
-  background: var(--nav-button-background);
-  box-shadow: var(--box-shadow-pixelated);
+  font-size: 1rem;
+  line-height: 2.2rem;
+  min-width: 5.2rem;
 }
 
 .nav-item:hover {
   cursor: pointer;
-  transform: translateY(-2px);
-  background: var(--nav-button-hover-background);
+  transform: translateY(-3px);
 }
 
 .nav-item:active {
   cursor: pointer;
   transform: translateY(-2px);
-  background-color: var(--first);
-  box-shadow: var(--box-shadow-pixelated-hover);
 }
 
 .crafts-menu {
@@ -188,7 +229,7 @@ nav {
   min-width: 5rem;
   background: var(--first);
   color: var(--white);
-  box-shadow: var(--box-shadow-pixelated);
+  z-index: 5;
 }
 
 .crafts-menu:hover .crafts-dropdown {
@@ -199,11 +240,13 @@ nav {
 .craft-item {
   padding: 0.2rem 0.7rem;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .craft-item:hover {
-  background: var(--nav-button-hover-background);
-  box-shadow: var(--box-shadow-pixelated);
+  background: url(./assets/button-borders-hover3.png);
+  background-size: cover;
+  color: var(--black);
 }
 
 .reading-gif {
@@ -219,7 +262,6 @@ nav {
 }
 
 .page-header {
-  font-size: 1.5rem;
   text-align: left;
   line-height: 2.7rem;
 }
@@ -265,25 +307,25 @@ nav {
 }
 
 .gifs {
-  width: 5rem;
+  width: 7rem;
   margin: 0 auto;
 }
 
 .profile {
-  height: 12rem;
+  height: 18rem;
+  padding-top: .5rem;
 }
 
 .portrait-image {
   position: relative;
-  width: 7rem;
-  margin: 0 auto;
+  width: 100%;
+  height: 16rem;
+  margin: 0rem auto;
 }
 
 .portrait-image>img {
-  border: var(--dotted-border);
   position: absolute;
   top: 0;
-  width: 7rem;
 }
 
 .portrait-image>.undithered {
@@ -293,6 +335,12 @@ nav {
 
 .portrait-image:hover>.undithered {
   opacity: 1;
+}
+
+.bio {
+  padding: .5rem;
+  font-family: "Kranky", serif;
+  font-size: .8rem;
 }
 
 .oldman {
@@ -306,7 +354,7 @@ nav {
 }
 
 .calendar {
-  width: 7rem;
+  width: 9rem;
   background-color: var(--first);
   margin: .9rem auto;
 }
@@ -339,7 +387,6 @@ nav {
   cursor: pointer;
   color: var(--white);
   font-size: .7rem;
-  font-family: Arial, Helvetica, sans-serif;
   padding: .23rem;
 }
 
@@ -348,15 +395,9 @@ nav {
   font-size: .6rem;
 }
 
-.calendar-dates div:hover {
-  background-color: var(--first);
-  box-shadow: var(--box-shadow-pixelated);
-}
-
 .current-date {
-  background-color: var(--first);
-  color: var(--white);
-  box-shadow: var(--box-shadow-pixelated);
+  color: var(--black);
+  background: white;
 }
 
 @media only screen and (max-width: 800px) {
@@ -370,6 +411,18 @@ nav {
     padding-right: .5rem;
   }
 
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
   .home-content-container {
     display: grid;
     grid-template-columns: 6rem auto 6rem;
@@ -380,7 +433,7 @@ nav {
   }
 
   .oldman {
-    height: 5rem;
+    height: 6rem;
     margin: 0 auto;
   }
 
@@ -410,28 +463,18 @@ nav {
   }
 
   .home-nav-container {
-    padding: .5rem;
+    padding: 0.5rem 1rem .5rem 0rem;
     grid-template-columns: 3rem auto 16rem;
   }
 
-  .page-header {
-    font-size: 1rem;
-  }
-
   .calendar {
-    width: 5rem;
+    width: 5.5rem;
     background-color: var(--first);
-    margin: .3rem auto;
+    margin: 1rem auto;
   }
 
   .calendar-weekdays div {
     padding: 0rem;
-  }
-
-  .current-date {
-    background-color: var(--white);
-    color: var(--black);
-    box-shadow: var(--box-shadow-pixelated);
   }
 
   .bio {
@@ -442,6 +485,10 @@ nav {
   }
 
   .profile {
-    height: 8.5rem;
+    height: 11rem;
+  }
+
+  .button-border1, .button-border2, .button-border3, .button-border1:hover, .button-border2:hover, .button-border3:hover {
+    background-size: 5.2rem 1rem;
   }
 }

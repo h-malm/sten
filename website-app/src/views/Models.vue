@@ -1,30 +1,30 @@
 <template>
-	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
 		<img src="../assets/forrest-dithered-top.png" />
 		<div class="home-nav-container">
 			<div>
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
 			</div>
 			<div>
-				<h1 class="silkscreen-regular page-header">3D Models</h1>
+				<h2 class="page-header">3D Models</h2>
 			</div>
 			<Navbars />
 		</div>
 		<div class="content-container">
 			<div v-for=" ( model, index ) in models " :key="index">
-				<div class="silkscreen-regular">
-					<h1 class="silkscreen-regular ">{{ model.header }}</h1>
-					<button class="tiny5-regular" type="button" @click="showDialog( index )">
+				<div>
+					<h1>{{ model.header }}</h1>
+					<button type="button" @click="showDialog( index )">
 						Show
 					</button>
 				</div>
 				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
-					<div class="lekton-regular">
+					<div>
 						<component :is="model.content" />
 						<div style="text-align: center;">Be patient. It takes a while to render.
 						</div>
 					</div>
-					<button class="tiny5-regular" @click="hideDialog">
+					<button @click="hideDialog">
 						Close
 					</button>
 				</Dialog>

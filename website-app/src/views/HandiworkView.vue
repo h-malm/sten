@@ -1,22 +1,22 @@
 <template>
-	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+	<div class=" homepage" :class="{ 'overlay-active': isOverlayActive }">
 		<img src="../assets/forrest-dithered-top.png" />
 		<div class="home-nav-container">
 			<div>
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
 			</div>
 			<div>
-				<h1 class="silkscreen-regular page-header">Handiwork</h1>
+				<h2 class=" page-header">Handiwork</h2>
 			</div>
 			<Navbars />
 		</div>
 		<div id="main-content">
 			<div v-for=" ( item, index ) in stories " :key="index">
 				<div class="content-container-single-col">
-					<div class="silkscreen-regular">
-						<h1 class="silkscreen-regular ">{{ item.header }}</h1>
+					<div>
+						<h1>{{ item.header }}</h1>
 						<img v-for=" image in getImages( item ) " :key="image" :src="image">
-						<div class="lekton-regular">
+						<div>
 							<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
 								<p>{{ paragraph }}</p>
 							</div>

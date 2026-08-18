@@ -1,5 +1,5 @@
 <template>
-	<div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
 		<img src="../assets/forrest-dithered-top.png" />
 		<img v-on:click="toggleImage" :src="activeImage" alt="A Lightswitch" class="lightswitch">
 		<div class="overlay" v-if=" isOverlayActive "></div>
@@ -8,7 +8,7 @@
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
 			</div>
 			<div>
-				<h1 class="silkscreen-regular page-header">Sten</h1>
+				<h2 class="page-header">Sten</h2>
 			</div>
 			<Navbars />
 		</div>
@@ -23,6 +23,7 @@
 				</div>
 			</div>
 			<div id="main-content">
+				<h1>Welcome to Sten</h1>
 				<p>
 					This website is a personal website used to collect stuff I've made into one place! That
 					includes horror stories I've written, stuff I've made like knitting and baking, and stuff
@@ -34,11 +35,9 @@
 					it
 					is made using Vue (I'm hoping to work with Vue in the future). Feel
 					free
-					to roam around and explore. There's not gonna be a whole lot of content since I only
-					recently
-					implemented this website, but I look forward to filling it with my creative work!
+					to roam around and explore.
 				</p>
-				<h1 class="about-header">About Me</h1>
+				<h2 class="about-header">About Me</h2>
 				<div>
 					<div class="about-me-container">
 						<img src="/src/assets/reading.gif" class="reading-gif" />
@@ -60,7 +59,7 @@
 						peaked my interest in accessibility, usability, and global website design trends.
 					</p>
 				</div>
-				<h1>What does Sten like and dislike?</h1>
+				<h2>What does Sten like and dislike?</h2>
 				<p>
 					You want to get to know me moore~? Well, since you're so curious, I
 					like creative stuff, such as drawing, pottery, and painting. I also like building
@@ -104,7 +103,7 @@
 					can eat a dick. Then they can go hang out with other fake people (who can also eat a
 					dick).
 				</p>
-				<h1>Why make a website?</h1>
+				<h2>Why make a website?</h2>
 				<p>
 					Actually, the initial point of this website was to make something to show my
 					development and design skills when I apply for jobs. Since,
@@ -124,7 +123,7 @@
 					to maintain. React did feel a bit overkill for a
 					personalized website with blog-like content.
 				</p>
-				<h1>Guide to Sten's website</h1>
+				<h2>Guide to Sten's website</h2>
 				<p>
 					A little guide for this website might be good :) I was inspired by the 90s
 					websites when the computer screens were much smaller (I'm implementing the website
@@ -186,16 +185,16 @@
 			</div>
 			<div id="right-panel">
 				<div>
-					<p>STEN (me)</p>
 					<div class="profile">
+						<h3>STEN (me)</h3>
 						<div class="portrait-image">
 							<img src="/src/assets/portrait-dithered.png" class="dithered" />
 							<img src="/src/assets/portrait.jpg" class="undithered" />
 						</div>
 					</div>
-					<p class="bio">24</p>
-					<p class="bio">Frontend Dev</p>
-					<p class="bio">she/her</p>
+					<div class="bio">
+						24 - frontend dev - she/her
+					</div>
 				</div>
 				<div class="oldman">
 					<img loading="lazy" :src="oldManActiveImage" alt="An old man reading the newspaper">
@@ -212,7 +211,7 @@ import image1 from '/src/assets/images/thumbnail_IMG_1003.jpg';
 import image2 from '/src/assets/images/thumbnail_IMG_1005.jpg';
 import oldMan1 from '/src/assets/lightson.gif';
 import oldMan2 from '/src/assets/lightsoff.gif';
-import Stopwatch from '../components/StopwatchView.vue';
+import Stopwatch from '../components/Stopwatch.vue';
 import { ref } from 'vue';
 
 const activeImage = ref( image1 );

@@ -1,26 +1,26 @@
 <template>
-  <div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+  <div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
     <img src="../assets/forrest-dithered-top.png" />
     <div class="home-nav-container">
       <div>
         <img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
       </div>
       <div>
-        <h1 class="silkscreen-regular page-header">Horror</h1>
+        <h2 class="page-header">Horror</h2>
       </div>
       <Navbars />
     </div>
     <div id="main-content">
       <div v-for=" ( story, index ) in stories " :key="index">
-        <div class="silkscreen-regular">
-          <h1 class="silkscreen-regular">{{ story.header }}</h1>
-          <button class="tiny5-regular" type="button" @click="showDialog( index )">
+        <div>
+          <h1>{{ story.header }}</h1>
+          <button type="button" @click="showDialog( index )">
             Read
           </button>
         </div>
         <Dialog :visible="visibleIndex === index" @hide="hideDialog">
-          <div class="lekton-regular">
-            <h1 class="silkscreen-regular">
+          <div>
+            <h1>
               {{ story.header }}
             </h1>
             <div>
@@ -29,7 +29,7 @@
               </div>
             </div>
           </div>
-          <button class="tiny5-regular" @click="hideDialog">
+          <button @click="hideDialog">
             Close
           </button>
         </Dialog>

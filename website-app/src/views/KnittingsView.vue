@@ -1,21 +1,21 @@
 <template>
-	<h1 class="silkscreen-regular page-header ">Knitting</h1>
+	<h2 page-header ">Knitting</h2>
 	<div>
 		<div v-for=" ( item, index ) in stories " :key="index">
-			<div class="content-container-single-col">
-				<div class="silkscreen-regular">
-					<h1 class="silkscreen-regular ">{{ item.header }}</h1>
-					<a :href="item.url">{{ item.url }}</a>
-					<div class="lekton-regular">
-						<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
-							<p style="margin: .5rem;">{{ paragraph }}</p>
-						</div>
+		<div class="content-container-single-col">
+			<div>
+				<h2>{{ item.header }}</h2>
+				<a :href="item.url">{{ item.url }}</a>
+				<div>
+					<div v-for=" paragraph in formatText( item.text ) " :key="paragraph">
+						<p style="margin: .5rem;">{{ paragraph }}</p>
 					</div>
-					<img v-for=" image in getImages( item ) " :key="image" :src="image">
 				</div>
+				<img v-for=" image in getImages( item ) " :key="image" :src="image">
 			</div>
 		</div>
-	</div>
+		</div>
+		</div>
 </template>
 
 <script setup>

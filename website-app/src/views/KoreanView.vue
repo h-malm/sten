@@ -1,9 +1,9 @@
 <template>
-	<h1 class="silkscreen-regular page-header ">Korean Practice</h1>
+	<h2 class="page-header ">Korean Practice</h2>
 	<div>
 		<div class="content-container">
 			<div v-for=" ( story, index ) in stories " :key="index">
-				<div class="tiny5-regular">
+				<div>
 					<h1 class="dongle-regular">
 						{{ story.header }}
 					</h1>
@@ -20,7 +20,7 @@
 							{{ story.text }}
 						</div>
 					</div>
-					<button class="tiny5-regular" @click="hideDialog">
+					<button @click="hideDialog">
 						Close
 					</button>
 				</Dialog>

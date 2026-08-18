@@ -1,6 +1,6 @@
 <template>
-	<div class="bytesized-regular">
-		<p>Stopwatch</p>
+	<div>
+		<h3>Stopwatch</h3>
 		<div>
 			<div>{{ formattedTime }}</div>
 			<button @click="start">{{

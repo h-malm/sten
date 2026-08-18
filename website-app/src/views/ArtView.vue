@@ -1,17 +1,17 @@
 <template>
-    <div class="lekton-regular homepage" :class="{ 'overlay-active': isOverlayActive }">
+    <div class=" homepage" :class="{ 'overlay-active': isOverlayActive }">
         <img src="../assets/forrest-dithered-top.png" />
         <div class="home-nav-container">
             <div>
                 <img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
             </div>
             <div>
-                <h1 class="silkscreen-regular page-header">Art</h1>
+                <h2 class="page-header">Art</h2>
             </div>
             <Navbars />
         </div>
         <div>
-            <p class="lekton-regular">
+            <p class="">
                 A collection of stuff I've drawn or painted. I don't have a
                 specific style, but mostly draw whatever is fun or I think will look good.
             </p>
