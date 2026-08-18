@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h3>Stopwatch</h3>
+		<h3>Sten's Stopwatch</h3>
 		<div class="stopwatch">
 			<img src="../assets/stopwatch.png">
 		</div>

@@ -28,7 +28,6 @@
   font-family: "Kode Mono", monospace;
 }
 
-
 #app {
   text-align: center;
   width: 840px;
@@ -61,7 +60,6 @@ h3,
 .craft-item,
 #calendar {
   font-family: "Kranky", serif;
-
 }
 
 /**Items with border*/
@@ -130,11 +128,6 @@ nav {
 .home-nav-container {
   display: grid;
   grid-template-columns: 3rem auto 34rem;
-}
-
-.about-me-container {
-  display: grid;
-  grid-template-columns: auto auto;
 }
 
 .button-border1 {
@@ -225,7 +218,7 @@ nav {
 .reading-gif {
   position: relative;
   margin-right: .5rem;
-  width: 10rem;
+  width: 100%;
   display: inline;
 }
 
@@ -280,8 +273,8 @@ nav {
   max-height: 2rem;
   cursor: pointer;
   position: absolute;
-  top: 22.5rem;
-  right: 32.5rem;
+  top: 59rem;
+  right: 21rem;
 }
 
 .gifs {
@@ -393,15 +386,6 @@ nav {
   top: 1.5rem;
 }
 
-.stopwatch>.undithered {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
-}
-
-.stopwatch:hover>.undithered {
-  opacity: 1;
-}
-
 .stopwatch {
   position: relative;
   width: 9rem;
@@ -414,7 +398,7 @@ nav {
   font-size: .6rem;
   font-family: "Kode Mono", monospace;
   position: absolute;
-  padding-bottom: 2rem;
+  padding: 0 .5rem 2rem .5rem;
 }
 
 .start-button:hover,
@@ -423,21 +407,36 @@ nav {
   cursor: pointer;
 }
 
-.stop-button {
-  top: 34.3rem;
-  left: 22rem;
-  transform: rotate(-45deg);
+.start-button:hover {
+  top: 34.4rem;
+  left: 27.3rem;
+}
+
+.stop-button:hover {
+  top: 34.5rem;
+  left: 21.7rem;
+}
+
+.reset-button:hover {
+  top: 34.2rem;
+  left: 24.7rem;
 }
 
 .start-button {
   top: 34.1rem;
-  left: 27.9rem;
+  left: 27.7rem;
   transform: rotate(40deg);
+}
+
+.stop-button {
+  top: 34.3rem;
+  left: 21.6rem;
+  transform: rotate(-45deg);
 }
 
 .reset-button {
   top: 34rem;
-  left: 24.9rem;
+  left: 24.7rem;
 }
 
 #time {
@@ -451,6 +450,12 @@ nav {
 #musicplayer {
   background-color: var(--white);
   color: var(--black);
+  padding: .5rem;
+}
+
+#musicframe {
+  margin: .5rem 0;
+
 }
 
 #interests {
@@ -477,11 +482,15 @@ nav {
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: .8rem;
+  }
+
+  h3 {
+    font-size: .7rem;
   }
 
   p {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 
   .home-content-container {
@@ -494,7 +503,7 @@ nav {
   }
 
   .oldman {
-    height: 6rem;
+    height: 84rem;
     margin: 0 auto;
   }
 
@@ -528,10 +537,12 @@ nav {
     grid-template-columns: 3rem auto 16rem;
   }
 
+  #calendar {
+    height: 11.5rem;
+  }
+
   .calendar {
     width: 5.5rem;
-    background-color: var(--first);
-    margin: 1rem auto;
   }
 
   .calendar-weekdays div {
@@ -567,24 +578,48 @@ nav {
     width: 5rem;
   }
 
+  .stopwatch>img {
+    top: 1.9rem;
+  }
+
   .start-button {
-    top: 27.8rem;
-    left: 3.5rem;
+    top: 27.4rem;
+    left: 3.1rem;
   }
 
   .stop-button {
-    top: 27.8rem;
-    left: 1.3rem;
+    top: 27.4rem;
+    left: .6rem;
   }
 
   .reset-button {
-    top: 27.5rem;
-    left: 2.3rem;
+    top: 27.4rem;
+    left: 1.9rem;
+  }
+
+  .start-button:hover {
+    top: 27rem;
+    left: 3.3rem;
+  }
+
+  .stop-button:hover {
+    top: 27rem;
+    left: .6rem;
+  }
+
+  .reset-button:hover {
+    top: 27rem;
+    left: 2rem;
   }
 
   #time {
     font-size: .6rem;
-    top: 30.3rem;
+    top: 29.7rem;
     left: 1.5rem;
+  }
+
+  #musicframe {
+    margin: 0.5rem 0;
+    width: 5.3rem;
   }
 }

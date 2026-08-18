@@ -1,7 +1,6 @@
 <template>
 	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
 		<img src="../assets/forrest-dithered-top.png" />
-		<img v-on:click="toggleImage" :src="activeImage" alt="A Lightswitch" class="lightswitch">
 		<div class="overlay" v-if=" isOverlayActive "></div>
 		<div class="home-nav-container">
 			<div>
@@ -18,30 +17,20 @@
 				<Stopwatch id="stopwatch" />
 				<div id="interests">
 					<h3>
-						What I'm into now
+						What's currently inside Sten's brain
 					</h3>
-					<p>
-						Movie: Leviticus
-					</p>
-					<p>
-						Music: NCT Dream
-					</p>
-					<p>
-						Food: apples and oats
-					</p>
-					<p>
-						Books: The Haunting of Hill House
+					<p class="covered-by-your-grace-regular">
+						Leviticus
+						<br>
+						NCT Dream
+						<br>
+						Apples and cinnamon
+						<br>
+						The Haunting of Hill House
 					</p>
 				</div>
 				<div id="gifs">
 					<img class="gifs" src="/src/assets/bestonphone.gif" />
-				</div>
-				<div id="musicplayer">
-					<iframe width="100%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2253490541&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-					</iframe>
-
 				</div>
 			</div>
 			<div id="main-content">
@@ -59,10 +48,10 @@
 					free
 					to roam around and explore.
 				</p>
-				<h2 class="subheaders-right">About Me</h2>
+				<img src="/src/assets/reading.gif" class="reading-gif" />
+				<h2 class="subheaders-right">About Sten</h2>
 				<div>
-					<div class="about-me-container">
-						<img src="/src/assets/reading.gif" class="reading-gif" />
+					<div>
 						<p>
 							I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's
 							thesis.
@@ -209,7 +198,7 @@
 			<div id="right-panel">
 				<div>
 					<div class="profile">
-						<h3>STEN (me)</h3>
+						<h3>STEN</h3>
 						<div class="portrait-image">
 							<img src="/src/assets/portrait-dithered.png" class="dithered" />
 							<img src="/src/assets/portrait.jpg" class="undithered" />
@@ -220,14 +209,44 @@
 					</div>
 				</div>
 				<div id="musicplayer">
-					<iframe width="100%" height="20rem" scrolling="no" frameborder="no"
+					<h3 class="covered-by-your-grace-regular">Lately, Sten's been listening to:</h3>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2253490541&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A319564427&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
 						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2286756479&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A385433897&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1436136427&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A705970902&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A278689076&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
+					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
+						allow="autoplay; encrypted-media"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1247364829&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+					</iframe>
 				</div>
 				<div class="oldman">
+					<img v-on:click="toggleImage" :src="activeImage" alt="A Lightswitch" class="lightswitch">
 					<img loading="lazy" :src="oldManActiveImage" alt="An old man reading the newspaper">
-
 					This is the reading nook. Here, you are to read. So pick up a book, news paper, magazine, or
 					fire
 					up
@@ -241,12 +260,7 @@
 					seep
 					into you.
 				</div>
-				<div id="musicplayer">
-					<iframe width="100%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
-						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A319564427&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-					</iframe>
-				</div>
+
 			</div>
 		</div>
 	</div>
