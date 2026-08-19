@@ -1,6 +1,6 @@
 <template>
 	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
-		<img src="../assets/forrest-dithered-top.png" />
+		<img src="../assets/flowers-top.png" />
 		<div class="overlay" v-if=" isOverlayActive "></div>
 		<div class="home-nav-container">
 			<div>
@@ -48,7 +48,7 @@
 					free
 					to roam around and explore.
 				</p>
-				<img src="/src/assets/reading.gif" class="reading-gif" />
+				<img src="/src/assets/panorama1.png" class="panorama" />
 				<h2 class="subheaders-right">About Sten</h2>
 				<div>
 					<div>
@@ -71,6 +71,7 @@
 						peaked my interest in accessibility, usability, and global website design trends.
 					</p>
 				</div>
+				<img src="/src/assets/panorama2.png" class="panorama" />
 				<h2 class="subheaders-left">What does Sten like and dislike?</h2>
 				<p>
 					You want to get to know me moore~? Well, since you're so curious, I
@@ -211,36 +212,28 @@
 				<div id="musicplayer">
 					<h3 class="covered-by-your-grace-regular">Lately, Sten's been listening to:</h3>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2253490541&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A319564427&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2286756479&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A385433897&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1436136427&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A705970902&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A278689076&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 					<iframe id="musicframe" width="90%" height="20rem" scrolling="no" frameborder="no"
-						allow="autoplay; encrypted-media"
 						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1247364829&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 					</iframe>
 				</div>
@@ -269,8 +262,8 @@
 <script setup>
 import Calendar from '@/components/Calendar.vue';
 import Navbars from '../components/Navbars.vue';
-import image1 from '/src/assets/images/thumbnail_IMG_1003.jpg';
-import image2 from '/src/assets/images/thumbnail_IMG_1005.jpg';
+import image1 from '/src/assets/images/thumbnail_IMG_1003.png';
+import image2 from '/src/assets/images/thumbnail_IMG_1005.png';
 import oldMan1 from '/src/assets/lightson.gif';
 import oldMan2 from '/src/assets/lightsoff.gif';
 import Stopwatch from '../components/Stopwatch.vue';

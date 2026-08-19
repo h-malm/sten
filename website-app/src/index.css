@@ -8,6 +8,8 @@
   --nav-button-hover-background: linear-gradient(180deg, rgb(55, 6, 17) 0%, rgb(88, 26, 46) 42%, rgb(55, 6, 14) 100%);
   --body-primary: #383838;
   --dotted-border: 1px dashed var(--white);
+  --dotted-border-black: 1px dashed var(--black);
+
 }
 
 /**fonts**/
@@ -35,7 +37,86 @@
 }
 
 #main-content {
+  margin: .5rem;
+}
+
+#left-panel {
+  border-right: var(--dotted-border);
+}
+
+#right-panel {
+  border-left: var(--dotted-border);
+}
+
+.home-content-container {
+  display: grid;
+  grid-template-columns: 176px auto 177px;
+  color: var(--white);
+}
+
+.home-nav-container {
+  display: grid;
+  grid-template-columns: 3rem auto 34rem;
+
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  margin: 5rem 1rem 0rem 1rem;
+  padding: 2rem 0rem;
+}
+
+.content-container-single-col {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+  margin: 5rem 1rem 1rem 1rem;
+  padding: 1rem 1rem;
+}
+
+.content-container>div {
+  padding: 0.7rem;
+  line-height: 2rem;
+}
+
+#calendar {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+#stopwatch {
+  height: 14rem;
+
+}
+
+#musicplayer {
+  color: var(--white);
+  padding: .5rem;
+}
+
+#interests {
+  padding: .5rem;
+}
+
+.profile {
+  height: 18rem;
+  padding-top: .5rem;
+}
+
+.bio {
+  padding: .5rem;
+  font-family: "Kranky", serif;
+  font-size: .8rem;
+}
+
+.oldman {
+  height: 43rem;
+  width: auto;
   padding: 1rem;
+  font-size: .8rem;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 p {
@@ -64,8 +145,7 @@ h3,
 
 /**Items with border*/
 .homepage,
-.home-nav-container,
-.calendar-weekdays {
+.home-nav-container {
   border: var(--dotted-border);
 }
 
@@ -75,21 +155,14 @@ h3,
 #gifs,
 #musicplayer,
 #interests,
-.bio {
+.bio,
+.oldman {
   border-bottom: var(--dotted-border);
 }
 
 #gifs,
 #stopwatch {
   padding: .3rem;
-}
-
-#left-panel {
-  border-right: var(--dotted-border);
-}
-
-#right-panel {
-  border-left: var(--dotted-border);
 }
 
 #website-icon {
@@ -115,19 +188,9 @@ nav {
   margin: auto 0;
 }
 
-.home-content-container {
-  display: grid;
-  grid-template-columns: 176px auto 177px;
-}
-
 .homepage {
   min-height: 100vh;
   background-color: var(--first);
-}
-
-.home-nav-container {
-  display: grid;
-  grid-template-columns: 3rem auto 34rem;
 }
 
 .button-border1 {
@@ -215,11 +278,8 @@ nav {
   color: var(--black);
 }
 
-.reading-gif {
-  position: relative;
-  margin-right: .5rem;
-  width: 100%;
-  display: inline;
+.panorama {
+  margin: 1rem 0;
 }
 
 .subheaders-right {
@@ -247,27 +307,6 @@ nav {
   z-index: 1;
 }
 
-.content-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 2rem;
-  margin: 5rem 1rem 0rem 1rem;
-  padding: 2rem 0rem;
-}
-
-.content-container-single-col {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 2rem;
-  margin: 5rem 1rem 1rem 1rem;
-  padding: 1rem 1rem;
-}
-
-.content-container>div {
-  padding: 0.7rem;
-  line-height: 2rem;
-}
-
 .lightswitch {
   z-index: 5;
   max-height: 2rem;
@@ -280,11 +319,6 @@ nav {
 .gifs {
   width: 7rem;
   margin: 0 auto;
-}
-
-.profile {
-  height: 18rem;
-  padding-top: .5rem;
 }
 
 .portrait-image {
@@ -306,26 +340,6 @@ nav {
 
 .portrait-image:hover>.undithered {
   opacity: 1;
-}
-
-.bio {
-  padding: .5rem;
-  font-family: "Kranky", serif;
-  font-size: .8rem;
-}
-
-.oldman {
-  height: 43rem;
-  width: auto;
-  border-bottom: var(--dotted-border);
-  padding: 1rem;
-  font-size: .8rem;
-  font-family: "Nanum Gothic Coding", monospace;
-}
-
-#calendar {
-  background-color: var(--white);
-  color: var(--black);
 }
 
 .calendar {
@@ -362,9 +376,9 @@ nav {
 
 .calendar-weekdays div {
   cursor: pointer;
-  color: var(--white);
   font-size: .7rem;
   padding: .23rem;
+  border: var(--dotted-border-black);
 }
 
 .calendar-dates div {
@@ -377,13 +391,9 @@ nav {
   background: var(--black);
 }
 
-#stopwatch {
-  height: 14rem;
-}
-
 .stopwatch>img {
   position: absolute;
-  top: 1.5rem;
+  top: 1.75rem;
 }
 
 .stopwatch {
@@ -399,6 +409,23 @@ nav {
   font-family: "Kode Mono", monospace;
   position: absolute;
   padding: 0 .5rem 2rem .5rem;
+}
+
+.start-button {
+  top: 34.1rem;
+  left: 27.2rem;
+  transform: rotate(40deg);
+}
+
+.stop-button {
+  top: 34.3rem;
+  left: 21.6rem;
+  transform: rotate(-45deg);
+}
+
+.reset-button {
+  top: 34rem;
+  left: 24.7rem;
 }
 
 .start-button:hover,
@@ -422,23 +449,6 @@ nav {
   left: 24.7rem;
 }
 
-.start-button {
-  top: 34.1rem;
-  left: 27.7rem;
-  transform: rotate(40deg);
-}
-
-.stop-button {
-  top: 34.3rem;
-  left: 21.6rem;
-  transform: rotate(-45deg);
-}
-
-.reset-button {
-  top: 34rem;
-  left: 24.7rem;
-}
-
 #time {
   position: absolute;
   font-size: 1rem;
@@ -447,19 +457,9 @@ nav {
   font-family: "Kode Mono", monospace;
 }
 
-#musicplayer {
-  background-color: var(--white);
-  color: var(--black);
-  padding: .5rem;
-}
-
 #musicframe {
   margin: .5rem 0;
 
-}
-
-#interests {
-  padding: .5rem;
 }
 
 #interests p {
@@ -493,6 +493,22 @@ nav {
     font-size: .8rem;
   }
 
+  nav {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    width: 16rem;
+    gap: .5rem;
+  }
+
+  .home-nav-container {
+    padding: 0.5rem 1rem .5rem 0rem;
+    grid-template-columns: 3rem auto 16rem;
+  }
+
+  #calendar {
+    height: 11.5rem;
+  }
+
   .home-content-container {
     display: grid;
     grid-template-columns: 6rem auto 6rem;
@@ -523,22 +539,6 @@ nav {
     height: 1rem;
     width: 5rem;
     line-height: 1rem;
-  }
-
-  nav {
-    grid-template-columns: auto auto auto;
-    display: grid;
-    width: 16rem;
-    gap: .5rem;
-  }
-
-  .home-nav-container {
-    padding: 0.5rem 1rem .5rem 0rem;
-    grid-template-columns: 3rem auto 16rem;
-  }
-
-  #calendar {
-    height: 11.5rem;
   }
 
   .calendar {

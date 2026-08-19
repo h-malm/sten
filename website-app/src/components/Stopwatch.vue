@@ -2,7 +2,7 @@
 	<div>
 		<h3>Sten's Stopwatch</h3>
 		<div class="stopwatch">
-			<img src="../assets/stopwatch.png">
+			<img src="../assets/stopwatch-dithered.png">
 		</div>
 		<div id="time">{{ formattedTime }}</div>
 		<button @click="start" class="start-button">{{
