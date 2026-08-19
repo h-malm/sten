@@ -73,12 +73,18 @@
   grid-template-columns: auto;
   gap: 2rem;
   margin: 5rem 1rem 1rem 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .content-container>div {
   padding: 0.7rem;
   line-height: 2rem;
+}
+
+.photos-container {
+  display: grid;
+  grid-template-columns: 12rem auto;
+  padding: .5rem;
 }
 
 #calendar {
@@ -412,20 +418,20 @@ nav {
 }
 
 .start-button {
-  top: 34.1rem;
-  left: 27.2rem;
+  top: 1.2rem;
+  left: 5.8rem;
   transform: rotate(40deg);
 }
 
 .stop-button {
-  top: 34.3rem;
-  left: 21.6rem;
+  top: 1.4rem;
+  left: 0.2rem;
   transform: rotate(-45deg);
 }
 
 .reset-button {
-  top: 34rem;
-  left: 24.7rem;
+  top: 1.2rem;
+  left: 3.1rem;
 }
 
 .start-button:hover,
@@ -435,25 +441,25 @@ nav {
 }
 
 .start-button:hover {
-  top: 34.4rem;
-  left: 27.3rem;
+  top: 1.6rem;
+  left: 5.7rem;
 }
 
 .stop-button:hover {
-  top: 34.5rem;
-  left: 21.7rem;
+  top: 1.7rem;
+  left: 0.4rem;
 }
 
 .reset-button:hover {
-  top: 34.2rem;
-  left: 24.7rem;
+  top: 1.6rem;
+  left: 3.1rem;
 }
 
 #time {
   position: absolute;
   font-size: 1rem;
-  top: 38.3rem;
-  left: 23.4rem;
+  top: 5.5rem;
+  left: 2rem;
   font-family: "Kode Mono", monospace;
 }
 
@@ -462,8 +468,31 @@ nav {
 
 }
 
+.text-body {
+  padding: 1rem;
+  text-align: justify;
+}
+
 #interests p {
   margin: .5rem 0;
+}
+
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.photo-item {
+  max-width: 25rem;
+  max-height: 10rem;
+  padding: .5rem;
+}
+
+.category-item {
+  font-size: 1rem;
+  line-height: 2.2rem;
+  min-width: 5.2rem;
+  font-family: "Kranky", serif;
 }
 
 @media only screen and (max-width: 800px) {
@@ -583,43 +612,48 @@ nav {
   }
 
   .start-button {
-    top: 27.4rem;
-    left: 3.1rem;
-  }
-
-  .stop-button {
-    top: 27.4rem;
-    left: .6rem;
+    top: 1.5rem;
+    left: 2.6rem;
+    transform: rotate(40deg);
   }
 
   .reset-button {
-    top: 27.4rem;
-    left: 1.9rem;
+    top: 1.5rem;
+    left: 1.4rem;
   }
 
   .start-button:hover {
-    top: 27rem;
-    left: 3.3rem;
+    top: 1.8rem;
+    left: 2.6rem;
   }
 
   .stop-button:hover {
-    top: 27rem;
-    left: .6rem;
+    top: 1.6rem;
+    left: 0.2rem;
   }
 
   .reset-button:hover {
-    top: 27rem;
-    left: 2rem;
+    top: 1.7rem;
+    left: 1.4rem;
   }
 
   #time {
     font-size: .6rem;
-    top: 29.7rem;
-    left: 1.5rem;
+    top: 4.1rem;
+    left: 1rem;
   }
 
   #musicframe {
     margin: 0.5rem 0;
     width: 5.3rem;
+  }
+
+  .category-item {
+    font-size: .8rem;
+    line-height: 1rem;
+  }
+
+  .photo-item {
+    max-width: 13rem;
   }
 }

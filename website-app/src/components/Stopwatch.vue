@@ -3,12 +3,11 @@
 		<h3>Sten's Stopwatch</h3>
 		<div class="stopwatch">
 			<img src="../assets/stopwatch-dithered.png">
+			<div id="time">{{ formattedTime }}</div>
+			<button @click="start" class="start-button">{{ stopOrContinue }}</button>
+			<button @click="stop" class="stop-button">STOP</button>
+			<button @click="reset" class="reset-button">RESET</button>
 		</div>
-		<div id="time">{{ formattedTime }}</div>
-		<button @click="start" class="start-button">{{
-			stopOrContinue }}</button>
-		<button @click="stop" class="stop-button">STOP</button>
-		<button @click="reset" class="reset-button">RESET</button>
 	</div>
 </template>
 
