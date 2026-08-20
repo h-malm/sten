@@ -6,13 +6,13 @@
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
 			</div>
 			<div>
-				<h2 class=" page-header">Handywork</h2>
+				<h2 class=" page-header">Crafts</h2>
 			</div>
 			<Navbars />
 		</div>
 		<div class="crafts-container">
 			<div class="left-panel">
-				<h2 class="covered-by-your-grace-regular">Behold, my handiwork.</h2>
+				<h2 class="covered-by-your-grace-regular">Behold my handywork.</h2>
 			</div>
 			<div>
 				<div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">

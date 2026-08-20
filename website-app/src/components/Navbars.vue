@@ -5,7 +5,7 @@
     <RouterLink class="nav-item button-border2" to="/recipes">Recipes</RouterLink>
     <div class="crafts-menu">
       <button class="nav-item button-border3">
-        Crafts
+        Creations
       </button>
 
       <div class="crafts-dropdown ">
@@ -25,7 +25,7 @@
 <script setup lang="ts">
 const crafts = [
   { name: 'Art', path: '/art' },
-  { name: 'Handiwork', path: '/handiwork' },
+  { name: 'Crafts', path: '/crafts' },
   { name: 'Horror', path: '/horror' },
   { name: '3D Models', path: '/models' },
 ]
