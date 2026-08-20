@@ -27,7 +27,6 @@ const crafts = [
   { name: 'Art', path: '/art' },
   { name: 'Handiwork', path: '/handiwork' },
   { name: 'Horror', path: '/horror' },
-  { name: 'Recipes', path: '/recipes' },
   { name: '3D Models', path: '/models' },
 ]
 

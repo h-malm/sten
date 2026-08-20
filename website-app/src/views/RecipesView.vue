@@ -48,7 +48,7 @@ onMounted( () => {
 
 	stories.value[1].text = ChocolateChipCookies
 	stories.value[1].image1 = '/src/assets/images/food/untitled.jpeg'
-	stories.value[1].image2 = '/src/assets/images/food/1000006362.jpg'
+	stories.value[1].image2 = '/src/assets/images/food/IMG_20250308_182525.jpg'
 
 	stories.value[2].text = Mudcake
 	stories.value[2].image1 = '/src/assets/images/food/IMG_20240608_213526.jpg'
