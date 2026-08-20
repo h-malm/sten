@@ -40,8 +40,13 @@
   margin: .5rem;
 }
 
-#left-panel {
+#left-panel,
+.left-panel {
   border-right: var(--dotted-border);
+}
+
+.left-panel {
+  padding: .5rem;
 }
 
 #right-panel {
@@ -88,7 +93,18 @@
 .photos-container {
   display: grid;
   grid-template-columns: 12rem auto;
-  padding: .5rem;
+}
+
+.crafts-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.crafts-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  padding: 2rem 1rem;
 }
 
 #calendar {
@@ -167,7 +183,8 @@ h3,
 #interests,
 .bio,
 .recipes-container,
-.oldman {
+.oldman,
+.crafts-item {
   border-bottom: var(--dotted-border);
 }
 
@@ -562,6 +579,10 @@ nav {
     grid-template-columns: 6rem auto 6rem;
   }
 
+  .recipes-container {
+    grid-template-columns: auto;
+  }
+
   .portrait-image>img {
     width: 6rem;
   }
@@ -674,5 +695,9 @@ nav {
 
   .photo-item {
     max-width: 13rem;
+  }
+
+  .crafts-item {
+    grid-template-columns: auto;
   }
 }

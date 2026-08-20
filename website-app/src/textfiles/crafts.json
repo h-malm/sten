@@ -1,0 +1,43 @@
+[
+    {
+        "header": "Armchair cover",
+        "category": "sewing",
+        "text": "The fabric for my armchair was really not doing it for me, so I made a new one! This one is not quite doing it either, but it's better. (the ruffles are slaying tho)",
+        "images": [
+            "/src/assets/images/Crafts/IMG_2947.jpg"
+        ]
+    },
+    {
+        "header": "Wrench holder",
+        "category": "sewing",
+        "text": "This is a wrench holder I made for my dad for his birthday  <3 his old one was falling apart.I looked at the old one and tried to copy the format, but I messed up the position of the smaller ones. They are supposed to be pointed up. I used jean fabric and some more sturdy fabric as the back-piece. It weighs a fuckton because of the wrenches, so we'll see how long it actually holds together.",
+        "images": [
+            "/src/assets/images/Crafts/1556.jpg"
+        ]
+    },
+    {
+        "header": "Shelf",
+        "category": "woodwork",
+        "text": "This is a tiny shelf we made for the entrance to my friend's tiny apartment. We messed up something in the top part of the shelf, but it still turned out good! It's been in use for almost a year and still looks brand new. I think it was made with birch wood. One thing I realized was that it is annoying to live in an apartment because you don't have access to a garage of any kind. We had to go to my sister's place and borrow their housing complex's hobby room. Solid space, but having my own garage would be more comfortable and my goal is to have one within five years.",
+        "images": [
+            "/src/assets/images/Crafts/shelf1.jpg",
+            "/src/assets/images/Crafts/shelf2.jpg"
+        ]
+    },
+    {
+        "header": "Checkered Pillow",
+        "category": "sewing",
+        "text": "This is a pillow I made from a skirt that was both too annoying to use (because of the windy city I live in) and too small for me. It serves its new purpose well and decorates my den beautifully. Works perfectly as a headrest as well :)",
+        "images": [
+            "/src/assets/images/Crafts/skirt.jpg"
+        ]
+    },
+    {
+        "header": "Ruffled Bikini",
+        "category": "sewing",
+        "text": "I sewed a bikini from some fabric that was leftover from a pair of shorts I made.",
+        "images": [
+            "/src/assets/images/Crafts/1000010654.jpg"
+        ]
+    }
+]
