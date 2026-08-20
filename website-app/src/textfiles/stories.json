@@ -1,0 +1,14 @@
+[
+    {
+        "header": "Cloudy Day",
+        "category": "horror",
+        "teaser": "Fog dims the view to the outside world and only the ticking of seconds passing are heard. Quiet breaths can be heard occasionally, like gusts of wind in a calm autumn morning.",
+        "text": "/src/textfiles/stories/CloudyDay.txt"
+    },
+    {
+        "header": "Moving In",
+        "category": "horror",
+        "teaser": "New places hold a certain ambience. There's a new smell, new layout, new sounds mixed with familiar ones, new routines, and new people. Fear mixes with the elation of new experiences and a change of pace.",
+        "text": "/src/textfiles/stories/MovingIn.txt"
+    }
+]

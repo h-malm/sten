@@ -10,62 +10,66 @@
       </div>
       <Navbars />
     </div>
-    <div id="main-content">
-      <div v-for=" ( story, index ) in stories " :key="index">
-        <div>
-          <h2>{{ story.header }}</h2>
-          <button type="button" @click="showDialog( index )">
-            Read
-          </button>
-        </div>
-        <Dialog :visible="visibleIndex === index" @hide="hideDialog">
+    <div class="crafts-container">
+      <div class="left-panel">
+        <h2 class="covered-by-your-grace-regular">Behold my handywork.</h2>
+      </div>
+      <div>
+        <div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
+          <h2>{{ item.header }}</h2>
+          <div class="right-panel">
+            <img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image" :alt="item.header"
+              class="photo-item">
+          </div>
           <div>
-            <h2>
-              {{ story.header }}
-            </h2>
+            <p>{{ item.teaser }}</p>
             <div>
-              <div v-for=" paragraph in formatText( story.text ) " :key="paragraph">
-                <p style="margin: 1rem;">{{ paragraph }}</p>
+              <button v-if=" item.isHidden " class="category-item button-border2"
+                v-on:click="item.isHidden = !item.isHidden">Read
+                story</button>
+              <button v-if=" !item.isHidden " class="category-item button-border3"
+                v-on:click="item.isHidden = true">Collapse</button>
+              <div v-if=" !item.isHidden " v-for=" ( paragraph, paragraphIndex ) in formatText( item.text ) "
+                :key="paragraphIndex">
+                <p class="paragraph">{{ paragraph }}</p>
               </div>
             </div>
           </div>
-          <button @click="hideDialog">
-            Close
-          </button>
-        </Dialog>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import CloudyDayText from '../textfiles/stories/CloudyDay.txt?raw';
-import Dialog from 'primevue/dialog';
-import MovingIn from '../textfiles/stories/MovingIn.txt?raw';
-import Navbars from '@/components/Navbars.vue';
+import { ref } from 'vue'
+import Navbars from '@/components/Navbars.vue'
+import storiesData from '../textfiles/stories.json'
 
-const visibleIndex = ref( null );
-const stories = ref( [
-  { header: 'Cloudy Day', text: '' },
-  { header: 'Moving in', text: '' }
-] );
+const stories = ref(
+  storiesData.map( story => ( {
+    ...story,
+    isHidden: true
+  } ) )
+)
+const getTextFiles = import.meta.glob( '/src/textfiles/stories/*.txt', {
+  query: '?raw',
+  import: 'default',
+  eager: true
+} )
 
-onMounted( () => {
-  stories.value[0].text = CloudyDayText
-  stories.value[1].text = MovingIn
-} );
+const formatText = ( textPath ) => {
+  const text = getTextFiles[textPath]
 
-const showDialog = ( index ) => {
-  visibleIndex.value = index
-};
+  if ( !text ) {
+    console.warn( `Could not find text file: ${textPath}` )
+    return []
+  }
 
-const hideDialog = () => {
-  visibleIndex.value = null
-};
+  return text.split( /\r?\n/ )
+}
 
-const formatText = ( text ) => {
-  const paragraphs = text.split( '\n' );
-  return paragraphs;
-};
+const displayText = () => {
+
+}
 </script>

@@ -35,9 +35,9 @@
 <script setup>
 import { ref } from 'vue'
 import Navbars from '@/components/Navbars.vue'
-import storiesData from '../textfiles/crafts.json'
+import craftsData from '../textfiles/crafts.json'
 
-const stories = ref( storiesData )
+const stories = ref( craftsData )
 
 const formatText = ( text ) => {
 	return text.split( '\n' )

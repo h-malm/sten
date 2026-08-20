@@ -528,7 +528,7 @@ nav {
 }
 
 .paragraph {
-  margin: .3rem;
+  margin: .7rem .3rem;
 }
 
 @media only screen and (max-width: 800px) {
