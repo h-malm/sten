@@ -88,10 +88,7 @@
 				</p>
 				<p class="paragraph">
 					There are horror stories I've written under <i>Content > Horror</i>, plant tips
-					under <i>Content > Plant Tips</i>, and so on. If you happen to be a native Korean
-					speaker,
-					please do not judge my short Korean texts on the <i>Korean Practices</i> page too
-					harshly. I'm still new to writing Korean. There are also recipes and a page for
+					under <i>Content > Plant Tips</i>, and so on. There are also recipes and a page for
 					stuff I have made, such as woodwork, sewing, and drawing. One page is
 					dedicated to posting pictures I have taken, so it may load a bit slowly as it
 					renders a

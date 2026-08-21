@@ -63,8 +63,4 @@ const formatText = ( textPath ) => {
 
   return text.split( /\r?\n/ )
 }
-
-const displayText = () => {
-
-}
 </script>

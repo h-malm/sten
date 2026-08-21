@@ -36,7 +36,7 @@ const images = ref( [] );
 // Initially load all photos
 onMounted( () => {
     images.value.length = 0;
-    const modules = import.meta.glob( '../assets/images/drawings/*', {
+    const modules = import.meta.glob( '../assets/drawings/*', {
         eager: true,
     } );
 

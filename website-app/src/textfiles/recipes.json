@@ -4,7 +4,7 @@
         "category": "baking",
         "text": "/src/textfiles/recipes/Pancakes.txt",
         "images": [
-            "/food/IMG_20250308_182525.jpg"
+            "/food/IMG_20250308_182525-ds.png"
         ]
     },
     {
@@ -12,7 +12,7 @@
         "category": "meat",
         "text": "/src/textfiles/recipes/Pancakes.txt",
         "images": [
-            "/food/IMG_20241208_180903.jpg"
+            "/food/IMG_20241208_180903-ds.png"
         ]
     },
     {
@@ -25,7 +25,7 @@
         "category": "baking",
         "text": "/src/textfiles/recipes/Pancakes.txt",
         "images": [
-            "/food/IMG_20240608_213526.jpg"
+            "/food/IMG_20240608_213526-ds.png"
         ]
     }
 ]

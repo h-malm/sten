@@ -10,21 +10,17 @@
 			</div>
 			<Navbars />
 		</div>
-		<div class="crafts-container">
-			<div class="left-panel">
-				<h2 class="covered-by-your-grace-regular">Behold my handywork.</h2>
+		<div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
+			<div class="photo-container">
+				<img v-for=" ( image, imageIndex ) in getImages( item.images ) " :key="imageIndex" :src="image"
+					:alt="item.header" class="photo-item">
 			</div>
 			<div>
-				<div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
-					<div>
-						<h2>{{ item.header }}</h2>
-						<div v-for=" ( paragraph, paragraphIndex ) in formatText( item.text ) " :key="paragraphIndex">
-							<p>{{ paragraph }}</p>
-						</div>
-					</div>
-					<div class="photo-container">
-						<img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image"
-							:alt="item.header" class="photo-item">
+				<h2>{{ item.header }}</h2>
+				<div class="photo-container">
+					<div v-if=" !item.isHidden " v-for=" ( paragraph, paragraphIndex ) in formatText( item.text ) "
+						:key="paragraphIndex">
+						<p class="paragraph">{{ paragraph }}</p>
 					</div>
 				</div>
 			</div>
@@ -39,7 +35,34 @@ import craftsData from '../textfiles/crafts.json'
 
 const stories = ref( craftsData )
 
-const formatText = ( text ) => {
-	return text.split( '\n' )
+const getImageFiles = import.meta.glob(
+	'/src/assets/crafts/**/*.{jpg,JPG,jpeg,JPEG,png}',
+	{
+		eager: true,
+		import: 'default'
+	}
+)
+
+const getImages = ( folder ) => {
+	return Object.entries( getImageFiles )
+		.filter( ( [path] ) => path.startsWith( folder ) )
+		.map( ( [, image] ) => image )
+}
+
+const getTextFiles = import.meta.glob( '/src/textfiles/crafts/*.txt', {
+	query: '?raw',
+	import: 'default',
+	eager: true
+} )
+
+const formatText = ( textPath ) => {
+	const text = getTextFiles[textPath]
+
+	if ( !text ) {
+		console.warn( `Could not find text file: ${textPath}` )
+		return []
+	}
+
+	return text.split( /\r?\n/ )
 }
 </script>
