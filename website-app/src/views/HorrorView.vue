@@ -10,34 +10,27 @@
       </div>
       <Navbars />
     </div>
-    <div class="crafts-container">
-      <div class="left-panel">
-        <h2 class="covered-by-your-grace-regular">Behold my handywork.</h2>
+    <div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
+      <div class="right-panel">
+        <img :src="item.image" :alt="item.header" class="photo-item">
       </div>
       <div>
-        <div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
-          <h2>{{ item.header }}</h2>
-          <div class="right-panel">
-            <img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image" :alt="item.header"
-              class="photo-item">
-          </div>
-          <div>
-            <p>{{ item.teaser }}</p>
-            <div>
-              <button v-if=" item.isHidden " class="category-item button-border2"
-                v-on:click="item.isHidden = !item.isHidden">Read
-                story</button>
-              <button v-if=" !item.isHidden " class="category-item button-border3"
-                v-on:click="item.isHidden = true">Collapse</button>
-              <div v-if=" !item.isHidden " v-for=" ( paragraph, paragraphIndex ) in formatText( item.text ) "
-                :key="paragraphIndex">
-                <p class="paragraph">{{ paragraph }}</p>
-              </div>
-            </div>
+        <h2>{{ item.header }}</h2>
+        <p>{{ item.teaser }}</p>
+        <div>
+          <button v-if=" item.isHidden " class="category-item button-border2"
+            v-on:click="item.isHidden = !item.isHidden">Read
+            story</button>
+          <button v-if=" !item.isHidden " class="category-item button-border3"
+            v-on:click="item.isHidden = true">Collapse</button>
+          <div v-if=" !item.isHidden " v-for=" ( paragraph, paragraphIndex ) in formatText( item.text ) "
+            :key="paragraphIndex">
+            <p class="paragraph">{{ paragraph }}</p>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
