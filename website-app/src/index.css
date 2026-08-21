@@ -118,8 +118,9 @@
 }
 
 #musicplayer {
-  color: var(--white);
+  color: var(--black);
   padding: .5rem;
+  background-color: var(--white);
 }
 
 #interests {
@@ -340,7 +341,7 @@ nav {
   max-height: 2rem;
   cursor: pointer;
   position: absolute;
-  top: 59rem;
+  top: 51rem;
   right: 21rem;
 }
 

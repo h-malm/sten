@@ -7,10 +7,12 @@
 			</div>
 			<div>
 				<h2 class="page-header">Microblog</h2>
+
 			</div>
 			<Navbars />
 		</div>
 		<div class="home-content-container">
+			<img src="/src/assets/casettes.png">
 
 		</div>
 	</div>

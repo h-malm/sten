@@ -14,110 +14,47 @@
 		<div class="home-content-container">
 			<div id="left-panel">
 				<Calendar />
-				<Stopwatch id="stopwatch" />
 				<div id="interests">
 					<h3>
-						What's currently inside Sten's brain
+						What's currently on Sten's brain
 					</h3>
 					<p class="covered-by-your-grace-regular">
-						Leviticus
+						⊹ Leviticus
 						<br>
-						NCT Dream
+						⊹ NCT Dream
 						<br>
-						Apples and cinnamon
+						⊹ Apples and cinnamon
 						<br>
-						The Haunting of Hill House
+						⊹ The Haunting of Hill House
 					</p>
 				</div>
+				<Stopwatch id="stopwatch" />
 				<div id="gifs">
 					<img class="gifs" src="/src/assets/bestonphone.gif" />
 				</div>
 			</div>
 			<div id="main-content">
 				<h1>Welcome to Sten</h1>
-				<p>
+				<p class="paragraph">
 					This website is a personal website used to collect stuff I've made into one place! That
 					includes horror stories I've written, stuff I've made like knitting and baking, and stuff
-					I've
-					learned, e.g. some Korean.
-				</p>
-				<p>
-					The main purpose of this website was to practice my website-making skills, and that is why
-					it
-					is made using Vue (I'm hoping to work with Vue in the future). Feel
-					free
-					to roam around and explore.
+					I've learned, experienced, or thought about.
 				</p>
 				<img src="/src/assets/panorama1.png" class="panorama" />
 				<h2 class="subheaders-right">About Sten</h2>
-				<div>
-					<div>
-						<p>
-							I'm a 24-year-old Computer Engineering student. I got a 4 out of 5 for my Master's
-							thesis.
-							One
-							could
-							say
-							I am pretty fucking proud). My Master's thesis
-							discussed the
-							evolution of website design, focusing on
-							layout,
-							colors, navigation, and
-							visualized interactivity. </p>
-					</div>
-					<p>Can't say it was anything special. I did not really reach
-						the
-						depth of research I would have wanted to. Still, I learned a lot from it. It definitely
-						peaked my interest in accessibility, usability, and global website design trends.
-					</p>
-				</div>
+				<p class="paragraph">
+					I'm a 24-year-old Computer Engineer. I got a 4 out of 5 for my Master's
+					thesis. One could say I am fairly fucking proud). My Master's thesis discussed the evolution
+					of website design, focusing on layout, colors, navigation, and visualized interactivity.
+				</p>
+				<p class="paragraph">
+					Can't say it was anything special. I did not really reach the depth of research I would have
+					wanted to. Still, I learned a lot from it. It definitely peaked my interest in accessibility,
+					usability, and global website design trends.
+				</p>
 				<img src="/src/assets/panorama2.png" class="panorama" />
-				<h2 class="subheaders-left">What does Sten like and dislike?</h2>
-				<p>
-					You want to get to know me moore~? Well, since you're so curious, I
-					like all stuff creative, including drawing, pottery, and painting. I also like building
-					stuff, which means I like woodworking, knitting, home-making, and sewing. I
-					love problem-solving, which makes living alone easy as pie. If something's wrong
-					in my apartment or I'm missing something, I'll fix it by looking up the manual or
-					finding a video about it, or I'll DIY the thing I'm missing. Some people
-					may prefer to save time and spend money by paying someone else to fix or make
-					something for them, and I understand that. It's just not my style. Problem-solving
-					is
-					something that really makes me happy because it always results in a feeling of
-					accomplishment and self-sufficiency. And I learn something new!
-				</p>
-				<p>
-					I love a challenge. And by keeping an abundance
-					of plants, I have something that shows both progression from my hard-work and
-					something that gives me something back, like oxygen and hopefully vegetables.
-				</p>
-				<p>
-					Dude, I
-					looove everything horror. I consume
-					horror-stories and videos on the daily. In spite of this, I get easily scared.
-					House-fires are my
-					deepest fears (along with tics, deer flies, snakes, and joblessness. I had to look up the
-					English word for "deer fly", and the detailed images that Google showed me is enough
-					to give
-					me nightmares for days. I'm never never going out into the woods again).
-				</p>
-				<p>
-					I study in a field of predominantly men. My class had three girls out of
-					around 50 people. Can't say there is much different than a women-dominated field.
-					You see, drama isn't exclusive to groups of girls, cause there's been a bunch of
-					drama in the last year of our studies, all originating from guys. I thought
-					drama would disappear as people became adults, but I guess not.
-				</p>
-				<p>
-					I already said I don't like bugs, but I equally much do not like people who clearly value
-					friends based on social groups. Loyalty, however cliché it may sound, is
-					important. It's insane how much people play fast and loose with friendships just to
-					satisfy their needs or to find popularity. I don't like fake friends. Fake friends
-					can eat a dick. Then they can go hang out with other fake people (who can also eat a
-					dick).
-				</p>
 				<h2 class="subheaders-left">Why make a website?</h2>
-				<p>
+				<p class="paragraph">
 					Actually, the initial point of this website was to make something to show my
 					development and design skills when I apply for jobs. Since,
 					my main interest within IT is frontend, usability, and accessibility in website
@@ -136,8 +73,9 @@
 					to maintain. React did feel a bit overkill for a
 					personalized website with blog-like content.
 				</p>
+				<img src="/src/assets/panorama3.png" class="panorama" />
 				<h2 class="subheaders-right">Guide to Sten's website</h2>
-				<p>
+				<p class="paragraph">
 					A little guide for this website might be good :) I was inspired by the 90s
 					websites when the computer screens were much smaller (I'm implementing the website
 					using
@@ -148,7 +86,7 @@
 					any personal info here. You never know what websites are scraped for data to train
 					AI models.
 				</p>
-				<p>
+				<p class="paragraph">
 					There are horror stories I've written under <i>Content > Horror</i>, plant tips
 					under <i>Content > Plant Tips</i>, and so on. If you happen to be a native Korean
 					speaker,
@@ -161,7 +99,7 @@
 					categories
 					and sort them).
 				</p>
-				<p>
+				<p class="paragraph">
 					I'd say my website is majorly focused on reading, so if you're not interested in
 					that, I'd like to suggest that you get
 					off my
@@ -172,7 +110,7 @@
 					to
 					be here :)
 				</p>
-				<p>
+				<p class="paragraph">
 					It's worth noting that this page isn't made to be viewed on a small screen, such as
 					a
 					phone, and won't look great in that format. But also, who browses through
@@ -190,23 +128,67 @@
 					spotted and clicked on. This rant may or may not be fueled by some of the research I
 					did for my Master's and I think it is a valuable point, but I digress for now.
 				</p>
-				<p>
+				<img src="/src/assets/panorama4.png" class="panorama" />
+				<h2 class="subheaders-left">What does Sten like and dislike?</h2>
+				<p class="paragraph">
+					You want to get to know me moore~? Well, since you're so curious, I
+					like all stuff creative, including drawing, pottery, and painting. I also like building
+					stuff, which means I like woodworking, knitting, home-making, and sewing. I
+					love problem-solving, which makes living alone easy as pie. If something's wrong
+					in my apartment or I'm missing something, I'll fix it by looking up the manual or
+					finding a video about it, or I'll DIY the thing I'm missing. Some people
+					may prefer to save time and spend money by paying someone else to fix or make
+					something for them, and I understand that. It's just not my style. Problem-solving is
+					something that really makes me happy because it always results in a feeling of accomplishment and
+					self-sufficiency. And I learn something new!
+				</p>
+				<p class="paragraph">
+					I love a challenge. And by keeping an abundance
+					of plants, I have something that shows both progression from my hard-work and
+					something that gives me something back, like oxygen and hopefully vegetables.
+				</p>
+				<p class="paragraph">
+					Dude, I
+					looove everything horror. I consume
+					horror-stories and videos on the daily. In spite of this, I get easily scared.
+					House-fires are my
+					deepest fears (along with tics, deer flies, snakes, and joblessness. I had to look up the
+					English word for "deer fly", and the detailed images that Google showed me is enough
+					to give
+					me nightmares for days. I'm never never going out into the woods again).
+				</p>
+				<p class="paragraph">
+					I study in a field of predominantly men. My class had three girls out of
+					around 50 people. Can't say there is much different than a women-dominated field.
+					You see, drama isn't exclusive to groups of girls, cause there's been a bunch of
+					drama in the last year of our studies, all originating from guys. I thought
+					drama would disappear as people became adults, but I guess not.
+				</p>
+				<p class="paragraph">
+					I already said I don't like bugs, but I equally much do not like people who clearly value
+					friends based on social groups. Loyalty, however cliché it may sound, is
+					important. It's insane how much people play fast and loose with friendships just to
+					satisfy their needs or to find popularity. I don't like fake friends. Fake friends
+					can eat a dick. Then they can go hang out with other fake people (who can also eat a
+					dick).
+				</p>
+				<p class="paragraph">
 					Whew! There's a lot more text than I thought there'd be. Apparently, I'm a yapper in
 					text-form.
 				</p>
-				<p>Anyways, enjoy the page and lmk if you hate it <3 </p>
+				<p class="paragraph">Anyways, enjoy the page and lmk if you hate it <3 </p>
 			</div>
 			<div id="right-panel">
 				<div>
 					<div class="profile">
-						<h3>STEN</h3>
+						<h3>𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 STEN 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</h3>
 						<div class="portrait-image">
 							<img src="/src/assets/portrait-dithered.png" class="dithered" />
 							<img src="/src/assets/portrait.jpg" class="undithered" />
 						</div>
 					</div>
 					<div class="bio">
-						24 - frontend dev - she/her
+						24 ⋆ frontend dev ⋆ she/her
 					</div>
 				</div>
 				<div id="musicplayer">
@@ -253,7 +235,6 @@
 					seep
 					into you.
 				</div>
-
 			</div>
 		</div>
 	</div>
