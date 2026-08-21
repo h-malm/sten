@@ -40,7 +40,6 @@ import i6 from '/src/assets/images/plants/tomatoes/DSC_0037.JPG';
 
 const stories = ref( [
 	{ header: 'Cherry tomatoes', text: '', image1: '', image2: '', image3: '', image4: '', image5: '', image6: '' },
-
 ] )
 
 onMounted( () => {

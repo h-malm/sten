@@ -11,7 +11,10 @@
       <Navbars />
     </div>
     <div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
-      <div class="right-panel">
+      <div class="element {
+	height: auto;
+	align-content: center;
+}">
         <img :src="item.image" :alt="item.header" class="photo-item">
       </div>
       <div>
@@ -30,7 +33,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

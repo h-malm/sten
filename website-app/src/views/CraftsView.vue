@@ -22,7 +22,7 @@
 							<p>{{ paragraph }}</p>
 						</div>
 					</div>
-					<div class="right-panel">
+					<div class="photo-container">
 						<img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image"
 							:alt="item.header" class="photo-item">
 					</div>

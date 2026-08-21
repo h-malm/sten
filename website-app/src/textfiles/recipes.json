@@ -1,0 +1,31 @@
+[
+    {
+        "header": "Chocolate Chip Cookies",
+        "category": "baking",
+        "text": "/src/textfiles/recipes/Pancakes.txt",
+        "images": [
+            "/food/IMG_20250308_182525.jpg"
+        ]
+    },
+    {
+        "header": "Meatballs",
+        "category": "meat",
+        "text": "/src/textfiles/recipes/Pancakes.txt",
+        "images": [
+            "/food/IMG_20241208_180903.jpg"
+        ]
+    },
+    {
+        "header": "Pancakes",
+        "category": "baking",
+        "text": "/src/textfiles/recipes/Pancakes.txt"
+    },
+    {
+        "header": "Mudcake",
+        "category": "baking",
+        "text": "/src/textfiles/recipes/Pancakes.txt",
+        "images": [
+            "/food/IMG_20240608_213526.jpg"
+        ]
+    }
+]

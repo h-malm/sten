@@ -12,8 +12,6 @@
 			<Navbars />
 		</div>
 		<div class="home-content-container">
-			<img src="/src/assets/casettes.png">
-
 		</div>
 	</div>
 </template>
