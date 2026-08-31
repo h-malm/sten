@@ -1,6 +1,6 @@
 <template>
 	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
-		<img src="../assets/flowers-top.png" />
+		<img src="../assets/UI-components/flowers-top.png" />
 		<div class="home-nav-container">
 			<div>
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
@@ -35,7 +35,7 @@
 			</div>
 			<div>
 				<div v-for=" ( image, i ) in images " :key="i" class="photo-container">
-					<img :src="image" :alt="'Could not load image'" class="photo-item" />
+					<img :src="image" :alt="'Could not load image'" class="photo-item" loading="lazy" />
 				</div>
 			</div>
 		</div>

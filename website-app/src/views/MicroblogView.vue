@@ -1,6 +1,6 @@
 <template>
 	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
-		<img src="../assets/flowers-top.png" />
+		<img src="../assets/UI-components/flowers-top.png" />
 		<div class="home-nav-container">
 			<div>
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />

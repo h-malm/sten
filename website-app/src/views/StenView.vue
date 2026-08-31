@@ -1,6 +1,6 @@
 <template>
 	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
-		<img src="../assets/flowers-top.png" />
+		<img src="../assets/UI-components/flowers-top.png" />
 		<div class="overlay" v-if=" isOverlayActive "></div>
 		<div class="home-nav-container">
 			<div>
@@ -19,18 +19,18 @@
 						What's currently on Sten's brain
 					</h3>
 					<p class="covered-by-your-grace-regular">
-						⊹ Leviticus
+						⊹ Autumn
 						<br>
 						⊹ NCT Dream
 						<br>
 						⊹ Apples and cinnamon
 						<br>
-						⊹ The Haunting of Hill House
+						⊹ The job market
 					</p>
 				</div>
 				<Stopwatch id="stopwatch" />
 				<div id="gifs">
-					<img class="gifs" src="/src/assets/bestonphone.gif" />
+					<img class="gifs" src="/src/assets/UI-components/bestonphone.gif" />
 				</div>
 			</div>
 			<div id="main-content">
@@ -40,19 +40,19 @@
 					includes horror stories I've written, stuff I've made like knitting and baking, and stuff
 					I've learned, experienced, or thought about.
 				</p>
-				<img src="/src/assets/panorama1.png" class="panorama" />
+				<img src="/src/assets/UI-components/panorama1.png" class="panorama" />
 				<h2 class="subheaders-right">About Sten</h2>
 				<p class="paragraph">
-					I'm a 24-year-old Computer Engineer. I got a 4 out of 5 for my Master's
+					I'm a 24-year-old Computer Engineer (I got a 4 out of 5 for my Master's
 					thesis. One could say I am fairly fucking proud). My Master's thesis discussed the evolution
 					of website design, focusing on layout, colors, navigation, and visualized interactivity.
 				</p>
 				<p class="paragraph">
-					Can't say it was anything special. I did not really reach the depth of research I would have
+					Can't say it was anything special. I did not reach the depth of research I would have
 					wanted to. Still, I learned a lot from it. It definitely peaked my interest in accessibility,
 					usability, and global website design trends.
 				</p>
-				<img src="/src/assets/panorama2.png" class="panorama" />
+				<img src="/src/assets/UI-components/panorama2.png" class="panorama" />
 				<h2 class="subheaders-left">Why make a website?</h2>
 				<p class="paragraph">
 					Actually, the initial point of this website was to make something to show my
@@ -73,7 +73,7 @@
 					to maintain. React did feel a bit overkill for a
 					personalized website with blog-like content.
 				</p>
-				<img src="/src/assets/panorama3.png" class="panorama" />
+				<img src="/src/assets/UI-components/panorama3.png" class="panorama" />
 				<h2 class="subheaders-right">Guide to Sten's website</h2>
 				<p class="paragraph">
 					A little guide for this website might be good :) I was inspired by the 90s
@@ -125,7 +125,7 @@
 					spotted and clicked on. This rant may or may not be fueled by some of the research I
 					did for my Master's and I think it is a valuable point, but I digress for now.
 				</p>
-				<img src="/src/assets/panorama4.png" class="panorama" />
+				<img src="/src/assets/UI-components/panorama4.png" class="panorama" />
 				<h2 class="subheaders-left">What does Sten like and dislike?</h2>
 				<p class="paragraph">
 					You want to get to know me moore~? Well, since you're so curious, I
@@ -178,10 +178,12 @@
 			<div id="right-panel">
 				<div>
 					<div class="profile">
-						<h3>𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 STEN 𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</h3>
+						<h3>𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</h3>
+						<h3>STEN </h3>
+						<h3>𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</h3>
 						<div class="portrait-image">
-							<img src="/src/assets/portrait-dithered.png" class="dithered" />
-							<img src="/src/assets/portrait.jpg" class="undithered" />
+							<img src="/src/assets/UI-components/portrait-dithered.png" class="dithered" />
+							<img src="/src/assets/UI-components/portrait.jpg" class="undithered" />
 						</div>
 					</div>
 					<div class="bio">
@@ -242,8 +244,8 @@ import Calendar from '@/components/Calendar.vue';
 import Navbars from '../components/Navbars.vue';
 import image1 from '/src/assets/images/thumbnail_IMG_1003.png';
 import image2 from '/src/assets/images/thumbnail_IMG_1005.png';
-import oldMan1 from '/src/assets/lightson.gif';
-import oldMan2 from '/src/assets/lightsoff.gif';
+import oldMan1 from '/src/assets/UI-components/lightson.gif';
+import oldMan2 from '/src/assets/UI-components/lightsoff.gif';
 import Stopwatch from '../components/Stopwatch.vue';
 import { ref } from 'vue';
 

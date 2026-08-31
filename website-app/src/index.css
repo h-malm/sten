@@ -34,6 +34,7 @@
   text-align: center;
   width: 840px;
   margin: 0rem auto;
+  cursor: url(./assets/Cursor/cursor-mouse.png) 1 1, auto;
 }
 
 #main-content {
@@ -129,13 +130,14 @@
 
 .profile {
   height: 18rem;
-  padding-top: .5rem;
+  margin-top: .5rem;
 }
 
 .bio {
   padding: .5rem;
   font-family: "Kranky", serif;
   font-size: .8rem;
+  position: relative;
 }
 
 .oldman {
@@ -223,18 +225,18 @@ nav {
 }
 
 .button-border1 {
-  background-image: url(./assets/button-borders1.png);
+  background-image: url(./assets/UI-components/button-borders1.png);
   background-size: cover;
 }
 
 .button-border2 {
   background-size: cover;
-  background-image: url(./assets/button-borders4.png);
+  background-image: url(./assets/UI-components/button-borders4.png);
 }
 
 .button-border3 {
   background-size: cover;
-  background-image: url(./assets/button-borders3.png);
+  background-image: url(./assets/UI-components/button-borders3.png);
 }
 
 .button-border1:hover,
@@ -244,17 +246,17 @@ nav {
 }
 
 .button-border1:hover {
-  background-image: url(./assets/button-borders-hover3.png);
+  background-image: url(./assets/UI-components/button-borders-hover3.png);
   background-size: cover;
 }
 
 .button-border2:hover {
   background-size: cover;
-  background-image: url(./assets/button-borders-hover1.png);
+  background-image: url(./assets/UI-components/button-borders-hover1.png);
 }
 
 .button-border3:hover {
-  background-image: url(./assets/button-borders-hover4.png);
+  background-image: url(./assets/UI-components/button-borders-hover4.png);
   background-size: cover;
 }
 
@@ -266,12 +268,12 @@ nav {
 }
 
 .nav-item:hover {
-  cursor: pointer;
+  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
   transform: translateY(-3px);
 }
 
 .nav-item:active {
-  cursor: pointer;
+  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 1, auto;
   transform: translateY(-2px);
 }
 
@@ -286,6 +288,7 @@ nav {
   position: absolute;
   min-width: 5rem;
   background: var(--first);
+  border: var(--dotted-border);
   color: var(--white);
   z-index: 5;
 }
@@ -302,7 +305,7 @@ nav {
 }
 
 .craft-item:hover {
-  background-image: url(./assets/button-borders-hover3.png);
+  background-image: url(./assets/UI-components/button-borders-hover3.png);
   background-size: cover;
   color: var(--black);
 }
@@ -339,10 +342,16 @@ nav {
 .lightswitch {
   z-index: 5;
   max-height: 2rem;
-  cursor: pointer;
   position: absolute;
   top: 51rem;
-  right: 21rem;
+}
+
+.lightswitch:hover {
+  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
+}
+
+.lightswitch:active {
+  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 1, auto;
 }
 
 .gifs {
@@ -353,7 +362,6 @@ nav {
 .portrait-image {
   position: relative;
   width: 100%;
-  height: 16rem;
   margin: 0rem auto;
 }
 
@@ -388,7 +396,6 @@ nav {
   background-color: transparent;
   border: none;
   font-size: 1.5em;
-  cursor: pointer;
 }
 
 #month-year {
@@ -404,14 +411,12 @@ nav {
 }
 
 .calendar-weekdays div {
-  cursor: pointer;
   font-size: .7rem;
   padding: .23rem;
   border: var(--dotted-border-black);
 }
 
 .calendar-dates div {
-  cursor: pointer;
   font-size: .6rem;
 }
 
@@ -460,7 +465,13 @@ nav {
 .start-button:hover,
 .stop-button:hover,
 .reset-button:hover {
-  cursor: pointer;
+  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
+}
+
+.start-button:active,
+.stop-button:active,
+.reset-button:active {
+  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 1, auto;
 }
 
 .start-button:hover {
@@ -488,7 +499,7 @@ nav {
 
 #musicframe {
   margin: .5rem 0;
-
+  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
 }
 
 .text-body {
@@ -515,7 +526,15 @@ nav {
 
 .recipe-photo {
   max-width: 20rem;
+  filter: grayscale(100%);
+  transition: 200ms ease-in-out;
 }
+
+.recipe-photo:hover {
+  filter: grayscale(0%);
+  transition: 200ms ease-in-out;
+}
+
 
 .category-item {
   font-size: 1rem;
@@ -525,14 +544,6 @@ nav {
 }
 
 .recipe-item {}
-
-.recipe-image {
-  margin: 1rem;
-  max-width: 10rem;
-  border: var(--dotted-border);
-  position: relative;
-  display: inline-flex;
-}
 
 .paragraph {
   margin: .7rem .3rem;

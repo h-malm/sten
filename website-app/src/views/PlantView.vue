@@ -1,6 +1,6 @@
 <template>
 	<div class="homepage" :class="{ 'overlay-active': isOverlayActive }">
-		<img src="../assets/flowers-top.png" />
+		<img src="../assets/UI-components/flowers-top.png" />
 		<div class="home-nav-container">
 			<div>
 				<img src="/src/assets/images/iconofrock.jpeg" id="website-icon" />
@@ -13,7 +13,7 @@
 		<div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
 			<div class="photo-container">
 				<img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image" :alt="item.header"
-					class="photo-item">
+					class="photo-item" loading="lazy">
 			</div>
 			<div>
 				<h2>{{ item.header }}</h2>
