@@ -63,7 +63,6 @@
 .home-nav-container {
   display: grid;
   grid-template-columns: 3rem auto 34rem;
-
 }
 
 .content-container {
@@ -268,12 +267,10 @@ nav {
 }
 
 .nav-item:hover {
-  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
   transform: translateY(-3px);
 }
 
 .nav-item:active {
-  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 1, auto;
   transform: translateY(-2px);
 }
 
@@ -346,12 +343,26 @@ nav {
   top: 51rem;
 }
 
-.lightswitch:hover {
+.start-button:hover,
+.stop-button:hover,
+.reset-button:hover,
+.lightswitch:hover,
+.category-item:hover,
+.photo-item:hover,
+.recipe-photo:hover,
+.nav-item:hover {
   cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
 }
 
-.lightswitch:active {
-  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 1, auto;
+.start-button:active,
+.stop-button:active,
+.reset-button:active,
+.lightswitch:active,
+.category-item:active,
+.photo-item:active,
+.recipe-photo:active,
+.nav-item:active {
+  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 -2, auto;
 }
 
 .gifs {
@@ -462,18 +473,6 @@ nav {
   left: 3.1rem;
 }
 
-.start-button:hover,
-.stop-button:hover,
-.reset-button:hover {
-  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
-}
-
-.start-button:active,
-.stop-button:active,
-.reset-button:active {
-  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 1, auto;
-}
-
 .start-button:hover {
   top: 1.6rem;
   left: 5.7rem;
@@ -499,7 +498,6 @@ nav {
 
 #musicframe {
   margin: .5rem 0;
-  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
 }
 
 .text-body {
@@ -522,6 +520,8 @@ nav {
   max-width: 25rem;
   max-height: 10rem;
   padding: .5rem;
+  filter: grayscale(100%);
+  transition: 200ms ease-in-out;
 }
 
 .recipe-photo {
@@ -530,6 +530,7 @@ nav {
   transition: 200ms ease-in-out;
 }
 
+.photo-item:hover,
 .recipe-photo:hover {
   filter: grayscale(0%);
   transition: 200ms ease-in-out;
