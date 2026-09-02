@@ -34,7 +34,6 @@
   text-align: center;
   width: 840px;
   margin: 0rem auto;
-  cursor: url(./assets/Cursor/cursor-mouse.png) 1 1, auto;
 }
 
 #main-content {
@@ -208,6 +207,7 @@ body {
   color: var(--white);
   width: auto;
   height: auto;
+  cursor: url(./assets/Cursor/cursor-mouse.png) 0 0, auto;
 }
 
 nav {
@@ -350,8 +350,9 @@ nav {
 .category-item:hover,
 .photo-item:hover,
 .recipe-photo:hover,
-.nav-item:hover {
-  cursor: url(./assets/Cursor/cursor-pointer.png) 1 1, auto;
+.nav-item:hover,
+.craft-item:hover {
+  cursor: url(./assets/Cursor/cursor-pointer.png) 0 0, auto;
 }
 
 .start-button:active,
@@ -362,7 +363,7 @@ nav {
 .photo-item:active,
 .recipe-photo:active,
 .nav-item:active {
-  cursor: url(./assets/Cursor/cursor-pointer-active.png) 1 -2, auto;
+  cursor: url(./assets/Cursor/cursor-pointer-active.png) 0 0, auto;
 }
 
 .gifs {
@@ -453,38 +454,38 @@ nav {
   font-size: .6rem;
   font-family: "Kode Mono", monospace;
   position: absolute;
-  padding: 0 .5rem 2rem .5rem;
+  padding: 2rem .5rem 2rem .5rem;
 }
 
 .start-button {
-  top: 1.2rem;
-  left: 5.8rem;
+  top: -.5rem;
+  left: 6.5rem;
   transform: rotate(40deg);
 }
 
 .stop-button {
-  top: 1.4rem;
-  left: 0.2rem;
+  top: -0.4rem;
+  left: -.5rem;
   transform: rotate(-45deg);
 }
 
 .reset-button {
-  top: 1.2rem;
+  top: -.8rem;
   left: 3.1rem;
 }
 
 .start-button:hover {
-  top: 1.6rem;
-  left: 5.7rem;
+  top: -.2rem;
+  left: 6.3rem;
 }
 
 .stop-button:hover {
-  top: 1.7rem;
-  left: 0.4rem;
+  top: 0rem;
+  left: -rem;
 }
 
 .reset-button:hover {
-  top: 1.6rem;
+  top: -0.5rem;
   left: 3.1rem;
 }
 
@@ -671,28 +672,28 @@ nav {
   }
 
   .start-button {
-    top: 1.5rem;
-    left: 2.6rem;
+    top: -0.5rem;
+    left: 3.4rem;
     transform: rotate(40deg);
   }
 
   .reset-button {
-    top: 1.5rem;
+    top: -.8rem;
     left: 1.4rem;
   }
 
   .start-button:hover {
-    top: 1.8rem;
-    left: 2.6rem;
+    top: -.3rem;
+    left: 3.4rem;
   }
 
   .stop-button:hover {
-    top: 1.6rem;
-    left: 0.2rem;
+    top: -.3rem;
+    left: -.5rem;
   }
 
   .reset-button:hover {
-    top: 1.7rem;
+    top: -.5rem;
     left: 1.4rem;
   }
 
