@@ -2,7 +2,7 @@
     {
         "header": "Chocolate Chip Cookies",
         "category": "baking",
-        "text": "/src/textfiles/recipes/Pancakes.txt",
+        "text": "/src/textfiles/recipes/ChocolateChipCookies.txt",
         "images": [
             "/food/IMG_20250308_182525-ds.png"
         ]
@@ -10,7 +10,7 @@
     {
         "header": "Meatballs",
         "category": "meat",
-        "text": "/src/textfiles/recipes/Pancakes.txt",
+        "text": "/src/textfiles/recipes/Meatballs.txt",
         "images": [
             "/food/IMG_20241208_180903-ds.png"
         ]
@@ -23,7 +23,7 @@
     {
         "header": "Mudcake",
         "category": "baking",
-        "text": "/src/textfiles/recipes/Pancakes.txt",
+        "text": "/src/textfiles/recipes/Mudcake.txt",
         "images": [
             "/food/IMG_20240608_213526-ds.png"
         ]
