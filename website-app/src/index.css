@@ -173,7 +173,7 @@ h3,
 /**Items with border*/
 .homepage,
 .home-nav-container,
-.blog-photo-container {
+.recipe-photo {
   border: var(--dotted-border);
 }
 
@@ -538,6 +538,9 @@ nav {
   transition: 200ms ease-in-out;
 }
 
+.microblog-photo {
+  max-width: 10rem;
+}
 
 .category-item {
   font-size: 1rem;
@@ -727,5 +730,10 @@ nav {
 
   .crafts-item {
     grid-template-columns: auto;
+  }
+
+  .microblog-photo {
+    max-width: 10rem;
+    margin: 0 auto;
   }
 }
