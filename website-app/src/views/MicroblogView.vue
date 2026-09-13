@@ -11,7 +11,7 @@
 			<Navbars />
 		</div>
 		<div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
-			<div class="photo-container">
+			<div class="blog-photo-container">
 				<img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image" :alt="item.header"
 					class="recipe-photo">
 			</div>
@@ -25,11 +25,29 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </template>
 
 <script setup>
-import Navbars from '@/components/Navbars.vue';
+import { ref } from 'vue'
+import Navbars from '@/components/Navbars.vue'
+import recipesData from '../textfiles/microblog.json'
 
+const stories = ref( recipesData )
+const getTextFiles = import.meta.glob( '/src/textfiles/recipes/*.txt', {
+	query: '?raw',
+	import: 'default',
+	eager: true
+} )
+
+const formatText = ( textPath ) => {
+	const text = getTextFiles[textPath]
+
+	if ( !text ) {
+		console.warn( `Could not find text file: ${textPath}` )
+		return []
+	}
+
+	return text.split( /\r?\n/ )
+}
 </script>

@@ -17,12 +17,7 @@
 			</div>
 			<div>
 				<h2>{{ item.header }}</h2>
-				<div class="photo-container">
-					<div v-if=" !item.isHidden " v-for=" ( paragraph, paragraphIndex ) in formatText( item.text ) "
-						:key="paragraphIndex">
-						<p class="paragraph">{{ paragraph }}</p>
-					</div>
-				</div>
+				<div v-if=" !item.isHidden " class="markdown-content" v-html="formatText( item.text )"></div>
 			</div>
 		</div>
 	</div>
@@ -32,6 +27,7 @@
 import { ref } from 'vue'
 import Navbars from '@/components/Navbars.vue'
 import craftsData from '../textfiles/crafts.json'
+import { marked } from 'marked'
 
 const stories = ref( craftsData )
 
@@ -49,7 +45,7 @@ const getImages = ( folder ) => {
 		.map( ( [, image] ) => image )
 }
 
-const getTextFiles = import.meta.glob( '/src/textfiles/crafts/*.txt', {
+const getTextFiles = import.meta.glob( '/src/textfiles/crafts/*.md', {
 	query: '?raw',
 	import: 'default',
 	eager: true
@@ -63,6 +59,6 @@ const formatText = ( textPath ) => {
 		return []
 	}
 
-	return text.split( /\r?\n/ )
+	return marked( text )
 }
 </script>

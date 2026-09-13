@@ -172,7 +172,8 @@ h3,
 
 /**Items with border*/
 .homepage,
-.home-nav-container {
+.home-nav-container,
+.blog-photo-container {
   border: var(--dotted-border);
 }
 
@@ -547,8 +548,9 @@ nav {
 
 .recipe-item {}
 
-.paragraph {
-  margin: .7rem .3rem;
+
+.markdown-content {
+  margin: .5rem;
 }
 
 .container {

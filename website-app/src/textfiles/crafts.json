@@ -2,73 +2,73 @@
     {
         "header": "Yellow Sweater",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/yellow_cotton_sweater.txt",
+        "text": "/src/textfiles/crafts/yellow_cotton_sweater.md",
         "images": "/src/assets/crafts/yellow-cotton-sweater/"
     },
     {
         "header": "Armchair cover",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/armchair_cover.txt",
+        "text": "/src/textfiles/crafts/armchair_cover.md",
         "images": "/src/assets/crafts/armchair-cover/"
     },
     {
         "header": "Beige Alpaca Sweater",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/beige_alpacka_sweater.txt",
+        "text": "/src/textfiles/crafts/beige_alpacka_sweater.md",
         "images": "/src/assets/crafts/beige-alpacka-sweater/"
     },
     {
         "header": "Birch Shelf",
         "category": "woodwork",
-        "text": "/src/textfiles/crafts/birch_shelf.txt",
+        "text": "/src/textfiles/crafts/birch_shelf.md",
         "images": "/src/assets/crafts/birch-shelf/"
     },
     {
         "header": "Blue Chunky Sweater",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/blue_chunky_sweater.txt",
+        "text": "/src/textfiles/crafts/blue_chunky_sweater.md",
         "images": "/src/assets/crafts/blue-chunky-sweater/"
     },
     {
         "header": "Fluffy Brown Sweater",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/fluffy_brown_sweater.txt",
+        "text": "/src/textfiles/crafts/fluffy_brown_sweater.md",
         "images": "/src/assets/crafts/fluffy-brown-sweater/"
     },
     {
         "header": "Wrench Holder",
         "category": "sewing",
-        "text": "/src/textfiles/crafts/wrench_holder.txt",
+        "text": "/src/textfiles/crafts/wrench_holder.md",
         "images": "/src/assets/crafts/wrench-holder/"
     },
     {
         "header": "Ruffled Bikini",
         "category": "sewing",
-        "text": "/src/textfiles/crafts/ruffled_bikini.txt",
+        "text": "/src/textfiles/crafts/ruffled_bikini.md",
         "images": "/src/assets/crafts/ruffled-bikini/"
     },
     {
         "header": "Red Striped Shirt",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/striped_red_sweater.txt",
+        "text": "/src/textfiles/crafts/striped_red_sweater.md",
         "images": "/src/assets/crafts/striped-red-sweater/"
     },
     {
         "header": "White and Gray Gloves",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/white_gray_gloves.txt",
+        "text": "/src/textfiles/crafts/white_gray_gloves.md",
         "images": "/src/assets/crafts/white-gray-gloves/"
     },
     {
         "header": "Patterned Brown Gloves",
         "category": "knitting",
-        "text": "/src/textfiles/crafts/patterned_brown_gloves.txt",
+        "text": "/src/textfiles/crafts/patterned_brown_gloves.md",
         "images": "/src/assets/crafts/patterned-brown-gloves/"
     },
     {
         "header": "Checkered Pillow",
         "category": "sewing",
-        "text": "/src/textfiles/crafts/checkered_pillow.txt",
+        "text": "/src/textfiles/crafts/checkered_pillow.md",
         "images": "/src/assets/crafts/checkered-pillow/"
     }
 ]

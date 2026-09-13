@@ -2,7 +2,7 @@
     {
         "header": "Tomatoes 2025",
         "category": "tomatoes",
-        "text": "/src/textfiles/plants/Tomatoes.txt",
+        "text": "/src/textfiles/plants/Tomatoes.md",
         "images": [
             "/plants/tomatoes/2025/DSC_0030-ds.png",
             "/plants/tomatoes/2025/DSC_0037-ds.png",
