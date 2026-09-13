@@ -45,7 +45,8 @@
   border-right: var(--dotted-border);
 }
 
-.left-panel {
+.left-panel,
+.right-panel {
   padding: .5rem;
 }
 
@@ -73,7 +74,7 @@
   grid-template-columns: auto;
   gap: 2rem;
   margin: 5rem 1rem 1rem 1rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .recipes-container {
@@ -81,7 +82,7 @@
   grid-template-columns: auto 20rem;
   gap: 2rem;
   margin: 1rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .content-container>div {
@@ -103,7 +104,11 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 1rem;
-  padding: 2rem 1rem;
+}
+
+.blog-item {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 #calendar {
@@ -186,7 +191,8 @@ h3,
 .bio,
 .recipes-container,
 .oldman,
-.crafts-item {
+.crafts-item,
+.blog-item {
   border-bottom: var(--dotted-border);
 }
 
@@ -503,7 +509,7 @@ nav {
 }
 
 .text-body {
-  padding: 1rem;
+  padding: .5rem;
   text-align: justify;
 }
 
@@ -516,6 +522,7 @@ nav {
   display: inline-block;
   height: auto;
   align-content: center;
+  padding: .5rem .5rem .5rem 1rem;
 }
 
 .photo-item {
@@ -538,8 +545,8 @@ nav {
   transition: 200ms ease-in-out;
 }
 
-.microblog-photo {
-  max-width: 10rem;
+.pfp-blog {
+  max-width: 5rem;
 }
 
 .category-item {
@@ -553,13 +560,40 @@ nav {
 
 
 .markdown-content {
-  margin: .5rem;
+  margin: 1rem;
 }
 
 .container {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#model-content.p-dialog {
+  background: var(--first);
+  width: 30rem;
+  height: auto;
+  border: var(--dotted-border);
+  padding: .5rem;
+}
+
+.p-icon {
+  opacity: 0;
+}
+
+.close-button {
+  margin: 0 auto;
+  display: inherit;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.microblog-photo {
+  max-width: 15rem;
+  margin: auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -726,14 +760,19 @@ nav {
 
   .photo-item {
     max-width: 13rem;
+    display: initial;
   }
 
   .crafts-item {
     grid-template-columns: auto;
   }
 
-  .microblog-photo {
-    max-width: 10rem;
+  .pfp-blog {
+    max-height: 10rem;
     margin: 0 auto;
+  }
+
+  .craft-item {
+    font-size: .8rem;
   }
 }

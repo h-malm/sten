@@ -10,17 +10,19 @@
 			</div>
 			<Navbars />
 		</div>
-		<div v-for=" ( item, index ) in stories " :key="index" class="crafts-item">
-			<div>
-				<img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image" :alt="item.header"
-					class="microblog-photo">
+		<div v-for=" ( item, index ) in stories " :key="index" class="blog-item">
+			<div class="left-panel">
+				<img src="../assets/UI-components/portrait-dithered.png" alt="Portrait of Sten" class="pfp-blog">
 				<h3>{{ item.header }}</h3>
+				<h3 class="covered-by-your-grace-regular">{{ item.time }}</h3>
 				<div v-for=" ( tag, tagIndex ) in item.tags " :key="tagIndex">
 					<p style="display: inline; position: relative; flex: content;">#{{ tag }}</p>
 				</div>
 			</div>
-			<div>
-				<div v-if=" !item.isHidden " class="markdown-content" v-html="formatText( item.text )"></div>
+			<div class="right-panel">
+				<div v-if=" !item.isHidden " v-html="formatText( item.text )"></div>
+				<img v-for=" ( image, imageIndex ) in item.images " :key="imageIndex" :src="image" :alt="item.header"
+					class="microblog-photo" />
 			</div>
 		</div>
 	</div>

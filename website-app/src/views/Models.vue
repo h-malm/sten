@@ -14,17 +14,18 @@
 			<div v-for=" ( model, index ) in models " :key="index">
 				<div>
 					<h2>{{ model.header }}</h2>
-					<button type="button" @click="showDialog( index )">
+					<button class="nav-item button-border1" type="button" @click="showDialog( index )">
 						Show
 					</button>
 				</div>
-				<Dialog :visible="visibleIndex === index" @hide="hideDialog">
+				<Dialog :visible="visibleIndex === index" @hide="hideDialog" id="model-content">
 					<div>
 						<component :is="model.content" />
-						<div style="text-align: center;">Be patient. It takes a while to render.
+						<div style="text-align: center;" class="nanum-gothic-coding-regular">
+							Be patient. It takes a while to render.
 						</div>
 					</div>
-					<button @click="hideDialog">
+					<button class="nav-item button-border1 close-button" @click="hideDialog">
 						Close
 					</button>
 				</Dialog>
