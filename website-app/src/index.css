@@ -1,16 +1,56 @@
 @import 'tailwindcss';
 
 :root {
-  --first: #070707;
-  --white: rgb(199, 199, 199);
-  --black: black;
+  --first-background: #070707;
+
+  --primary-color: rgb(199, 199, 199);
+  --primary-background: black;
+  --secondary-background: rgb(199, 199, 199);
+  --body-primary: #383838;
+
+  --texture-primary: rgba(0, 0, 0, 0.842);
+  --texture-secondary: rgba(3, 0, 0, 0.877);
+
+  --calendar-color: #0c0c0c;
+  --calendar-background: #c3bcbc;
+
   --nav-button-background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 50%, rgba(0, 0, 0, 1) 100%);
   --nav-button-hover-background: linear-gradient(180deg, rgb(55, 6, 17) 0%, rgb(88, 26, 46) 42%, rgb(55, 6, 14) 100%);
-  --body-primary: #383838;
-  --dotted-border: 1px dashed var(--white);
-  --dotted-border-black: 1px dashed var(--black);
 
+  --dotted-border: 1px dashed var(--primary-color);
+  --dotted-border-secondary: 1px dashed var(--primary-background);
 }
+
+.theme-ween {
+  --primary-color: #ca5310;
+  --primary-background: #030303;
+  --secondary-background: #c7691d;
+  --body-primary: #b16756;
+
+  --texture-primary: rgba(29, 17, 9, 0.863);
+  --texture-secondary: rgba(51, 21, 1, 0.904);
+
+  --calendar-color: #f3efee;
+  --calendar-background: #612213;
+
+  --nav-button-background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  --nav-button-hover-background: linear-gradient(180deg, rgb(55, 6, 17) 0%, rgb(88, 26, 46) 42%, rgb(55, 6, 14) 100%);
+
+  --dotted-border: 1px dashed var(--primary-color);
+  --dotted-border-secondary: 1px dashed var(--primary-background);
+}
+
+
+.theme-selector {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.theme-option {
+  background: black;
+}
+
 
 /**fonts**/
 
@@ -57,7 +97,7 @@
 .home-content-container {
   display: grid;
   grid-template-columns: 176px auto 177px;
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .home-nav-container {
@@ -112,8 +152,8 @@
 }
 
 #calendar {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--calendar-background);
+  color: var(--calendar-color);
 }
 
 #stopwatch {
@@ -122,9 +162,9 @@
 }
 
 #musicplayer {
-  color: var(--black);
+  color: var(--primary-background);
   padding: .5rem;
-  background-color: var(--white);
+  background-color: var(--secondary-background);
 }
 
 #interests {
@@ -206,12 +246,13 @@ h3,
 }
 
 body {
-  background-color: var(--first);
-  background-size: 7px 7px;
-  background-image: radial-gradient(circle at center,
-      var(--body-primary) 0.05rem,
-      transparent 0);
-  color: var(--white);
+  background: repeating-linear-gradient(0deg,
+      var(--texture-primary) 0px,
+      var(--texture-primary) 5px,
+      var(--texture-secondary) 5px,
+      var(--texture-secondary) 11px),
+    url(./assets/UI-components/texture.png);
+  color: var(--primary-color);
   width: auto;
   height: auto;
   cursor: url(./assets/Cursor/cursor-mouse.png) 0 0, auto;
@@ -227,7 +268,7 @@ nav {
 
 .homepage {
   min-height: 100vh;
-  background-color: var(--first);
+  background-color: var(--first-background);
 }
 
 .button-border1 {
@@ -248,7 +289,7 @@ nav {
 .button-border1:hover,
 .button-border2:hover,
 .button-border3:hover {
-  color: var(--black);
+  color: var(--primary-background);
 }
 
 .button-border1:hover {
@@ -291,9 +332,9 @@ nav {
   display: none;
   position: absolute;
   min-width: 5rem;
-  background: var(--first);
+  background: var(--first-background);
   border: var(--dotted-border);
-  color: var(--white);
+  color: var(--primary-color);
   z-index: 5;
 }
 
@@ -311,7 +352,7 @@ nav {
 .craft-item:hover {
   background-image: url(./assets/UI-components/button-borders-hover3.png);
   background-size: cover;
-  color: var(--black);
+  color: var(--primary-background);
 }
 
 .panorama {
@@ -432,7 +473,7 @@ nav {
 .calendar-weekdays div {
   font-size: .7rem;
   padding: .23rem;
-  border: var(--dotted-border-black);
+  border: var(--dotted-border-secondary);
 }
 
 .calendar-dates div {
@@ -440,8 +481,9 @@ nav {
 }
 
 .current-date {
-  color: var(--white);
-  background: var(--black);
+  color: var(--primary-color);
+  background: var(--primary-background);
+  border-radius: 2rem;
 }
 
 .stopwatch>img {
@@ -570,7 +612,7 @@ nav {
 }
 
 #model-content.p-dialog {
-  background: var(--first);
+  background: var(--first-background);
   width: 30rem;
   height: auto;
   border: var(--dotted-border);

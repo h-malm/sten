@@ -17,8 +17,13 @@
     <RouterLink class="nav-item button-border1" to="/photos">Photos</RouterLink>
     <RouterLink class="nav-item button-border3" to="/plants">Plants</RouterLink>
   </nav>
-  <main>
+  <main :class="`theme-${selectedTheme}`">
     <RouterView />
+    <div class="theme-selector">
+      Themes
+      <button class="nav-item button-border3" @click="selectedTheme( 'og' )">OG</button>
+      <button class="nav-item button-border1" @click="selectedTheme( 'ween' )">Ween</button>
+    </div>
   </main>
 </template>
 
@@ -30,4 +35,7 @@ const crafts = [
   { name: '3D Models', path: '/models' },
 ]
 
+function selectedTheme( theme: string ) {
+  document.body.className = `theme-${theme}`
+};
 </script>
