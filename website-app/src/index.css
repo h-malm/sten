@@ -4,6 +4,8 @@
   --first-background: #070707;
 
   --primary-color: rgb(199, 199, 199);
+  --secondary-color: rgb(227, 226, 226);
+
   --primary-background: black;
   --secondary-background: rgb(199, 199, 199);
   --body-primary: #383838;
@@ -22,16 +24,20 @@
 }
 
 .theme-ween {
+  --first-background: #070707;
+
   --primary-color: #ca5310;
+  --secondary-color: rgb(227, 226, 226);
+
   --primary-background: #030303;
-  --secondary-background: #c7691d;
+  --secondary-background: #b95402;
   --body-primary: #b16756;
 
   --texture-primary: rgba(29, 17, 9, 0.863);
   --texture-secondary: rgba(51, 21, 1, 0.904);
 
   --calendar-color: #f3efee;
-  --calendar-background: #612213;
+  --calendar-background: #6f1d0d;
 
   --nav-button-background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 50%, rgba(0, 0, 0, 1) 100%);
   --nav-button-hover-background: linear-gradient(180deg, rgb(55, 6, 17) 0%, rgb(88, 26, 46) 42%, rgb(55, 6, 14) 100%);
@@ -97,7 +103,7 @@
 .home-content-container {
   display: grid;
   grid-template-columns: 176px auto 177px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .home-nav-container {
@@ -195,6 +201,7 @@ p {
   font-size: .9rem;
   text-align: justify;
   font-family: "Nanum Gothic Coding", monospace;
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -204,6 +211,13 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-color);
 }
 
 h1,
@@ -252,7 +266,6 @@ body {
       var(--texture-secondary) 5px,
       var(--texture-secondary) 11px),
     url(./assets/UI-components/texture.png);
-  color: var(--primary-color);
   width: auto;
   height: auto;
   cursor: url(./assets/Cursor/cursor-mouse.png) 0 0, auto;
@@ -312,6 +325,7 @@ nav {
   font-size: 1rem;
   line-height: 2.2rem;
   min-width: 5.2rem;
+  color: var(--secondary-color);
 }
 
 .nav-item:hover {
@@ -334,7 +348,7 @@ nav {
   min-width: 5rem;
   background: var(--first-background);
   border: var(--dotted-border);
-  color: var(--primary-color);
+  color: var(--secondary-color);
   z-index: 5;
 }
 
