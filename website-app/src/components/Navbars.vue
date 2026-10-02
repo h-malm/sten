@@ -20,9 +20,10 @@
   <main :class="`theme-${selectedTheme}`">
     <RouterView />
     <div class="theme-selector">
-      Themes
+      <h2>Themes</h2>
       <button class="nav-item button-border3" @click="selectedTheme( 'og' )">OG</button>
       <button class="nav-item button-border1" @click="selectedTheme( 'ween' )">Ween</button>
+      <button class="nav-item button-border1" @click="selectedTheme( 'linemode' )">Line-mode</button>
     </div>
   </main>
 </template>
